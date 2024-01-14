@@ -1,0 +1,11 @@
+/*missing alt attribute*/
+img:not([alt]) {
+  outline: 0.5rem dashed red;
+  outline-offset: 0.5rem;
+}
+
+/*empty alt attribute*/
+img[alt=""] {
+  outline-offset: 1.5rem;
+  outline: 0.5rem solid blue;
+}

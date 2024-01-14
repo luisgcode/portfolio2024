@@ -1,0 +1,125 @@
+/*CSS Stylesheet T.O.C. - Table of contents
+Created XX April XXXX
+Last update April XX: 
+
+
+Compatible Browser:
+Firefox V.85.0.2 (64-bit)
+Chrome V.89.0.4389.90 (Build oficial) (64 bits)
+Edge V.89.0.774.54 (Compilación oficial) (64 bits)
+Safari V. 
+
+
+=RESET % CONDITIONAL COMMENT
+=GENERAL
+=LAYOUT:
+=PAGES
+
+      =index
+
+/*       RESET      */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   margin: 0;
+   padding: 0;
+   vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+
+body {
+   line-height: 1.5;
+}
+
+ol,
+ul {
+   list-style: none;
+}
+
+/*///////////////////////GENERAL///////////////////////////*/
