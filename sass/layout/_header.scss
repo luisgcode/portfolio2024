@@ -11,10 +11,12 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px solid white;
 
     // Navigation section
     .nav {
       padding: 2rem 0;
+      border: 1px solid white;
 
       // navigation links
       a {
@@ -33,10 +35,11 @@ header {
       &-desktop {
         @include flex_center;
         justify-content: flex-end;
+        border: 1px solid white;
 
         &-ul {
           @include flex_center;
-          margin-right: 16%;
+          width: 42%;
 
           li {
             margin-left: 2.5rem;
@@ -47,16 +50,53 @@ header {
 
     // Hero header
     &-hero {
+      border: 1px solid white;
       display: flex;
-      padding: 0 8rem;
-
+      padding: 0rem 1rem 0rem 6rem;
       width: 100%;
+      @include margin_center;
       align-items: center;
-      // justify-content: space-around;
       text-align: center;
+      justify-content: space-around;
 
       &-block {
-        min-width: 50%;
+        @include flex_center;
+        justify-content: center;
+        margin-left: 4rem;
+
+        .coder {
+          height: 350px;
+          width: 300px;
+
+          display: flex;
+          flex-direction: column;
+
+          &-header {
+            width: 100%;
+            height: 40px;
+            padding: 1rem 0;
+            background: #d9d9d921;
+            border-radius: 3px;
+          }
+
+          &-content {
+            border: 3px solid #ffffff3d;
+            height: 100%;
+            position: relative;
+            margin-top: 2rem;
+
+            &::after {
+              content: "";
+              color: white;
+              position: absolute;
+              bottom: -4px;
+              left: 50%;
+              transform: translate(-50%);
+              width: 60%;
+              border: 3px solid $regular-color;
+            }
+          }
+        }
       }
 
       &-img {

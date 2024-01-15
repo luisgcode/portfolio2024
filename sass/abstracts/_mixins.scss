@@ -39,3 +39,8 @@
   display: flex;
   align-items: center;
 }
+
+// Basic adjustments for sections
+@mixin section_reset {
+  padding: 5rem 1rem;
+}
