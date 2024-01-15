@@ -34,9 +34,8 @@
   margin: 0 auto;
 }
 
-// Centering flex
+// centering flex
 @mixin flex_center {
   display: flex;
   align-items: center;
-  justify-content: center;
 }

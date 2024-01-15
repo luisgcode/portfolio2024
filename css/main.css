@@ -69,6 +69,11 @@ span {
   padding: 0;
 }
 
+#focused {
+  color: #f48b8d;
+  border-bottom: 2px solid #ef5d5f;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -85,11 +90,61 @@ li {
 }
 
 header {
-  background-color: #0c0c0c;
+  background-color: #111111;
+  height: 100vh;
+  max-height: 800px;
+  overflow: hidden;
 }
 header .wrapper {
   margin: 0 auto;
-  max-height: 100vh;
   max-width: 160rem;
-  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .wrapper .nav {
+  padding: 2rem 0;
+}
+header .wrapper .nav a {
+  color: #efeaff;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  text-transform: uppercase;
+  padding-bottom: 0.6rem;
+  transition: all 0.3s ease;
+}
+header .wrapper .nav a:hover {
+  color: #f48b8d;
+}
+header .wrapper .nav-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .wrapper .nav-desktop-ul {
+  display: flex;
+  align-items: center;
+  margin-right: 16%;
+}
+header .wrapper .nav-desktop-ul li {
+  margin-left: 2.5rem;
+}
+header .wrapper-hero {
+  display: flex;
+  padding: 0 8rem;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+header .wrapper-hero-block {
+  min-width: 50%;
+}
+header .wrapper-hero-img {
+  min-width: 50%;
+}
+header .wrapper-hero-img img {
+  object-fit: cover;
+  object-position: center;
+  max-height: 60rem;
 }

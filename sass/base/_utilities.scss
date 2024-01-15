@@ -16,3 +16,9 @@ span {
   margin: 0;
   padding: 0;
 }
+
+// link focused
+#focused {
+  color: lighten($highlight-color, 10%);
+  border-bottom: 2px solid $highlight-color;
+}
