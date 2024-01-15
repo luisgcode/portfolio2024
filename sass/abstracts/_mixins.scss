@@ -29,7 +29,14 @@
   margin: 0.8rem 0;
 }
 
-// Centering
+// Centering margin
 @mixin margin_center {
   margin: 0 auto;
+}
+
+// Centering flex
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
