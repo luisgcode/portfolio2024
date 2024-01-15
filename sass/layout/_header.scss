@@ -1,0 +1,10 @@
+header {
+  background-color: $regular-color;
+
+  .wrapper {
+    @include margin_center;
+    max-height: 100vh;
+    max-width: 160rem;
+    min-height: 100vh;
+  }
+}
