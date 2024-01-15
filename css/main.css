@@ -89,6 +89,13 @@ li {
   padding: 0;
 }
 
+.intro {
+  padding: 5rem 6rem;
+  max-width: 160rem;
+  border: 5px solid rgb(0, 64, 128);
+  margin: 0 auto;
+}
+
 header {
   background-color: #111111;
   height: 100vh;
@@ -128,7 +135,7 @@ header .wrapper .nav-desktop {
 header .wrapper .nav-desktop-ul {
   display: flex;
   align-items: center;
-  width: 42%;
+  width: 45%;
 }
 header .wrapper .nav-desktop-ul li {
   margin-left: 2.5rem;
@@ -185,4 +192,10 @@ header .wrapper-hero-img img {
   object-fit: cover;
   object-position: center;
   max-height: 60rem;
+}
+
+main {
+  max-width: 160rem;
+  border: 5px solid purple;
+  margin: 0 auto;
 }

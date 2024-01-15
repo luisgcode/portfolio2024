@@ -42,5 +42,6 @@
 
 // Basic adjustments for sections
 @mixin section_reset {
-  padding: 5rem 1rem;
+  padding: 5rem 6rem;
+  max-width: 160rem;
 }
