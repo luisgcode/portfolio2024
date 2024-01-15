@@ -1,27 +1,22 @@
-// @import "abstracts/functions";
-// @import "abstracts/mixins";
-// @import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-// @import "base/typography";
-// @import "base/utilities";
-// @import "base/reset";
+@import "base/typography";
+@import "base/utilities";
+@import "base/reset";
 
-// @import "components/about";
-// @import "components/animations";
+@import "components/about";
+@import "components/animations";
 // @import "components/app";
-// @import "components/buttons";
+@import "components/buttons";
 // @import "components/collage";
 // @import "components/explanation";
 // @import "components/features";
-// @import "components/forms";
-// @import "components/hook";
-// @import "components/info";
-// @import "components/testimonials";
+@import "components/forms";
 
-// @import "layout/footer";
-// @import "layout/main";
-// @import "layout/header";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/main";
+@import "layout/navigation";
 
-// @import "layout/navigation";
-
-// @import "pages/home";
+@import "pages/home";
