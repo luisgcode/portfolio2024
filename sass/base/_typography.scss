@@ -3,9 +3,8 @@ html {
 }
 
 body {
-  color: #2f2f2f;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: $regular-text-font;
   font-weight: 600;
   line-height: 1.6;
 }
@@ -20,6 +19,11 @@ h5 {
 
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
   margin: 0;
   padding: 0;
 }

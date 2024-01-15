@@ -9,3 +9,9 @@ img[alt=""] {
   outline-offset: 1.5rem;
   outline: 0.5rem solid blue;
 }
+
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}

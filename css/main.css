@@ -1,1 +1,62 @@
+html {
+  font-size: 62.5%;
+}
 
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/*missing alt attribute*/
+img:not([alt]) {
+  outline: 0.5rem dashed red;
+  outline-offset: 0.5rem;
+}
+
+/*empty alt attribute*/
+img[alt=""] {
+  outline-offset: 1.5rem;
+  outline: 0.5rem solid blue;
+}
+
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

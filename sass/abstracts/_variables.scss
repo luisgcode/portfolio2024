@@ -1,15 +1,10 @@
-// $primary-color: #ec672d;
-// $secondary-color: #de4b64;
-// $primary-dark-color: #e44d07;
-// $tertiary-color: #41537b;
-// $quaternary-color: #2f4858;
+$regular-text-color: #0c0c0c;
+$highlight-color: #ef5d5f;
+$cta-color: #ef5da8;
+$details-color: #5d5fef;
 
-/* --xl-font: 3rem;
-   --lg-font: 2.5rem;
-   --md-font: 2rem;
-   --sm-font: 1.8rem;
-   --xs-font: 1.6rem; */
-
-// Grid
-// $horizontal-gutter: 5rem;
-// $vertical-gutter: 8rem;
+// $primary-heading-font: clamp(, 5vw);
+// $secondary-heading-font: clamp(, 5vw);
+// $tertiary-heading-font: clamp(, 5vw);
+// $quaternary-heading-font: clamp(, 5vw);
+$regular-text-font: clamp(1.6rem, 2vw, 1.8rem);
