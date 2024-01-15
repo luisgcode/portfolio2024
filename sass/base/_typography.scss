@@ -4,17 +4,28 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: $regular-text-font;
-  font-weight: 600;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Montserrat", sans-serif;
+p {
+  @include regular_text;
+}
+
+h1 {
+  @include primary_heading;
+}
+
+h2 {
+  @include secondary_heading;
+}
+
+h3 {
+  @include tertiary_heading;
+}
+
+h4 {
+  @include quaternary_heading;
 }
 
 a {

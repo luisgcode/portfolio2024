@@ -1,3 +1,30 @@
-// No margin no padding
-@mixin noMP {
+@mixin primary_heading {
+  margin: 1.2rem 0;
+  font-size: $primary-heading-font;
+  font-family: "Montserrat", sans-serif;
+}
+
+@mixin secondary_heading {
+  margin: 1rem 0;
+  font-size: $secondary-heading-font;
+  font-family: "Montserrat", sans-serif;
+}
+
+@mixin tertiary_heading {
+  margin: 0.8rem 0;
+  font-size: $tertiary-heading-font;
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin quaternary_heading {
+  margin: 0.8rem 0;
+  font-size: $quaternary-heading-font;
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin regular_text {
+  line-height: 2.4rem;
+  font-size: $regular-text-font;
+  font-family: "Open Sans", sans-serif;
+  margin: 0.8rem 0;
 }
