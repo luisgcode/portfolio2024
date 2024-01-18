@@ -2,7 +2,45 @@
   @include section_reset;
   @include margin_center;
 
-  .secondary-heading {
-    @include secondary_heading;
+  &-wrapper {
+    @include margin_center;
+    display: flex;
+    max-width: 900px;
+    height: 260px;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    &-eyes {
+      max-width: 428px;
+      height: 260px;
+      flex-basis: 50%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &-info {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+
+      .secondary-heading {
+        @include secondary_heading;
+        display: inline;
+        margin: 0;
+      }
+
+      .regular-text {
+        @include regular_text;
+        border-bottom: 1px solid black;
+        padding-bottom: 3rem;
+      }
+    }
   }
 }

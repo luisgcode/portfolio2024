@@ -1,0 +1,5 @@
+.timeline {
+  @include section_reset;
+  @include margin_center;
+  background: red;
+}

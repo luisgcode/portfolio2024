@@ -3,19 +3,23 @@
   font-size: $primary-heading-font;
   margin: 1.2rem 0;
   letter-spacing: 2px;
+  font-weight: 600;
 }
 
 @mixin secondary_heading {
   font-family: "Montserrat", sans-serif;
   font-size: $secondary-heading-font;
   margin: 1rem 0;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: inline;
 }
 
 @mixin tertiary_heading {
   font-family: "Open Sans", sans-serif;
   font-size: $tertiary-heading-font;
   margin: 0.8rem 0;
+  font-weight: 600;
 }
 
 @mixin quaternary_heading {
@@ -29,6 +33,7 @@
   font-size: $regular-text-font;
   line-height: 2.4rem;
   margin: 0.8rem 0;
+  font-weight: 600;
 }
 
 // Centering margin
