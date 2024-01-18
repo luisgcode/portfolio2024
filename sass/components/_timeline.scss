@@ -1,5 +1,97 @@
 .timeline {
   @include section_reset;
   @include margin_center;
-  background: red;
+
+  &-wrapper {
+    @include margin_center;
+    width: 900px;
+    max-width: 99%;
+    overflow: hidden;
+
+    &-hero {
+      padding: 2rem 0;
+    }
+
+    &-items {
+      height: 400px;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      position: relative;
+
+      &::after {
+        background-color: royalblue;
+        background: linear-gradient(
+          rgb(59, 222, 59),
+          rgb(107, 107, 226),
+          #f9f871
+        );
+        border-radius: 5px;
+        content: "";
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%) translateY(-20px);
+        width: 5px;
+        z-index: -1;
+      }
+
+      .item {
+        display: flex;
+        margin: 0 0 1rem 0;
+        // opacity: 0;
+        transition: all 1s ease;
+        width: 100%;
+
+        &-block {
+          width: 50%;
+        }
+      }
+
+      .item.show {
+        opacity: 1;
+      }
+
+      .item:nth-child(odd) {
+        justify-content: flex-end;
+        position: relative;
+        text-align: left;
+      }
+
+      .item:nth-child(even) {
+        justify-content: flex-start;
+        position: relative;
+        text-align: right;
+      }
+
+      .item:nth-child(odd)::after {
+        background-color: white;
+        border-radius: 50%;
+        border: 3px solid royalblue;
+        content: "";
+        height: 15px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 15px;
+        z-index: 9;
+      }
+
+      .item:nth-child(even)::before {
+        background-color: white;
+        border-radius: 50%;
+        border: 3px solid royalblue;
+        content: "";
+        height: 15px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 15px;
+        z-index: 9;
+      }
+    }
+  }
 }
