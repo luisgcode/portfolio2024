@@ -2,12 +2,14 @@
   font-family: "Montserrat", sans-serif;
   font-size: $primary-heading-font;
   margin: 1.2rem 0;
+  letter-spacing: 2px;
 }
 
 @mixin secondary_heading {
   font-family: "Montserrat", sans-serif;
   font-size: $secondary-heading-font;
   margin: 1rem 0;
+  letter-spacing: 2px;
 }
 
 @mixin tertiary_heading {

@@ -1,5 +1,8 @@
 .intro {
   @include section_reset;
-  border: 5px solid rgb(0, 64, 128);
   @include margin_center;
+
+  .secondary-heading {
+    @include secondary_heading;
+  }
 }

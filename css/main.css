@@ -19,12 +19,14 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(2.3rem, 5vw, 3.8rem);
   margin: 1.2rem 0;
+  letter-spacing: 2px;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(2.1rem, 5vw, 3.5rem);
   margin: 1rem 0;
+  letter-spacing: 2px;
 }
 
 h3 {
@@ -70,8 +72,11 @@ span {
 }
 
 #focused {
-  color: #f48b8d;
   border-bottom: 2px solid #ef5d5f;
+}
+
+.detailed {
+  color: #ef5d5f;
 }
 
 * {
@@ -92,8 +97,13 @@ li {
 .intro {
   padding: 5rem 6rem;
   max-width: 160rem;
-  border: 5px solid rgb(0, 64, 128);
   margin: 0 auto;
+}
+.intro .secondary-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.1rem, 5vw, 3.5rem);
+  margin: 1rem 0;
+  letter-spacing: 2px;
 }
 
 header {
@@ -109,11 +119,9 @@ header .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid white;
 }
 header .wrapper .nav {
   padding: 2rem 0;
-  border: 1px solid white;
 }
 header .wrapper .nav a {
   color: #efeaff;
@@ -130,7 +138,6 @@ header .wrapper .nav-desktop {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  border: 1px solid white;
 }
 header .wrapper .nav-desktop-ul {
   display: flex;
@@ -141,7 +148,6 @@ header .wrapper .nav-desktop-ul li {
   margin-left: 2.5rem;
 }
 header .wrapper-hero {
-  border: 1px solid white;
   display: flex;
   padding: 0rem 1rem 0rem 6rem;
   width: 100%;
@@ -196,6 +202,5 @@ header .wrapper-hero-img img {
 
 main {
   max-width: 160rem;
-  border: 5px solid purple;
   margin: 0 auto;
 }

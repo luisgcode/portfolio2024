@@ -11,12 +11,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid white;
 
     // Navigation section
     .nav {
       padding: 2rem 0;
-      border: 1px solid white;
 
       // navigation links
       a {
@@ -35,7 +33,6 @@ header {
       &-desktop {
         @include flex_center;
         justify-content: flex-end;
-        border: 1px solid white;
 
         &-ul {
           @include flex_center;
@@ -50,7 +47,6 @@ header {
 
     // Hero header
     &-hero {
-      border: 1px solid white;
       display: flex;
       padding: 0rem 1rem 0rem 6rem;
       width: 100%;

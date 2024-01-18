@@ -19,6 +19,9 @@ span {
 
 // link focused
 #focused {
-  color: lighten($highlight-color, 10%);
   border-bottom: 2px solid $highlight-color;
+}
+
+.detailed {
+  color: $highlight-color;
 }
