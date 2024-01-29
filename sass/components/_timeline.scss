@@ -1,7 +1,22 @@
 .timeline {
   @include section_reset;
   @include margin_center;
-  margin-bottom: 50rem;
+
+  /* Estilo general para todos los navegadores */
+  ::-webkit-scrollbar {
+    width: 10px;
+    -webkit-appearance: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $cta-color;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1b0;
+    border-radius: 5px;
+  }
 
   &-wrapper {
     @include margin_center;
@@ -10,11 +25,11 @@
     overflow: hidden;
 
     &-hero {
-      padding: 2rem 0;
+      padding: 2rem 0 4rem 0;
     }
 
     &-items {
-      height: 400px;
+      height: 450px;
       overflow-y: scroll;
       display: flex;
       flex-direction: column;
@@ -22,15 +37,15 @@
       position: relative;
 
       &::after {
-        background-color: $highlight-color;
+        background-color: $regular-color;
         border-radius: 5px;
         content: "";
-        height: 3270px;
         // for now only
+        height: 3070px;
         left: 50%;
         position: absolute;
         transform: translate(-50%) translateY(-20px);
-        width: 3px;
+        width: 2px;
         z-index: -1;
       }
 
@@ -51,12 +66,96 @@
             margin: 0 auto;
             padding: 1rem;
             position: relative;
-            width: 80%;
+            width: 90%;
 
             &--header {
               align-items: center;
               display: flex;
+
+              .labels {
+                display: flex;
+
+                .label {
+                  align-items: center;
+                  border-radius: 3px;
+                  color: white;
+                  display: flex;
+                  font-size: 1rem;
+                  font-weight: bold;
+                  justify-content: center;
+                  margin: 0 0.2rem;
+                  padding: 0.2rem 0.5rem;
+                  text-transform: uppercase;
+                }
+
+                // all different labels
+                .label.udemy {
+                  background-color: #a435f0;
+                }
+
+                .label.pspoken {
+                  background-color: rgb(0, 128, 119);
+                }
+
+                .label.other {
+                  background-color: rgb(190, 202, 15);
+                }
+
+                .label.english {
+                  background-color: #c84b31;
+                }
+
+                .label.programming {
+                  background-color: #ff10a4;
+                }
+
+                .label.college {
+                  background-color: #ff1010;
+                }
+
+                .label.cambridge {
+                  background-color: #2a2d5f;
+                }
+
+                .label.html {
+                  background-color: #444;
+                }
+
+                .label.css {
+                  background-color: #4e9f3d;
+                }
+
+                .label.javascript {
+                  background-color: #803319;
+                }
+
+                .label.scrimba {
+                  background-color: #c91b0b92;
+                }
+              }
+
+              .time {
+                font-size: 1.2rem;
+              }
             }
+
+            &--details {
+              font-size: 1.4rem;
+
+              .comment {
+                margin: 1rem 0;
+                font-size: clamp(1.2rem, 2vw, 1.4rem);
+              }
+            }
+          }
+
+          // stars in each info block
+          .highlight::after {
+            content: "⭐";
+            position: absolute;
+            right: -8px;
+            top: -10px;
+            transform: rotate(10deg);
           }
         }
 
@@ -64,20 +163,13 @@
         &:nth-child(odd) {
           justify-content: flex-end;
           position: relative;
-          text-align: left;
-        }
-        // horizontal container bg
-        &:nth-child(even) {
-          justify-content: flex-start;
-          position: relative;
-          text-align: right;
         }
 
         // Circles
         &:nth-child(odd)::after {
           background-color: white;
           border-radius: 50%;
-          border: 3px solid $details-color;
+          border: 2px solid $highlight-color;
           content: "";
           height: 15px;
           left: 50%;
@@ -88,11 +180,17 @@
           z-index: 9;
         }
 
+        // horizontal container bg
+        &:nth-child(even) {
+          justify-content: flex-start;
+          position: relative;
+        }
+
         // Circles
         &:nth-child(even)::before {
           background-color: white;
           border-radius: 50%;
-          border: 3px solid $details-color;
+          border: 2px solid $highlight-color;
           content: "";
           height: 15px;
           left: 50%;
@@ -106,140 +204,3 @@
     }
   }
 }
-
-// .item:nth-child(even) .item_container_info--header {
-//   justify-content: flex-end;
-// }
-
-// .highlight::after {
-//   content: "⭐";
-//   position: absolute;
-//   right: -8px;
-//   top: -10px;
-//   transform: rotate(10deg);
-// }
-
-// .item_container_info--header time {
-//   font-size: 1.2rem;
-// }
-
-// .item:nth-child(even) .labels {
-//   margin-right: 1rem;
-//   order: -1;
-// }
-
-// .item:nth-child(odd) .labels {
-//   margin-left: 1rem;
-// }
-
-// .item_container_info--header .labels {
-//   display: flex;
-// }
-
-// .item_container_info--header .label {
-//   align-items: center;
-//   border-radius: 3px;
-//   color: white;
-//   display: flex;
-//   font-size: 1rem;
-//   font-weight: bold;
-//   justify-content: center;
-//   margin: 0 0.2rem;
-//   padding: 0.2rem 0.5rem;
-//   text-transform: uppercase;
-// }
-
-// .label.udemy {
-//   background-color: #a435f0;
-// }
-
-// .label.pspoken {
-//   background-color: rgb(0, 128, 119);
-// }
-
-// .label.other {
-//   background-color: rgb(190, 202, 15);
-// }
-
-// .label.english {
-//   background-color: #c84b31;
-// }
-
-// .label.programming {
-//   background-color: #ff10a4;
-// }
-
-// .label.college {
-//   background-color: #ff1010;
-// }
-
-// .label.cambridge {
-//   background-color: #2a2d5f;
-// }
-
-// .label.html {
-//   background-color: #444;
-// }
-
-// .label.css {
-//   background-color: #4e9f3d;
-// }
-
-// .label.javascript {
-//   background-color: #803319;
-// }
-
-// .label.scrimba {
-//   background-color: #c91b0b92;
-// }
-
-// .item_container_info--details {
-//   font-size: 1.4rem;
-// }
-
-// .item_container_info--details .comment {
-//   margin: 1rem 0;
-//   font-size: clamp(1.2rem, 2vw, 1.6rem);
-// }
-
-// .btn {
-//   font-size: 1.4rem;
-//   font-weight: bold;
-// }
-
-// .btn:hover {
-//   border-bottom: 1px solid #444;
-// }
-
-// @media (max-width: 600px) {
-//   .timeline {
-//     padding: 0;
-//   }
-
-//   .item_container_info {
-//     text-align: center;
-//     width: 95%;
-//   }
-
-//   .item_container_info--header {
-//     flex-direction: column;
-//     justify-content: center;
-//     text-align: center;
-//   }
-
-//   .labels {
-//     width: 100%;
-//   }
-
-//   .label {
-//     width: 100%;
-//   }
-
-//   .item:nth-child(even) .labels {
-//     margin-right: 0;
-//   }
-
-//   .item:nth-child(odd) .labels {
-//     margin-left: 0;
-//   }
-// }

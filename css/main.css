@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -107,7 +108,19 @@ li {
   padding: 10rem 6rem;
   max-width: 160rem;
   margin: 0 auto;
-  margin-bottom: 50rem;
+  /* Estilo general para todos los navegadores */
+}
+.timeline ::-webkit-scrollbar {
+  width: 10px;
+  -webkit-appearance: none;
+}
+.timeline ::-webkit-scrollbar-thumb {
+  background-color: #f20574;
+  border-radius: 5px;
+}
+.timeline ::-webkit-scrollbar-track {
+  background-color: rgba(241, 241, 241, 0.6901960784);
+  border-radius: 5px;
 }
 .timeline-wrapper {
   margin: 0 auto;
@@ -116,10 +129,10 @@ li {
   overflow: hidden;
 }
 .timeline-wrapper-hero {
-  padding: 2rem 0;
+  padding: 2rem 0 4rem 0;
 }
 .timeline-wrapper-items {
-  height: 400px;
+  height: 450px;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -128,14 +141,14 @@ li {
   /* Each item style */
 }
 .timeline-wrapper-items::after {
-  background-color: #ef5d5f;
+  background-color: #111111;
   border-radius: 5px;
   content: "";
-  height: 3270px;
+  height: 3070px;
   left: 50%;
   position: absolute;
   transform: translate(-50%) translateY(-20px);
-  width: 3px;
+  width: 2px;
   z-index: -1;
 }
 .timeline-wrapper-items .item {
@@ -154,26 +167,85 @@ li {
   margin: 0 auto;
   padding: 1rem;
   position: relative;
-  width: 80%;
+  width: 90%;
 }
 .timeline-wrapper-items .item_container_info--header {
   align-items: center;
   display: flex;
 }
+.timeline-wrapper-items .item_container_info--header .labels {
+  display: flex;
+}
+.timeline-wrapper-items .item_container_info--header .labels .label {
+  align-items: center;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+  justify-content: center;
+  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
+  text-transform: uppercase;
+}
+.timeline-wrapper-items .item_container_info--header .labels .label.udemy {
+  background-color: #a435f0;
+}
+.timeline-wrapper-items .item_container_info--header .labels .label.pspoken {
+  background-color: rgb(0, 128, 119);
+}
+.timeline-wrapper-items .item_container_info--header .labels .label.other {
+  background-color: rgb(190, 202, 15);
+}
+.timeline-wrapper-items .item_container_info--header .labels .label.english {
+  background-color: #c84b31;
+}
+.timeline-wrapper-items .item_container_info--header .labels .label.programming {
+  background-color: #ff10a4;
+}
+.timeline-wrapper-items .item_container_info--header .labels .label.college {
+  background-color: #ff1010;
+}
+.timeline-wrapper-items .item_container_info--header .labels .label.cambridge {
+  background-color: #2a2d5f;
+}
+.timeline-wrapper-items .item_container_info--header .labels .label.html {
+  background-color: #444;
+}
+.timeline-wrapper-items .item_container_info--header .labels .label.css {
+  background-color: #4e9f3d;
+}
+.timeline-wrapper-items .item_container_info--header .labels .label.javascript {
+  background-color: #803319;
+}
+.timeline-wrapper-items .item_container_info--header .labels .label.scrimba {
+  background-color: rgba(201, 27, 11, 0.5725490196);
+}
+.timeline-wrapper-items .item_container_info--header .time {
+  font-size: 1.2rem;
+}
+.timeline-wrapper-items .item_container_info--details {
+  font-size: 1.4rem;
+}
+.timeline-wrapper-items .item_container_info--details .comment {
+  margin: 1rem 0;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+.timeline-wrapper-items .item_container .highlight::after {
+  content: "⭐";
+  position: absolute;
+  right: -8px;
+  top: -10px;
+  transform: rotate(10deg);
+}
 .timeline-wrapper-items .item:nth-child(odd) {
   justify-content: flex-end;
   position: relative;
-  text-align: left;
-}
-.timeline-wrapper-items .item:nth-child(even) {
-  justify-content: flex-start;
-  position: relative;
-  text-align: right;
 }
 .timeline-wrapper-items .item:nth-child(odd)::after {
   background-color: white;
   border-radius: 50%;
-  border: 3px solid #5d5fef;
+  border: 2px solid #ef5d5f;
   content: "";
   height: 15px;
   left: 50%;
@@ -183,10 +255,14 @@ li {
   width: 15px;
   z-index: 9;
 }
+.timeline-wrapper-items .item:nth-child(even) {
+  justify-content: flex-start;
+  position: relative;
+}
 .timeline-wrapper-items .item:nth-child(even)::before {
   background-color: white;
   border-radius: 50%;
-  border: 3px solid #5d5fef;
+  border: 2px solid #ef5d5f;
   content: "";
   height: 15px;
   left: 50%;
