@@ -3,6 +3,7 @@ header {
   height: 100vh;
   max-height: 800px;
   overflow: hidden;
+  margin-bottom: 10rem;
 
   .wrapper {
     @include margin_center;

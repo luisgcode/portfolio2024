@@ -1,0 +1,9 @@
+.abilites {
+  @include section_reset;
+  @include margin_center;
+
+  &-wrapper {
+    max-width: 900px;
+    @include margin_center;
+  }
+}

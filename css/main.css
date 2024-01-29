@@ -36,7 +36,7 @@ h2 {
 
 h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-size: clamp(2rem, 5vw, 2.5rem);
   margin: 0.8rem 0;
   font-weight: 600;
 }
@@ -85,6 +85,10 @@ span {
   color: #ef5d5f;
 }
 
+.cta {
+  color: #f20574;
+}
+
 small {
   font-weight: bold;
 }
@@ -104,8 +108,18 @@ li {
   padding: 0;
 }
 
+.abilites {
+  padding: 0 6rem 10rem 6rem;
+  max-width: 160rem;
+  margin: 0 auto;
+}
+.abilites-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .timeline {
-  padding: 10rem 6rem;
+  padding: 0 6rem 10rem 6rem;
   max-width: 160rem;
   margin: 0 auto;
   /* Estilo general para todos los navegadores */
@@ -274,7 +288,7 @@ li {
 }
 
 .intro {
-  padding: 10rem 6rem;
+  padding: 0 6rem 10rem 6rem;
   max-width: 160rem;
   margin: 0 auto;
 }
@@ -329,6 +343,7 @@ header {
   height: 100vh;
   max-height: 800px;
   overflow: hidden;
+  margin-bottom: 10rem;
 }
 header .wrapper {
   margin: 0 auto;
