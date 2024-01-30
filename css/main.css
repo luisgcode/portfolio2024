@@ -108,14 +108,33 @@ li {
   padding: 0;
 }
 
-.abilites {
+.abilities {
   padding: 0 6rem 10rem 6rem;
   max-width: 160rem;
   margin: 0 auto;
 }
-.abilites-wrapper {
+.abilities-wrapper {
   max-width: 900px;
   margin: 0 auto;
+}
+.abilities-wrapper-counter {
+  text-align: center;
+  margin-top: 9rem;
+}
+.abilities-wrapper-counter-heading h3 {
+  position: relative;
+}
+.abilities-wrapper-counter-heading h3::before {
+  content: "01101100 01110101";
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: rgba(0, 0, 0, 0.36);
+  padding-right: 1.5rem;
+}
+.abilities-wrapper-counter-heading h3::after {
+  content: "01101001 01110011";
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: rgba(0, 0, 0, 0.36);
+  padding-left: 1.5rem;
 }
 
 .timeline {

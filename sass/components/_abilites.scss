@@ -1,9 +1,37 @@
-.abilites {
+.abilities {
   @include section_reset;
   @include margin_center;
 
   &-wrapper {
     max-width: 900px;
     @include margin_center;
+
+    &-header {
+    }
+
+    &-counter {
+      text-align: center;
+      margin-top: 9rem;
+
+      &-heading {
+        h3 {
+          position: relative;
+
+          &::before {
+            content: "01101100 01110101";
+            font-size: clamp(1rem, 2vw, 1.4rem);
+            color: rgba(0, 0, 0, 0.36);
+            padding-right: 1.5rem;
+          }
+
+          &::after {
+            content: "01101001 01110011";
+            font-size: clamp(1rem, 2vw, 1.4rem);
+            color: rgba(0, 0, 0, 0.36);
+            padding-left: 1.5rem;
+          }
+        }
+      }
+    }
   }
 }
