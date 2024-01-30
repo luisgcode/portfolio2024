@@ -32,6 +32,19 @@
           }
         }
       }
+
+      &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 600px;
+        margin: 5rem auto 0 auto;
+
+        .odometro-item-digits {
+          color: $details-color;
+          font-size: clamp(1.5rem, 3vw, 3.4rem);
+        }
+      }
     }
   }
 }

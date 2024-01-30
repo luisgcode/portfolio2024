@@ -136,6 +136,17 @@ li {
   color: rgba(0, 0, 0, 0.36);
   padding-left: 1.5rem;
 }
+.abilities-wrapper-counter-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  margin: 5rem auto 0 auto;
+}
+.abilities-wrapper-counter-top .odometro-item-digits {
+  color: #5d5fef;
+  font-size: clamp(1.5rem, 3vw, 3.4rem);
+}
 
 .timeline {
   padding: 0 6rem 10rem 6rem;
