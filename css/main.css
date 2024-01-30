@@ -138,7 +138,6 @@ li {
 }
 .abilities-wrapper-counter-top {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 600px;
   margin: 5rem auto 0 auto;
@@ -146,6 +145,10 @@ li {
 .abilities-wrapper-counter-top .odometro-item-digits {
   color: #5d5fef;
   font-size: clamp(1.5rem, 3vw, 3.4rem);
+}
+.abilities-wrapper-counter-top .odometro-item-digits span {
+  color: black;
+  font-size: clamp(1.6rem, 2vw, 1.6rem);
 }
 
 .timeline {
