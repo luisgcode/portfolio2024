@@ -4,6 +4,7 @@ header {
   max-height: 800px;
   overflow: hidden;
   margin-bottom: 10rem;
+  position: relative;
 
   .wrapper {
     @include margin_center;
@@ -107,6 +108,34 @@ header {
           max-height: 60rem;
         }
       }
+    }
+  }
+
+  .scrolling {
+    position: absolute;
+    width: 3rem;
+    height: 5rem;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255, 255, 255, 0.458);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &-circle {
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.458);
+      width: 8px;
+      height: 8px;
+
+      animation: scrollDown;
+      animation-timing-function: ease;
+      animation-duration: 3s;
+      animation-fill-mode: backwards;
+      animation-iteration-count: infinite;
     }
   }
 }

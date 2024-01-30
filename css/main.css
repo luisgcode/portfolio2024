@@ -134,6 +134,16 @@ li {
   padding: 0;
 }
 
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-16px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+}
 .abilities {
   padding: 0 6rem 10rem 6rem;
   max-width: 160rem;
@@ -365,12 +375,17 @@ li {
   padding-bottom: 3rem;
 }
 
+footer {
+  background-color: rgba(238, 239, 253, 0.3019607843);
+}
+
 header {
   background-color: #111111;
   height: 100vh;
   max-height: 800px;
   overflow: hidden;
   margin-bottom: 10rem;
+  position: relative;
 }
 header .wrapper {
   margin: 0 auto;
@@ -459,6 +474,31 @@ header .wrapper-hero-img img {
   object-fit: cover;
   object-position: center;
   max-height: 60rem;
+}
+header .scrolling {
+  position: absolute;
+  width: 3rem;
+  height: 5rem;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(255, 255, 255, 0.458);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+header .scrolling-circle {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.458);
+  width: 8px;
+  height: 8px;
+  animation: scrollDown;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
 }
 
 main {

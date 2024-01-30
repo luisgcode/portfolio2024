@@ -1,0 +1,13 @@
+// Header scroll animation
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-16px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+}
