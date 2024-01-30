@@ -45,7 +45,7 @@
         left: 50%;
         position: absolute;
         transform: translate(-50%) translateY(-20px);
-        width: 2px;
+        width: 1px;
         z-index: -1;
       }
 
@@ -86,51 +86,7 @@
                   margin: 0 0.2rem;
                   padding: 0.2rem 0.5rem;
                   text-transform: uppercase;
-                }
-
-                // all different labels
-                .label.udemy {
-                  background-color: #a435f0;
-                }
-
-                .label.pspoken {
-                  background-color: rgb(0, 128, 119);
-                }
-
-                .label.other {
-                  background-color: rgb(190, 202, 15);
-                }
-
-                .label.english {
-                  background-color: #c84b31;
-                }
-
-                .label.programming {
-                  background-color: #ff10a4;
-                }
-
-                .label.college {
-                  background-color: #ff1010;
-                }
-
-                .label.cambridge {
-                  background-color: #2a2d5f;
-                }
-
-                .label.html {
-                  background-color: #444;
-                }
-
-                .label.css {
-                  background-color: #4e9f3d;
-                }
-
-                .label.javascript {
-                  background-color: #803319;
-                }
-
-                .label.scrimba {
-                  background-color: #c91b0b92;
+                  background: $cta-color;
                 }
               }
 
@@ -169,7 +125,7 @@
         &:nth-child(odd)::after {
           background-color: white;
           border-radius: 50%;
-          border: 2px solid $highlight-color;
+          border: 1px solid $cta-color;
           content: "";
           height: 15px;
           left: 50%;
@@ -190,7 +146,7 @@
         &:nth-child(even)::before {
           background-color: white;
           border-radius: 50%;
-          border: 2px solid $highlight-color;
+          border: 1px solid $cta-color;
           content: "";
           height: 15px;
           left: 50%;

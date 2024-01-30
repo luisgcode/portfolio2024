@@ -93,6 +93,32 @@ small {
   font-weight: bold;
 }
 
+.hr {
+  width: 100%;
+  border-top: 1px solid black;
+  height: 5px;
+  display: block;
+  margin: 13rem auto;
+  position: relative;
+}
+
+.hr-img {
+  position: absolute;
+  left: 0;
+  top: -42px;
+}
+
+.hr::after {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -50%);
+  position: absolute;
+  height: 2.7rem;
+  width: 1px;
+  background-color: black;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -195,7 +221,7 @@ li {
   left: 50%;
   position: absolute;
   transform: translate(-50%) translateY(-20px);
-  width: 2px;
+  width: 1px;
   z-index: -1;
 }
 .timeline-wrapper-items .item {
@@ -234,39 +260,7 @@ li {
   margin: 0 0.2rem;
   padding: 0.2rem 0.5rem;
   text-transform: uppercase;
-}
-.timeline-wrapper-items .item_container_info--header .labels .label.udemy {
-  background-color: #a435f0;
-}
-.timeline-wrapper-items .item_container_info--header .labels .label.pspoken {
-  background-color: rgb(0, 128, 119);
-}
-.timeline-wrapper-items .item_container_info--header .labels .label.other {
-  background-color: rgb(190, 202, 15);
-}
-.timeline-wrapper-items .item_container_info--header .labels .label.english {
-  background-color: #c84b31;
-}
-.timeline-wrapper-items .item_container_info--header .labels .label.programming {
-  background-color: #ff10a4;
-}
-.timeline-wrapper-items .item_container_info--header .labels .label.college {
-  background-color: #ff1010;
-}
-.timeline-wrapper-items .item_container_info--header .labels .label.cambridge {
-  background-color: #2a2d5f;
-}
-.timeline-wrapper-items .item_container_info--header .labels .label.html {
-  background-color: #444;
-}
-.timeline-wrapper-items .item_container_info--header .labels .label.css {
-  background-color: #4e9f3d;
-}
-.timeline-wrapper-items .item_container_info--header .labels .label.javascript {
-  background-color: #803319;
-}
-.timeline-wrapper-items .item_container_info--header .labels .label.scrimba {
-  background-color: rgba(201, 27, 11, 0.5725490196);
+  background: #f20574;
 }
 .timeline-wrapper-items .item_container_info--header .time {
   font-size: 1.2rem;
@@ -292,7 +286,7 @@ li {
 .timeline-wrapper-items .item:nth-child(odd)::after {
   background-color: white;
   border-radius: 50%;
-  border: 2px solid #ef5d5f;
+  border: 1px solid #f20574;
   content: "";
   height: 15px;
   left: 50%;
@@ -309,7 +303,7 @@ li {
 .timeline-wrapper-items .item:nth-child(even)::before {
   background-color: white;
   border-radius: 50%;
-  border: 2px solid #ef5d5f;
+  border: 1px solid #f20574;
   content: "";
   height: 15px;
   left: 50%;

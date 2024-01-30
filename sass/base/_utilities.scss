@@ -33,3 +33,30 @@ span {
 small {
   font-weight: bold;
 }
+
+// custome HR
+.hr {
+  width: 100%;
+  border-top: 1px solid black;
+  height: 5px;
+  display: block;
+  margin: 13rem auto;
+  position: relative;
+}
+
+.hr-img {
+  position: absolute;
+  left: 0;
+  top: -42px;
+}
+
+.hr::after {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -50%);
+  position: absolute;
+  height: 2.7rem;
+  width: 1px;
+  background-color: black;
+}
