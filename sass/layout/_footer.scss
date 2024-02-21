@@ -1,4 +1,49 @@
 footer {
   background-color: #eeeffd4d;
-  display: flex;
+
+  .top,
+  .bottom {
+    width: 100%;
+    max-width: 1200px;
+    @include margin_center;
+    @include flex_center;
+    justify-content: space-between;
+  }
+
+  .top {
+    padding: 5rem 0;
+    &-nav {
+      &-ul {
+        display: flex;
+        width: 100%;
+      }
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 300px;
+
+      &-img img {
+        min-width: 150px;
+      }
+
+      &-info {
+        &-title {
+          font-weight: bold;
+        }
+
+        &-text {
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    height: 50px;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
 }
