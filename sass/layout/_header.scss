@@ -1,13 +1,16 @@
 header {
-  background-color: $regular-color;
-  height: 100vh;
+  background-color: rgb(252, 251, 251);
+  height: 85vh;
   max-height: 800px;
   overflow: hidden;
-  margin-bottom: 10rem;
+  max-width: 3000px;
+  margin: 0 auto;
+  margin-bottom: 12rem;
   position: relative;
 
   .wrapper {
     @include margin_center;
+
     max-width: 160rem;
     height: 100%;
     display: flex;
@@ -16,33 +19,32 @@ header {
 
     // Navigation section
     .nav {
-      padding: 2rem 0;
+      padding: 3rem 0;
 
       // navigation links
       a {
-        color: #efeaff;
-        font-family: "Montserrat", sans-serif;
+        color: #333333;
+        font-family: "Poppins", sans-serif;
         font-size: clamp(1.6rem, 2vw, 1.8rem);
-        text-transform: uppercase;
+        text-transform: capitalize;
         padding-bottom: 0.6rem;
+        font-weight: 600;
         transition: all 0.3s ease;
 
         &:hover {
-          color: lighten($highlight-color, 10%);
+          color: $highlight-color;
         }
       }
 
       &-desktop {
         @include flex_center;
-        justify-content: flex-end;
+        justify-content: center;
 
         &-ul {
           @include flex_center;
-          width: 45%;
-
-          li {
-            margin-left: 2.5rem;
-          }
+          width: 600px;
+          align-items: center;
+          justify-content: space-around;
         }
       }
     }
@@ -50,92 +52,36 @@ header {
     // Hero header
     &-hero {
       display: flex;
-      padding: 0rem 1rem 0rem 6rem;
-      width: 100%;
+      width: 1100px;
       @include margin_center;
       align-items: center;
-      text-align: center;
       justify-content: space-around;
+      padding-bottom: 5rem;
 
       &-block {
-        @include flex_center;
-        justify-content: center;
-        margin-left: 4rem;
+        flex-basis: 50%;
+        padding-left: 8rem;
 
-        margin-bottom: 20rem;
-
-        .coder {
-          height: 350px;
-          width: 300px;
-
-          display: flex;
-          flex-direction: column;
-
-          &-header {
-            width: 100%;
-            height: 40px;
-            padding: 1rem 0;
-            background: #d9d9d921;
-            border-radius: 3px;
-          }
-
-          &-content {
-            border: 3px solid #ffffff3d;
-            height: 100%;
-            position: relative;
-            margin-top: 2rem;
-
-            &::after {
-              content: "";
-              color: white;
-              position: absolute;
-              bottom: -4px;
-              left: 50%;
-              transform: translate(-50%);
-              width: 60%;
-              border: 3px solid $regular-color;
-            }
-          }
+        .hand-animation {
+          animation-name: shake;
+          animation-duration: 2.5s;
+          animation-iteration-count: infinite;
+          transform-origin: 70% 70%;
+          display: inline-block;
         }
       }
 
       &-img {
-        min-width: 50%;
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         img {
-          object-fit: cover;
-          object-position: center;
-          max-height: 60rem;
+          width: 60%;
+          transform: rotate(3deg);
         }
       }
-    }
-  }
-
-  .scrolling {
-    position: absolute;
-    width: 3rem;
-    height: 5rem;
-    left: 50%;
-    top: 90%;
-    transform: translate(-50%, -50%);
-    border: 2px solid rgba(255, 255, 255, 0.458);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-
-    &-circle {
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.458);
-      width: 8px;
-      height: 8px;
-
-      animation: scrollDown;
-      animation-timing-function: ease;
-      animation-duration: 3s;
-      animation-fill-mode: backwards;
-      animation-iteration-count: infinite;
     }
   }
 }
