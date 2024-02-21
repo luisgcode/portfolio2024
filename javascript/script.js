@@ -82,3 +82,40 @@ const observer = new IntersectionObserver(activarOdometro, {
 });
 
 observer.observe(odometro);
+
+// footer animation
+const menus = document.querySelectorAll(".top-icon-graph-options");
+const dots = document.querySelectorAll(".dots");
+const progressBar = document.querySelector(".circle-mark");
+
+let currentValue = 1;
+
+let menusArray = Array.from(menus);
+let dotsArray = Array.from(dots);
+
+menusArray.forEach(function (menu) {
+  menu.addEventListener("click", function () {
+    let idValue = menu.getAttribute("data-id");
+
+    if (idValue == 1) {
+      progressBar.style.height = "33%";
+    } else if (idValue == 2) {
+      progressBar.style.height = "63%";
+    } else if (idValue == 3) {
+      progressBar.style.height = "100%";
+    }
+
+    progressBar.style.width = menusArray.forEach(function (men) {
+      men.classList.remove("active");
+    });
+
+    dotsArray.forEach(function (dot) {
+      dot.classList.remove("active");
+    });
+
+    this.classList.add("active");
+
+    var dotsIndex = menusArray.indexOf(this);
+    dotsArray[dotsIndex + 1].classList.add("active");
+  });
+});
