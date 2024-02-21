@@ -11,19 +11,30 @@ footer {
   }
 
   .top {
-    padding: 6rem 0;
+    padding: 10rem 0 6rem 0;
 
     &-logo {
     }
 
     &-nav {
       max-width: 500px;
+
       &-ul {
         display: flex;
 
         li {
           margin-right: 3rem;
+          a {
+            color: $highlight-color;
+            font-weight: bold;
+          }
         }
+      }
+
+      &-text {
+        text-align: left;
+        min-width: 500px;
+        margin-top: 1rem;
       }
     }
 
@@ -124,6 +135,7 @@ footer {
       }
 
       &-info {
+        margin-left: 1rem;
         &-title {
           font-weight: bold;
         }
@@ -139,8 +151,16 @@ footer {
 
   .bottom {
     display: flex;
-    height: 50px;
     max-width: 1200px;
     justify-content: space-between;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+
+    &-license {
+      a {
+        color: $highlight-color;
+        font-weight: bold;
+      }
+    }
   }
 }

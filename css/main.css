@@ -402,7 +402,7 @@ footer .bottom {
   justify-content: space-between;
 }
 footer .top {
-  padding: 6rem 0;
+  padding: 10rem 0 6rem 0;
 }
 footer .top-nav {
   max-width: 500px;
@@ -412,6 +412,15 @@ footer .top-nav-ul {
 }
 footer .top-nav-ul li {
   margin-right: 3rem;
+}
+footer .top-nav-ul li a {
+  color: #ef5d5f;
+  font-weight: bold;
+}
+footer .top-nav-text {
+  text-align: left;
+  min-width: 500px;
+  margin-top: 1rem;
 }
 footer .top-icon {
   display: flex;
@@ -495,6 +504,9 @@ footer .top-icon-graph-container .dots.active {
   outline: 2px solid #ef5d5f;
   transform: scale(1.5);
 }
+footer .top-icon-info {
+  margin-left: 1rem;
+}
 footer .top-icon-info-title {
   font-weight: bold;
 }
@@ -505,9 +517,14 @@ footer .top-icon-info-text {
 }
 footer .bottom {
   display: flex;
-  height: 50px;
   max-width: 1200px;
   justify-content: space-between;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+footer .bottom-license a {
+  color: #ef5d5f;
+  font-weight: bold;
 }
 
 header {
