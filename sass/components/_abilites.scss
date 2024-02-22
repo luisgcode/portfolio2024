@@ -1,5 +1,4 @@
 .abilities {
-  @include section_reset;
   @include margin_center;
 
   &-wrapper {
@@ -11,10 +10,12 @@
 
     &-counter {
       text-align: center;
+      margin-top: 10rem;
 
       &-heading {
         h3 {
           position: relative;
+          margin-bottom: 3rem;
 
           &::before {
             content: "01101100 01110101";
@@ -36,7 +37,7 @@
         display: flex;
         justify-content: space-between;
         width: 600px;
-        margin: 0 auto;
+        margin: 0 auto 10rem auto;
 
         .odometro-item-digits {
           color: $details-color;

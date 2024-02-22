@@ -6,6 +6,7 @@ header {
   max-width: 3000px;
   margin: 0 auto;
   position: relative;
+  padding-bottom: 12rem;
 
   .wrapper {
     @include margin_center;
@@ -51,11 +52,11 @@ header {
     // Hero header
     &-hero {
       display: flex;
+      padding-top: 6rem;
       width: 1100px;
       @include margin_center;
       align-items: center;
       justify-content: space-around;
-      padding-bottom: 5rem;
 
       &-block {
         flex-basis: 50%;

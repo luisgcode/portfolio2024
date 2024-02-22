@@ -1,0 +1,26 @@
+.stack {
+  margin-bottom: 10rem;
+  text-align: center;
+  &-wrapper {
+    max-width: 900px;
+    @include margin_center;
+
+    &-icons {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5rem;
+
+      &-box {
+        flex-basis: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      img {
+        max-width: 70px;
+      }
+    }
+  }
+}

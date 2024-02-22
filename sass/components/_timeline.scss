@@ -1,6 +1,6 @@
 .timeline {
-  @include section_reset;
   @include margin_center;
+  padding-bottom: 12rem;
 
   /* Estilo general para todos los navegadores */
   ::-webkit-scrollbar {
@@ -9,7 +9,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: $cta-color;
+    background-color: $highlight-color;
     border-radius: 5px;
   }
 
@@ -86,7 +86,7 @@
                   margin: 0 0.2rem;
                   padding: 0.2rem 0.5rem;
                   text-transform: uppercase;
-                  background: $cta-color;
+                  background: $highlight-color;
                 }
               }
 
@@ -125,7 +125,7 @@
         &:nth-child(odd)::after {
           background-color: white;
           border-radius: 50%;
-          border: 1px solid $cta-color;
+          border: 1px solid $highlight-color;
           content: "";
           height: 15px;
           left: 50%;
@@ -146,7 +146,7 @@
         &:nth-child(even)::before {
           background-color: white;
           border-radius: 50%;
-          border: 1px solid $cta-color;
+          border: 1px solid $highlight-color;
           content: "";
           height: 15px;
           left: 50%;

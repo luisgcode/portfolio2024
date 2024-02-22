@@ -20,10 +20,6 @@ span {
   color: $highlight-color;
 }
 
-.cta {
-  color: $cta-color;
-}
-
 small {
   font-weight: bold;
 }
@@ -37,19 +33,23 @@ small {
   position: relative;
 }
 
-.hr-img {
-  position: absolute;
-  left: 0;
-  top: -42px;
+// soon techs
+.soon {
+  position: relative;
+
+  img {
+    opacity: 10%;
+  }
 }
 
-.hr::after {
-  content: "";
-  top: 50%;
-  left: 50%;
-  transform: translate(-90%, -50%);
+.soon::after {
+  content: "Soon";
+  opacity: 50%;
   position: absolute;
-  height: 2.7rem;
-  width: 1px;
-  background-color: black;
+  left: 50%;
+  bottom: 30%;
+  color: $highlight-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%) rotate(-20deg);
 }
