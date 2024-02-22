@@ -594,7 +594,7 @@ header .wrapper .nav-desktop {
 header .wrapper .nav-desktop-ul {
   display: flex;
   align-items: center;
-  width: 600px;
+  width: 700px;
   align-items: center;
   justify-content: space-around;
 }
