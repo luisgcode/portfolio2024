@@ -1,14 +1,24 @@
 .toolbar {
   border-radius: 2.5rem;
+  border: 0.1rem solid $highlight-color;
   display: flex;
-  height: 17.3rem;
   justify-content: center;
-  margin-top: 10rem;
-  border: 0.1rem solid purple;
-  position: sticky;
-  top: 1rem;
-  // Can't be bigger than 40px
-  width: 4rem;
+  padding: 1.5rem 0.5rem;
   //   Key margin to center all elements because of the toolbar
   margin-left: -4rem;
+  margin-top: 17rem;
+  position: sticky;
+  top: 10rem;
+  // Can't be bigger than 40px
+  width: 4rem;
+
+  &-ul {
+    @include flex_center;
+    border-radius: 2.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+  }
 }
