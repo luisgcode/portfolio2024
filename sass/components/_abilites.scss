@@ -1,8 +1,8 @@
 .abilities {
   @include margin_center;
+  border: 1px solid purple;
 
   &-wrapper {
-    max-width: 900px;
     @include margin_center;
 
     &-header {

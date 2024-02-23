@@ -1,0 +1,28 @@
+.main-wrapp {
+  display: flex;
+  max-width: 1100px;
+  @include margin_center;
+}
+
+aside {
+  margin: 0;
+  padding: 0;
+}
+
+.toolbar {
+  border-radius: 25px;
+  display: flex;
+  height: 173px;
+  justify-content: center;
+  margin-top: 100px;
+  border: 1px solid purple;
+  position: sticky;
+  top: 10px;
+  width: 40px;
+  //   Key margin to center all elements because of the toolbar
+  margin-left: -40px;
+}
+
+main {
+  @include margin_center;
+}

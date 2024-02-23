@@ -10,9 +10,8 @@ header {
 
   .wrapper {
     @include margin_center;
-
-    max-width: 160rem;
     height: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;

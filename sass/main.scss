@@ -5,16 +5,15 @@
 @import "base/utilities";
 @import "base/reset";
 
-@import "components/animations";
 // @import "components/app";
-@import "components/buttons";
 // @import "components/collage";
-// @import "components/explanation";
-
 @import "components/abilites";
-@import "components/timeline";
+@import "components/animations";
+@import "components/buttons";
 @import "components/introduction";
 @import "components/stacks";
+@import "components/timeline";
+@import "components/toolbar";
 
 @import "layout/footer";
 @import "layout/header";

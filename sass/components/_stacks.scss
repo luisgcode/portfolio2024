@@ -1,8 +1,7 @@
 .stack {
   margin-bottom: 10rem;
-  text-align: center;
+
   &-wrapper {
-    max-width: 900px;
     @include margin_center;
 
     &-icons {
@@ -15,11 +14,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         padding: 2rem;
+
+        .tech-name {
+          margin-top: 0.5rem;
+          font-size: 1rem;
+          letter-spacing: 1px;
+          font-weight: bold;
+          color: $details-color;
+        }
       }
 
       img {
         max-width: 70px;
+        min-height: 70px;
       }
     }
   }
