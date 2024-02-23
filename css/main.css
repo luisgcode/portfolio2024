@@ -4,63 +4,58 @@ html {
 }
 
 body {
+  color: #191919;
   font-family: "Open Sans", sans-serif;
   font-size: clamp(1.2rem, 2vw, 1.4rem);
   line-height: 1.6;
-  background: #fcfbfb;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-  font-size: clamp(1.2rem, 2vw, 1.4rem);
-  line-height: 2.4rem;
-  margin: 0.8rem 0;
-  color: #333333;
-  font-weight: 600;
 }
 
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: clamp(2.3rem, 5vw, 3.8rem);
-  margin: 1.2rem 0;
   font-weight: 600;
-  color: #333333;
+  margin: 1.2rem 0;
 }
 
 h2 {
+  display: inline;
   font-family: "Poppins", sans-serif;
   font-size: clamp(2rem, 5vw, 3rem);
-  margin: 1rem 0;
-  letter-spacing: 1px;
   font-weight: 600;
-  color: #333333;
-  display: inline;
+  letter-spacing: 1px;
+  margin: 1rem 0;
 }
 
 h3 {
   font-family: "Poppins", sans-serif;
   font-size: clamp(1.8rem, 5vw, 2rem);
-  margin: 0.8rem 0;
   font-weight: 600;
-  color: #333333;
+  margin: 0.8rem 0;
 }
 
 h4 {
   font-family: "Poppins", sans-serif;
   font-size: clamp(1.4rem, 5vw, 1.8rem);
   margin: 0.8rem 0;
-  color: #333333;
 }
 
 a {
-  text-decoration: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 figure {
   margin: 0;
   padding: 0;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin: 0.8rem 0;
 }
 
 /*missing alt attribute*/
@@ -119,6 +114,10 @@ small {
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  background: #fcfcfc;
 }
 
 img {
@@ -231,23 +230,21 @@ li {
   flex-direction: column;
 }
 .intro-wrapper-info .secondary-heading {
+  display: inline;
   font-family: "Poppins", sans-serif;
   font-size: clamp(2rem, 5vw, 3rem);
-  margin: 1rem 0;
-  letter-spacing: 1px;
   font-weight: 600;
-  color: #333333;
-  display: inline;
+  letter-spacing: 1px;
+  margin: 1rem 0;
   display: inline;
   margin: 0;
 }
 .intro-wrapper-info .regular-text {
   font-family: "Open Sans", sans-serif;
   font-size: clamp(1.2rem, 2vw, 1.4rem);
+  font-weight: 600;
   line-height: 2.4rem;
   margin: 0.8rem 0;
-  color: #333333;
-  font-weight: 600;
   border-bottom: 1px solid black;
   padding-bottom: 3rem;
 }
@@ -321,7 +318,7 @@ li {
   /* Each item style */
 }
 .timeline-wrapper-items::after {
-  background-color: #333333;
+  background-color: #191919;
   border-radius: 5px;
   content: "";
   height: 3070px;
@@ -457,8 +454,8 @@ footer .bottom {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
 }
 footer .top {
@@ -587,76 +584,63 @@ footer .bottom-license a {
   font-weight: bold;
 }
 
-header {
-  background-color: rgb(252, 251, 251);
+.header {
   height: 85vh;
-  max-height: 800px;
-  overflow: hidden;
+  margin: 0 auto;
+  max-height: 700px;
   max-width: 3000px;
-  margin: 0 auto;
+  overflow: hidden;
   position: relative;
-  padding-bottom: 12rem;
 }
-header .wrapper {
-  margin: 0 auto;
-  height: 100%;
+.header .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
 }
-header .wrapper .nav {
-  padding: 3rem 0;
+.header .wrapper-nav {
+  margin-bottom: 5rem;
+  padding: 2rem 0 4rem 0;
 }
-header .wrapper .nav a {
-  color: #333333;
+.header .wrapper-nav-ul {
+  align-items: center;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+.header .wrapper-nav-ul li a {
+  color: #191919;
   font-family: "Poppins", sans-serif;
   font-size: clamp(1.4rem, 2vw, 1.6rem);
-  text-transform: capitalize;
-  padding-bottom: 0.6rem;
   font-weight: 600;
+  text-transform: capitalize;
   transition: all 0.3s ease;
 }
-header .wrapper .nav a:hover {
+.header .wrapper-nav-ul li a:hover {
   color: #ef5d5f;
 }
-header .wrapper .nav-desktop {
-  display: flex;
+.header .wrapper-hero {
   align-items: center;
-  justify-content: center;
-}
-header .wrapper .nav-desktop-ul {
   display: flex;
-  align-items: center;
-  width: 700px;
-  align-items: center;
-  justify-content: space-around;
-}
-header .wrapper-hero {
-  display: flex;
-  padding-top: 6rem;
-  width: 1100px;
   margin: 0 auto;
-  align-items: center;
-  justify-content: space-around;
 }
-header .wrapper-hero-block {
+.header .wrapper-hero-info {
   flex-basis: 50%;
-  padding-left: 8rem;
+  padding-left: 12rem;
 }
-header .wrapper-hero-block .hand-animation {
-  animation-name: shake;
+.header .wrapper-hero-info .hand-animation {
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
+  animation-name: shake;
   display: inline-block;
+  transform-origin: 70% 70%;
 }
-header .wrapper-hero-img {
-  flex-basis: 50%;
-  display: flex;
+.header .wrapper-hero-banner {
   align-items: center;
+  display: flex;
+  flex-basis: 50%;
   justify-content: center;
 }
-header .wrapper-hero-img img {
-  width: 60%;
+.header .wrapper-hero-banner img {
   transform: rotate(3deg);
+  width: 60%;
 }

@@ -3,14 +3,10 @@ html {
 }
 
 body {
+  color: $regular-color;
   font-family: "Open Sans", sans-serif;
   font-size: $regular-text-font;
   line-height: 1.6;
-  background: #fcfbfb;
-}
-
-p {
-  @include regular_text;
 }
 
 h1 {
@@ -30,12 +26,16 @@ h4 {
 }
 
 a {
-  text-decoration: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 figure {
   margin: 0;
   padding: 0;
+}
+
+p {
+  @include regular_text;
 }
