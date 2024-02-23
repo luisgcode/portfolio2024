@@ -1,25 +1,30 @@
-footer {
+.footer {
   background-color: #eeeffd4d;
 
   .top,
   .bottom {
-    width: 100%;
-    max-width: 1200px;
-    @include margin_center;
     @include flex_center;
+    @include margin_center;
     justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
   }
 
   .top {
     padding: 6rem 0 5rem 0;
+
+    &-logo {
+    }
+
     &-nav {
-      max-width: 500px;
+      min-width: 500px;
 
       &-ul {
         display: flex;
+        gap: 4.5rem;
+        margin-bottom: 1rem;
 
         li {
-          margin-right: 3rem;
           a {
             color: $highlight-color;
             font-weight: bold;
@@ -28,14 +33,13 @@ footer {
       }
 
       &-text {
-        text-align: left;
-        min-width: 500px;
-        margin-top: 1rem;
+        max-width: 410px;
       }
     }
 
     &-icon {
       display: flex;
+
       align-items: center;
       justify-content: center;
       max-width: 300px;

@@ -446,56 +446,53 @@ main {
   margin: 0 auto;
 }
 
-footer {
+.footer {
   background-color: rgba(238, 239, 253, 0.3019607843);
 }
-footer .top,
-footer .bottom {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+.footer .top,
+.footer .bottom {
   align-items: center;
   display: flex;
+  margin: 0 auto;
   justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
 }
-footer .top {
+.footer .top {
   padding: 6rem 0 5rem 0;
 }
-footer .top-nav {
-  max-width: 500px;
+.footer .top-nav {
+  min-width: 500px;
 }
-footer .top-nav-ul {
+.footer .top-nav-ul {
   display: flex;
+  gap: 4.5rem;
+  margin-bottom: 1rem;
 }
-footer .top-nav-ul li {
-  margin-right: 3rem;
-}
-footer .top-nav-ul li a {
+.footer .top-nav-ul li a {
   color: #ef5d5f;
   font-weight: bold;
 }
-footer .top-nav-text {
-  text-align: left;
-  min-width: 500px;
-  margin-top: 1rem;
+.footer .top-nav-text {
+  max-width: 410px;
 }
-footer .top-icon {
+.footer .top-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 300px;
 }
-footer .top-icon-graph {
+.footer .top-icon-graph {
   margin-right: 1rem;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-footer .top-icon-graph-user {
+.footer .top-icon-graph-user {
   min-width: 140px;
 }
-footer .top-icon-graph-options {
+.footer .top-icon-graph-options {
   width: 25px;
   height: 25px;
   background-color: black;
@@ -511,19 +508,19 @@ footer .top-icon-graph-options {
   cursor: pointer;
   transition: scale 0.4s ease;
 }
-footer .top-icon-graph-options:nth-child(3) {
+.footer .top-icon-graph-options:nth-child(3) {
   top: -5px;
 }
-footer .top-icon-graph-options:nth-child(4) {
+.footer .top-icon-graph-options:nth-child(4) {
   top: -50px;
   left: 60%;
 }
-footer .top-icon-graph-options.active {
+.footer .top-icon-graph-options.active {
   transform: scale(1.1);
   background-color: #4e54ec;
   transition: scale 0.4s ease;
 }
-footer .top-icon-graph-container {
+.footer .top-icon-graph-container {
   height: 210px;
   background-color: transparent;
   width: 105px;
@@ -534,7 +531,7 @@ footer .top-icon-graph-container {
   left: -30px;
   border-right: none;
 }
-footer .top-icon-graph-container .dots {
+.footer .top-icon-graph-container .dots {
   width: 5px;
   height: 5px;
   background-color: #ef5d5f;
@@ -545,41 +542,41 @@ footer .top-icon-graph-container .dots {
   transition: all 0.2s ease;
   border: 2px solid transparent;
 }
-footer .top-icon-graph-container .dots:nth-child(2) {
+.footer .top-icon-graph-container .dots:nth-child(2) {
   left: 10px;
   bottom: 45px;
 }
-footer .top-icon-graph-container .dots:nth-child(3) {
+.footer .top-icon-graph-container .dots:nth-child(3) {
   left: 8px;
   top: 50px;
 }
-footer .top-icon-graph-container .dots:nth-child(4) {
+.footer .top-icon-graph-container .dots:nth-child(4) {
   top: -3px;
 }
-footer .top-icon-graph-container .dots.active {
+.footer .top-icon-graph-container .dots.active {
   transition: all 0.2s ease;
   outline: 2px solid #ef5d5f;
   transform: scale(1.5);
 }
-footer .top-icon-info {
+.footer .top-icon-info {
   margin-left: 1rem;
 }
-footer .top-icon-info-title {
+.footer .top-icon-info-title {
   font-weight: bold;
 }
-footer .top-icon-info-text {
+.footer .top-icon-info-text {
   font-size: 1rem;
   line-height: 1.5;
   text-align: justify;
 }
-footer .bottom {
+.footer .bottom {
   display: flex;
   max-width: 1200px;
   justify-content: space-between;
   font-size: 1rem;
   padding-bottom: 2rem;
 }
-footer .bottom-license a {
+.footer .bottom-license a {
   color: #ef5d5f;
   font-weight: bold;
 }
