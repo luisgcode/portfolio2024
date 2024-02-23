@@ -1,6 +1,5 @@
 .abilities {
   @include margin_center;
-  border: 1px solid purple;
 
   &-wrapper {
     @include margin_center;
@@ -36,7 +35,7 @@
       &-top {
         display: flex;
         justify-content: space-between;
-        width: 600px;
+        width: 60rem;
         margin: 0 auto 10rem auto;
 
         .odometro-item-digits {

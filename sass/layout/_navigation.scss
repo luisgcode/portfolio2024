@@ -1,0 +1,47 @@
+// top nav menu
+.wrapper-nav {
+  margin-bottom: 5rem;
+  padding: 2rem 0 4rem 0;
+  &-ul {
+    @include flex_center;
+    gap: 4rem;
+    justify-content: center;
+
+    li {
+      a {
+        color: $regular-color;
+        font-family: "Poppins", sans-serif;
+        font-size: clamp(1.4rem, 2vw, 1.6rem);
+        font-weight: 600;
+        text-transform: capitalize;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $highlight-color;
+        }
+      }
+    }
+  }
+}
+
+// footer nav menu
+.top-nav {
+  min-width: 50rem;
+
+  &-ul {
+    display: flex;
+    gap: 4.5rem;
+    margin-bottom: 1rem;
+
+    li {
+      a {
+        color: $highlight-color;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &-text {
+    max-width: 41rem;
+  }
+}
