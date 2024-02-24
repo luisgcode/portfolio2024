@@ -123,45 +123,40 @@ li {
   padding: 0;
 }
 
-.abilities {
-  margin: 0 auto;
-}
 .abilities-wrapper {
   margin: 0 auto;
 }
 .abilities-wrapper-counter {
-  text-align: center;
   margin-top: 10rem;
+  text-align: center;
 }
 .abilities-wrapper-counter-heading h3 {
+  margin-bottom: 2rem;
   position: relative;
-  margin-bottom: 3rem;
 }
 .abilities-wrapper-counter-heading h3::before {
+  color: #191919;
+  color: #cccccc;
   content: "01101100 01110101";
   font-size: clamp(1rem, 2vw, 1.4rem);
-  color: rgba(0, 0, 0, 0.36);
   padding-right: 1.5rem;
 }
 .abilities-wrapper-counter-heading h3::after {
+  color: #cccccc;
   content: "01101001 01110011";
   font-size: clamp(1rem, 2vw, 1.4rem);
-  color: rgba(0, 0, 0, 0.36);
   padding-left: 1.5rem;
 }
 .abilities-wrapper-counter-top {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 60rem;
   margin: 0 auto 10rem auto;
+  width: 60rem;
 }
 .abilities-wrapper-counter-top .odometro-item-digits {
   color: #5d5fef;
   font-size: clamp(1.5rem, 3vw, 3.4rem);
-}
-.abilities-wrapper-counter-top .odometro-item-digits span {
-  color: black;
-  font-size: clamp(1.2rem, 2vw, 1.4rem);
 }
 
 @keyframes shake {
@@ -191,8 +186,7 @@ li {
   }
 }
 .intro {
-  margin: 0 auto;
-  padding: 11rem 0;
+  padding: 10rem 0;
 }
 .intro-wrapper {
   align-items: center;
@@ -237,9 +231,8 @@ li {
 }
 .stack-wrapper-icons-box {
   flex-basis: 20%;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
   padding: 2rem;
 }
@@ -411,6 +404,10 @@ li {
   height: 100%;
   justify-content: center;
   width: 100%;
+}
+.toolbar-ul .sidebar-icon {
+  font-size: 1.8rem;
+  color: #383838;
 }
 
 .footer {

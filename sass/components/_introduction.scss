@@ -1,7 +1,5 @@
 .intro {
-  @include margin_center;
-
-  padding: 11rem 0;
+  padding: 10rem 0;
 
   &-wrapper {
     @include flex_center;

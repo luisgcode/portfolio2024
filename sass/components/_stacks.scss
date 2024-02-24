@@ -11,9 +11,7 @@
 
       &-box {
         flex-basis: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex_center;
         flex-direction: column;
         padding: 2rem;
 
