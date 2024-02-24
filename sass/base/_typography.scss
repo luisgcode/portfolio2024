@@ -36,6 +36,14 @@ figure {
   padding: 0;
 }
 
+// Still for improvement
 p {
   @include regular_text;
+  transition: all 0.3s ease;
+}
+
+p.agrandar {
+  font-size: clamp(2rem, 2vw, 2rem);
+  transition: all 0.3s ease;
+  line-height: normal;
 }

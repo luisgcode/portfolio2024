@@ -56,6 +56,13 @@ p {
   font-weight: 600;
   line-height: 2.4rem;
   margin: 0.8rem 0;
+  transition: all 0.3s ease;
+}
+
+p.agrandar {
+  font-size: clamp(2rem, 2vw, 2rem);
+  transition: all 0.3s ease;
+  line-height: normal;
 }
 
 /*missing alt attribute*/
@@ -448,7 +455,7 @@ li {
 }
 
 .toolbar {
-  border-radius: 2.5rem;
+  border-radius: 1rem;
   border: 0.1rem solid #ef5d5f;
   display: flex;
   justify-content: center;
@@ -462,16 +469,33 @@ li {
 .toolbar-ul {
   align-items: center;
   display: flex;
-  border-radius: 2.5rem;
+  border-radius: 1rem;
   flex-direction: column;
   gap: 1.5rem;
   height: 100%;
   justify-content: center;
   width: 100%;
 }
-.toolbar-ul .sidebar-icon {
-  font-size: 1.8rem;
-  color: #383838;
+.toolbar-ul .toolbar-ul-li-increase {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  width: 30px;
+  height: 27px;
+}
+.toolbar-ul .toolbar-ul-li-increase button {
+  background: none;
+  border: 1px solid #383838;
+  outline: none;
+  cursor: pointer;
+  margin: 0.1rem 0;
+}
+.toolbar-ul .toolbar-ul-li-increase-regular {
+  font-size: 0.8rem;
+  border-radius: 3px 3px 0 0;
+}
+.toolbar-ul .toolbar-ul-li-increase-max {
+  border-radius: 0 0 3px 3px;
 }
 
 .footer {

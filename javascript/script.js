@@ -119,3 +119,23 @@ menusArray.forEach(function (menu) {
     dotsArray[dotsIndex + 1].classList.add("active");
   });
 });
+
+// Font sizes
+const btnIncreaseFonts = document.querySelector(".toolbar-ul-li-increase-max");
+const btnDecreaseFonts = document.querySelector(
+  ".toolbar-ul-li-increase-regular"
+);
+
+const regularText = document.querySelectorAll("p");
+
+btnIncreaseFonts.addEventListener("click", function () {
+  regularText.forEach(function (text) {
+    text.classList.add("agrandar");
+  });
+});
+
+btnDecreaseFonts.addEventListener("click", function () {
+  regularText.forEach(function (text) {
+    text.classList.remove("agrandar");
+  });
+});
