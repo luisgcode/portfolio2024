@@ -29,9 +29,9 @@
       }
 
       &-top {
-        @include flex_center;
+        display: flex;
         justify-content: space-between;
-        margin: 0 auto 10rem auto;
+        margin: 0 auto;
         width: 60rem;
 
         .odometro-item-digits {
