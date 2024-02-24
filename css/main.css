@@ -218,7 +218,7 @@ li {
 }
 
 .projects {
-  padding-bottom: 15rem;
+  padding-bottom: 11rem;
 }
 .projects-heading {
   text-align: center;
@@ -274,6 +274,8 @@ li {
 .projects-wrapper .projects-card-links a {
   color: #ef5d5f;
   border-bottom: 1px solid #ef5d5f;
+  font-weight: bold;
+  font-size: 1rem;
 }
 .projects-wrapper .projects-card-links .projects-icons {
   font-size: 1rem;
