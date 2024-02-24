@@ -2,6 +2,7 @@
 .wrapper-nav {
   margin-bottom: 5rem;
   padding: 2rem 0 4rem 0;
+
   &-ul {
     @include flex_center;
     gap: 4rem;
@@ -20,6 +21,10 @@
           color: $highlight-color;
         }
       }
+    }
+
+    .nav-logo {
+      margin-right: 5rem;
     }
   }
 }

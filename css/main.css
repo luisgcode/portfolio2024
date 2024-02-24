@@ -648,6 +648,9 @@ li {
 .wrapper-nav-ul li a:hover {
   color: #ef5d5f;
 }
+.wrapper-nav-ul .nav-logo {
+  margin-right: 5rem;
+}
 
 .top-nav {
   min-width: 50rem;
