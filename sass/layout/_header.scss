@@ -9,8 +9,8 @@
   .wrapper {
     display: flex;
     flex-direction: column;
-    width: 900px;
-    max-width: 90%;
+    width: 1000px;
+    max-width: 95%;
     @include margin_center;
 
     // navigation on the nav page
@@ -21,7 +21,7 @@
       @include margin_center;
 
       &-info {
-        flex-basis: 50%;
+        flex-basis: 60%;
 
         .hand-animation {
           animation-duration: 2.5s;
@@ -39,7 +39,7 @@
 
         img {
           transform: rotate(2deg);
-          width: 60%;
+          width: 70%;
         }
       }
     }

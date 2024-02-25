@@ -532,7 +532,7 @@ li {
 }
 
 .footer {
-  background-color: #eeeffd;
+  background-color: rgba(238, 239, 253, 0.2666666667);
 }
 .footer .top,
 .footer .bottom {
@@ -655,8 +655,8 @@ li {
 .header .wrapper {
   display: flex;
   flex-direction: column;
-  width: 900px;
-  max-width: 90%;
+  width: 1000px;
+  max-width: 95%;
   margin: 0 auto;
 }
 .header .wrapper-hero {
@@ -665,7 +665,7 @@ li {
   margin: 0 auto;
 }
 .header .wrapper-hero-info {
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 .header .wrapper-hero-info .hand-animation {
   animation-duration: 2.5s;
@@ -682,12 +682,12 @@ li {
 }
 .header .wrapper-hero-banner img {
   transform: rotate(2deg);
-  width: 60%;
+  width: 70%;
 }
 
 .wrapper-nav {
   margin-bottom: 5rem;
-  padding: 2rem 0 4rem 0;
+  padding: 3rem 0 4rem 0;
   display: flex;
   width: 100%;
   justify-content: space-between;
