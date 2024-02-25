@@ -2,12 +2,14 @@
 .wrapper-nav {
   margin-bottom: 5rem;
   padding: 2rem 0 4rem 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 
   &-ul {
-    @include flex_center;
-    gap: 4rem;
-    justify-content: center;
-
+    display: flex;
+    align-items: center;
+    gap: 3rem;
     li {
       a {
         color: $regular-color;

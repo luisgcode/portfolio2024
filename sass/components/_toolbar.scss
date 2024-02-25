@@ -1,12 +1,12 @@
 .toolbar {
   border-radius: 1rem;
-  background-color: $footer-bg;
+  border: 1px solid $regular-color;
   display: flex;
   justify-content: center;
   padding: 1.5rem 0.5rem 1.1rem 0.5rem;
   //   Key margin to center all elements because of the toolbar
   margin-left: -4rem;
-  margin-top: 17rem;
+  margin-top: 11.8rem;
   position: sticky;
   top: 10rem;
   // Can't be bigger than 40px
@@ -32,10 +32,10 @@
 
       button {
         background: none;
-        border: 1.1px solid $details-color;
+        border: 1.1px solid $regular-color;
         cursor: pointer;
         margin: 0.05rem 0;
-        color: $details-color;
+        color: $regular-color;
         outline: none;
         padding: 0.2rem 0;
       }
@@ -54,7 +54,7 @@
     .toolbar-ul-li-mode {
       align-items: center;
       border-radius: 50%;
-      border: 1.2px solid $details-color;
+      border: 1.2px solid $regular-color;
       display: flex;
       height: 25px;
       justify-content: center;
