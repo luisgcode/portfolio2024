@@ -60,31 +60,45 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="wrapper">
         <!-- nav menu -->
-        <nav class="nav">
-          <div class="nav-desktop">
-            <ul class="nav-desktop-ul">
-              <li>
-                <a href="index.html">
-                  <img src="images/logo.svg" alt="lgcode logo" />
-                </a>
-              </li>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
+        <nav class="wrapper-nav">
+          <a href="index.html">
+            <img src="images/logos/luisgcode-black.svg" alt="lgcode logo" />
+          </a>
+          <ul class="wrapper-nav-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="about.html"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+            <li>
+              <a href="projects.html"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
         </nav>
 
         <!-- hero section -->
         <div class="wrapper-hero">
-          <!-- block one -->
-          <div class="wrapper-hero-block"></div>
-          <!-- block two -->
-          <figure class="wrapper-hero-img"></figure>
+          <div class="wrapper-hero-info">
+            <h1>
+              Hi <span class="hand-animation">👋</span>, <br />
+              I am
+              <span class="detailed">@luisgcode</span> <br />
+              A dedicated Web Developer Student.
+            </h1>
+          </div>
+          <figure class="wrapper-hero-banner">
+            <img
+              src="images/banners/hero-alter.png"
+              alt="Luis Guaiquirian photo"
+            />
+          </figure>
         </div>
       </div>
     </header>
@@ -644,11 +658,12 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <!-- top section -->
+
       <div class="top">
         <div class="top-logo">
-          <img src="/images/logo.svg" alt="footer logo" />
+          <img src="images/logos/luisgcode-black.svg" alt="footer logo" />
         </div>
         <div class="top-nav">
           <ul class="top-nav-ul">
@@ -658,14 +673,15 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="top-nav-text">
-            luisgcode.com is my starting professional portfolio <br />
-            for Web Development.
+            luisgcode.com is my starting professional portfolio for Web
+            Development. Lorem ipsum dolor sit amet, consectetur adipisi ips
+            natus ea.
           </div>
         </div>
         <div class="top-icon">
           <div class="top-icon-graph">
             <img
-              src="images/profile.svg"
+              src="images/banners/footer-profile.svg"
               alt="me photo"
               class="top-icon-graph-user"
             />
