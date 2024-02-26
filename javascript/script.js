@@ -139,3 +139,26 @@ btnDecreaseFonts.addEventListener("click", function () {
     text.classList.remove("agrandar");
   });
 });
+
+// Scroll Revealing //
+const allRevealSections = document.querySelectorAll(".scroll");
+
+console.log(allRevealSections);
+
+const revealSection = function (entries, oberserver) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("scroll-hidden");
+  oberserver.unobserve(entry.target);
+};
+
+const sectionOberserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+});
+
+allRevealSections.forEach(function (section) {
+  sectionOberserver.observe(section);
+  section.classList.add("scroll-hidden");
+});

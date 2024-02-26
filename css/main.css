@@ -130,6 +130,15 @@ li {
   padding: 0;
 }
 
+.scroll {
+  transition: transform 1s, opacity 1s;
+}
+
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(3rem);
+}
+
 .abilities-wrapper {
   margin: 0 auto;
 }
@@ -645,7 +654,7 @@ li {
 }
 
 .header {
-  height: 85vh;
+  height: 90vh;
   margin: 0 auto;
   max-height: 70rem;
   max-width: 300rem;
