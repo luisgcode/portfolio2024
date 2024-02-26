@@ -44,3 +44,13 @@ small {
   text-transform: uppercase;
   transform: translate(-50%, -50%) rotate(-20deg);
 }
+
+// Scroll revealing animation
+.scroll {
+  transition: transform 1s, opacity 1.5s;
+}
+
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(3rem);
+}

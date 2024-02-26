@@ -111,6 +111,15 @@ small {
   transform: translate(-50%, -50%) rotate(-20deg);
 }
 
+.scroll {
+  transition: transform 1s, opacity 1.5s;
+}
+
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(3rem);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -128,15 +137,6 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.scroll {
-  transition: transform 1s, opacity 1s;
-}
-
-.scroll-hidden {
-  opacity: 0;
-  transform: translateY(3rem);
 }
 
 .abilities-wrapper {

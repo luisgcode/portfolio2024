@@ -16,14 +16,3 @@ li {
   margin: 0;
   padding: 0;
 }
-
-// Scroll revealing animation
-
-.scroll {
-  transition: transform 1s, opacity 1s;
-}
-
-.scroll-hidden {
-  opacity: 0;
-  transform: translateY(3rem);
-}
