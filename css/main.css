@@ -691,6 +691,13 @@ li {
 }
 .wrapper-nav-ul .dropActivator {
   position: relative;
+  background-color: #353e45;
+  background-color: #161e21;
+  border-radius: 5px;
+  padding: 0 1rem;
+}
+.wrapper-nav-ul .dropActivator a {
+  color: #ffffff;
 }
 .wrapper-nav-ul .dropdown {
   background: #ffffff;

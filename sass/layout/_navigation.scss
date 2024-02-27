@@ -28,6 +28,14 @@
     // List item drop activator
     .dropActivator {
       position: relative;
+      background-color: lighten($regular-color, 10%);
+      background-color: #161e21;
+
+      border-radius: 5px;
+      padding: 0 1rem;
+      a {
+        color: $bg-color;
+      }
     }
 
     .dropdown {
