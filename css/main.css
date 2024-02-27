@@ -715,16 +715,19 @@ li {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
   }
+  .header .wrapper-nav img {
+    min-width: 150px;
+  }
+  .header .wrapper-nav-ul {
+    display: none;
+  }
   .header .wrapper-hero {
     flex-direction: column;
-    border: 2px solid red;
   }
   .header .wrapper-hero-info {
-    border: 2px solid red;
     text-align: center;
   }
   .header .wrapper-hero-banner {
-    border: 2px solid red;
     justify-content: center;
   }
 }

@@ -73,18 +73,24 @@
       &-nav {
         margin-bottom: 1rem;
         padding-bottom: 1rem;
+
+        img {
+          min-width: 150px;
+        }
+
+        &-ul {
+          display: none;
+        }
       }
+
       &-hero {
         flex-direction: column;
-        border: 2px solid red;
 
         &-info {
-          border: 2px solid red;
           text-align: center;
         }
 
         &-banner {
-          border: 2px solid red;
           justify-content: center;
 
           img {
