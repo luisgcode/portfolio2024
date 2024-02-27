@@ -10,13 +10,13 @@
     display: flex;
     align-items: center;
     gap: 3rem;
-    li {
+
+    &-li {
       a {
         color: $regular-color;
         font-family: "Poppins", sans-serif;
         font-size: clamp(1.4rem, 2vw, 1.6rem);
         font-weight: 600;
-        text-transform: capitalize;
         transition: all 0.3s ease;
 
         &:hover {
@@ -28,13 +28,13 @@
     // List item drop activator
     .dropActivator {
       position: relative;
-      background-color: lighten($regular-color, 10%);
-      background-color: #161e21;
-
+      background-color: lighten($regular-color, 8%);
       border-radius: 5px;
-      padding: 0 1rem;
+      padding: 0.2rem 1rem;
+
       a {
         color: $bg-color;
+        font-weight: 600;
       }
     }
 
@@ -42,32 +42,56 @@
       background: $bg-color;
       border-radius: 0.5rem;
       box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.478);
-      padding: 2rem 4rem;
       position: absolute;
-      right: -1rem;
+      right: 0;
       text-align: left;
-      top: 3.5rem;
+      top: 5rem;
       z-index: 1;
       transition: opacity 0.2s ease;
       visibility: hidden;
       opacity: 0;
+      font-size: 1.3rem;
+      padding: 2rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
 
-      .social {
-        opacity: 0;
-        transition: opacity 0.2 ease;
-        margin-bottom: 1rem;
-        a {
-          margin: 0 0.4rem;
-        }
+      &::before {
+        content: "";
+        border-radius: 4px 0;
+        box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.1178);
+        height: 16px;
+        right: 4.6rem;
+        position: absolute;
+        top: -0.3rem;
+        transform: rotate(45deg) translate(-50%);
+        width: 16px;
+        background: $bg-color;
       }
 
-      .mailbox {
-        opacity: 0;
-        transition: opacity 0.2 ease;
-        padding-top: 1rem;
-        border-top: 1px solid rgba(128, 128, 128, 0.353);
+      hr {
+        margin: 0;
+        padding: 0;
+        opacity: 30%;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+
+        .social-network i {
+          margin-right: 1rem;
+        }
+
+        small {
+          font-weight: normal;
+          margin-bottom: 0.5rem;
+          font-size: 1.4rem;
+        }
+
         a {
-          text-transform: none;
+          color: $regular-color;
+          font-size: 1.4rem;
         }
       }
     }
@@ -82,6 +106,9 @@
       opacity: 1;
     }
     .dropdownActivated .mailbox {
+      opacity: 1;
+    }
+    .dropdownActivated .cv {
       opacity: 1;
     }
   }

@@ -68,16 +68,18 @@
             <img src="images/logos/luisgcode-black.svg" alt="lgcode logo" />
           </a>
           <ul class="wrapper-nav-ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li class="wrapper-nav-ul-li"><a href="index.html">Home</a></li>
+            <li class="wrapper-nav-ul-li"><a href="about.html">About</a></li>
+            <li class="wrapper-nav-ul-li">
+              <a href="projects.html">Projects</a>
+            </li>
             <li class="dropActivator">
               <a href="#"
                 >Contact &nbsp; <i class="fa-solid fa-chevron-down"></i
               ></a>
               <span class="dropdown">
-                <div class="social">
-                  <span>Social:</span>
+                <div class="dropdown-item social">
+                  <small>Social:</small>
                   <div class="social-network">
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -86,9 +88,16 @@
                     ></a>
                   </div>
                 </div>
-                <div class="mailbox">
-                  <span>Mail:</span>
+                <hr />
+                <div class="dropdown-item mailbox">
+                  <small>Mail:</small>
                   <a href="#">luisgcode@gmail.com</a>
+                </div>
+                <hr />
+                <div class="dropdown-item cv">
+                  <a href="#"
+                    >Download CV <i class="fa-solid fa-file-arrow-down"></i
+                  ></a>
                 </div>
               </span>
             </li>
