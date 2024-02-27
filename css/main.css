@@ -498,7 +498,7 @@ li {
   border: 1.1px solid #1f2428;
   cursor: pointer;
   margin: 0.05rem 0;
-  color: #1f2428;
+  color: #5d5fef;
   outline: none;
   padding: 0.2rem 0;
 }
@@ -653,6 +653,14 @@ li {
   font-weight: bold;
 }
 
+/*************************************************
+****************Responsive styles****************
+**************************************************/
+@media (max-width: 1200px) {
+  .footer {
+    padding: 0 2rem;
+  }
+}
 .header {
   height: 90vh;
   margin: 0 auto;
@@ -694,6 +702,32 @@ li {
   width: 70%;
 }
 
+/*************************************************
+****************Responsive styles****************
+**************************************************/
+@media (max-width: 1050px) {
+  .header .wrapper-hero {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .header .wrapper-nav {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .header .wrapper-hero {
+    flex-direction: column;
+    border: 2px solid red;
+  }
+  .header .wrapper-hero-info {
+    border: 2px solid red;
+    text-align: center;
+  }
+  .header .wrapper-hero-banner {
+    border: 2px solid red;
+    justify-content: center;
+  }
+}
 .wrapper-nav {
   margin-bottom: 5rem;
   padding: 3rem 0 4rem 0;

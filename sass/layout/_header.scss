@@ -45,3 +45,52 @@
     }
   }
 }
+
+/*************************************************
+****************Responsive styles****************
+**************************************************/
+@media (max-width: 1050px) {
+  .header {
+    .wrapper {
+      &-hero {
+        padding: 0 2rem;
+
+        &-info {
+        }
+
+        &-banner {
+          img {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    .wrapper {
+      &-nav {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+      }
+      &-hero {
+        flex-direction: column;
+        border: 2px solid red;
+
+        &-info {
+          border: 2px solid red;
+          text-align: center;
+        }
+
+        &-banner {
+          border: 2px solid red;
+          justify-content: center;
+
+          img {
+          }
+        }
+      }
+    }
+  }
+}

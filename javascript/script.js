@@ -143,8 +143,6 @@ btnDecreaseFonts.addEventListener("click", function () {
 // Scroll Revealing //
 const allRevealSections = document.querySelectorAll(".scroll");
 
-console.log(allRevealSections);
-
 const revealSection = function (entries, oberserver) {
   const [entry] = entries;
 
