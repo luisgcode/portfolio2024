@@ -564,71 +564,6 @@ li {
   display: flex;
   position: relative;
 }
-.footer .top-icon-graph-options {
-  align-items: center;
-  display: flex;
-  background-color: black;
-  border-radius: 50%;
-  bottom: 0;
-  color: white;
-  cursor: pointer;
-  height: 2.5rem;
-  justify-content: center;
-  left: -6rem;
-  position: absolute;
-  transition: scale 0.4s ease;
-  width: 2.5rem;
-}
-.footer .top-icon-graph-options:nth-child(3) {
-  top: -0.5rem;
-}
-.footer .top-icon-graph-options:nth-child(4) {
-  top: -5rem;
-  left: 60%;
-}
-.footer .top-icon-graph-options.active {
-  background-color: #4e54ec;
-  transform: scale(1.1);
-  transition: scale 0.4s ease;
-}
-.footer .top-icon-graph-container {
-  background-color: transparent;
-  border-bottom-left-radius: 10rem;
-  border-top-left-radius: 10rem;
-  border: 0.2rem solid #fcddec;
-  height: 21rem;
-  left: -3rem;
-  position: absolute;
-  width: 10.5rem;
-  border-right: none;
-}
-.footer .top-icon-graph-container .dots {
-  background-color: #ef5d5f;
-  border-radius: 50%;
-  border: 0.2rem solid transparent;
-  bottom: -0.3rem;
-  height: 0.5rem;
-  left: 95%;
-  position: absolute;
-  transition: all 0.2s ease;
-  width: 0.5rem;
-}
-.footer .top-icon-graph-container .dots:nth-child(2) {
-  left: 1rem;
-  bottom: 4.5rem;
-}
-.footer .top-icon-graph-container .dots:nth-child(3) {
-  left: 0.8rem;
-  top: 5rem;
-}
-.footer .top-icon-graph-container .dots:nth-child(4) {
-  top: -0.3rem;
-}
-.footer .top-icon-graph-container .dots.active {
-  outline: 0.2rem solid #5d5fef;
-  transform: scale(1.5);
-  transition: all 0.2s ease;
-}
 .footer .top-icon-info {
   margin-left: 1rem;
   max-width: 15rem;
@@ -754,8 +689,50 @@ li {
 .wrapper-nav-ul li a:hover {
   color: #ef5d5f;
 }
-.wrapper-nav-ul .nav-logo {
-  margin-right: 5rem;
+.wrapper-nav-ul .dropActivator {
+  position: relative;
+}
+.wrapper-nav-ul .dropdown {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.478);
+  padding: 2rem 4rem;
+  position: absolute;
+  right: -1rem;
+  text-align: left;
+  top: 3.5rem;
+  z-index: 1;
+  transition: opacity 0.2s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper-nav-ul .dropdown .social {
+  opacity: 0;
+  transition: opacity 0.2 ease;
+  margin-bottom: 1rem;
+}
+.wrapper-nav-ul .dropdown .social a {
+  margin: 0 0.4rem;
+}
+.wrapper-nav-ul .dropdown .mailbox {
+  opacity: 0;
+  transition: opacity 0.2 ease;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.353);
+}
+.wrapper-nav-ul .dropdown .mailbox a {
+  text-transform: none;
+}
+.wrapper-nav-ul .dropdownActivated {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.wrapper-nav-ul .dropdownActivated .social {
+  opacity: 1;
+}
+.wrapper-nav-ul .dropdownActivated .mailbox {
+  opacity: 1;
 }
 
 .top-nav {

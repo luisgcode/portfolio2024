@@ -25,8 +25,56 @@
       }
     }
 
-    .nav-logo {
-      margin-right: 5rem;
+    // List item drop activator
+    .dropActivator {
+      position: relative;
+    }
+
+    .dropdown {
+      background: $bg-color;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.478);
+      padding: 2rem 4rem;
+      position: absolute;
+      right: -1rem;
+      text-align: left;
+      top: 3.5rem;
+      z-index: 1;
+      transition: opacity 0.2s ease;
+      visibility: hidden;
+      opacity: 0;
+
+      .social {
+        opacity: 0;
+        transition: opacity 0.2 ease;
+        margin-bottom: 1rem;
+        a {
+          margin: 0 0.4rem;
+        }
+      }
+
+      .mailbox {
+        opacity: 0;
+        transition: opacity 0.2 ease;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(128, 128, 128, 0.353);
+        a {
+          text-transform: none;
+        }
+      }
+    }
+
+    .dropdownActivated {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.2s ease;
+    }
+
+    .dropdownActivated .social {
+      opacity: 1;
+    }
+    .dropdownActivated .mailbox {
+      opacity: 1;
     }
   }
 }
