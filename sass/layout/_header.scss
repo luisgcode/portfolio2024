@@ -70,19 +70,6 @@
 @media (max-width: 650px) {
   .header {
     .wrapper {
-      &-nav {
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-
-        img {
-          min-width: 150px;
-        }
-
-        &-ul {
-          display: none;
-        }
-      }
-
       &-hero {
         flex-direction: column;
 
@@ -92,9 +79,6 @@
 
         &-banner {
           justify-content: center;
-
-          img {
-          }
         }
       }
     }

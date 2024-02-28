@@ -5,6 +5,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 
   // Desktop navigation
   &-desktop {
@@ -118,14 +119,19 @@
   // mobile navigation
   &-icon {
     background: transparent;
+    cursor: pointer;
     outline: none;
     border: none;
     font-size: 3rem;
     width: 3rem;
     height: 3rem;
-    display: flex;
-    align-items: center;
+    @include flex_center;
     justify-content: center;
+    display: none;
+  }
+
+  &-mobile {
+    display: none;
   }
 }
 
@@ -148,5 +154,23 @@
 
   &-text {
     max-width: 41rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    .wrapper {
+      &-nav {
+        margin-bottom: 0;
+        padding: 3rem 2rem;
+        &-desktop {
+          display: none;
+        }
+
+        &-icon {
+          display: flex;
+        }
+      }
+    }
   }
 }
