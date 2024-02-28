@@ -6,8 +6,10 @@
   width: 100%;
   justify-content: space-between;
 
-  &-ul {
+  // Desktop navigation
+  &-desktop {
     display: flex;
+    // display: none;
     align-items: center;
     gap: 3rem;
 
@@ -51,7 +53,7 @@
       visibility: hidden;
       opacity: 0;
       font-size: 1.3rem;
-      padding: 2rem 4rem;
+      padding: 2rem 3rem;
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
@@ -61,7 +63,7 @@
         border-radius: 4px 0;
         box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.1178);
         height: 16px;
-        right: 4.6rem;
+        right: 3.6rem;
         position: absolute;
         top: -0.3rem;
         transform: rotate(45deg) translate(-50%);
@@ -111,6 +113,19 @@
     .dropdownActivated .cv {
       opacity: 1;
     }
+  }
+
+  // mobile navigation
+  &-icon {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
