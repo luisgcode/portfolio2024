@@ -783,6 +783,12 @@ li {
   .header .wrapper-nav-icon {
     display: flex;
   }
+  .header .wrapper-hero-info {
+    margin-bottom: 1rem;
+  }
+  .header .wrapper-hero-banner img {
+    width: 60%;
+  }
 }
 .top-nav {
   min-width: 50rem;

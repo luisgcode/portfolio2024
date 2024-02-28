@@ -150,6 +150,18 @@
           display: flex;
         }
       }
+
+      &-hero {
+        &-info {
+          margin-bottom: 1rem;
+        }
+
+        &-banner {
+          img {
+            width: 60%;
+          }
+        }
+      }
     }
   }
 }
