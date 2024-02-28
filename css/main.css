@@ -783,6 +783,23 @@ li {
   .header .wrapper-nav-icon {
     display: flex;
   }
+  .header .wrapper-nav-mobile {
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .header .wrapper-nav-mobile-ul {
+    display: flex;
+    gap: 2rem;
+  }
+  .header .wrapper-nav-mobile-ul li a {
+    color: #1f2428;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1.6rem;
+  }
   .header .wrapper-hero-info {
     margin-bottom: 1rem;
   }

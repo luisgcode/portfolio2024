@@ -142,12 +142,35 @@
       &-nav {
         margin-bottom: 0;
         padding: 3rem 2rem;
+
         &-desktop {
           display: none;
         }
 
         &-icon {
           display: flex;
+        }
+
+        &-mobile {
+          display: flex;
+          max-width: 90%;
+          @include margin_center;
+          margin-bottom: 3rem;
+
+          &-ul {
+            display: flex;
+            gap: 2rem;
+
+            li {
+              a {
+                color: $regular-color;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                font-size: 1.6rem;
+              }
+            }
+          }
         }
       }
 
