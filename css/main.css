@@ -681,7 +681,7 @@ li {
 }
 .wrapper-nav-desktop .dropActivator {
   position: relative;
-  background-color: #31393f;
+  background: #5d5fef;
   border-radius: 5px;
   padding: 0.2rem 1rem;
 }
@@ -766,11 +766,24 @@ li {
   display: flex;
   justify-content: center;
   display: none;
+  color: #5d5fef;
 }
 .wrapper-nav-mobile {
   display: none;
 }
 
+@media (max-width: 650px) {
+  .header .wrapper-nav {
+    margin-bottom: 0;
+    padding: 3rem 2rem;
+  }
+  .header .wrapper-nav-desktop {
+    display: none;
+  }
+  .header .wrapper-nav-icon {
+    display: flex;
+  }
+}
 .top-nav {
   min-width: 50rem;
 }
@@ -787,18 +800,6 @@ li {
   max-width: 41rem;
 }
 
-@media (max-width: 650px) {
-  .header .wrapper-nav {
-    margin-bottom: 0;
-    padding: 3rem 2rem;
-  }
-  .header .wrapper-nav-desktop {
-    display: none;
-  }
-  .header .wrapper-nav-icon {
-    display: flex;
-  }
-}
 .main-wrapp {
   display: flex;
   max-width: 110rem;

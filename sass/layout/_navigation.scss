@@ -31,7 +31,7 @@
     // List item drop activator
     .dropActivator {
       position: relative;
-      background-color: lighten($regular-color, 8%);
+      background: $details-color;
       border-radius: 5px;
       padding: 0.2rem 1rem;
 
@@ -128,10 +128,29 @@
     @include flex_center;
     justify-content: center;
     display: none;
+    color: $details-color;
   }
 
   &-mobile {
     display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    .wrapper {
+      &-nav {
+        margin-bottom: 0;
+        padding: 3rem 2rem;
+        &-desktop {
+          display: none;
+        }
+
+        &-icon {
+          display: flex;
+        }
+      }
+    }
   }
 }
 
@@ -154,23 +173,5 @@
 
   &-text {
     max-width: 41rem;
-  }
-}
-
-@media (max-width: 650px) {
-  .header {
-    .wrapper {
-      &-nav {
-        margin-bottom: 0;
-        padding: 3rem 2rem;
-        &-desktop {
-          display: none;
-        }
-
-        &-icon {
-          display: flex;
-        }
-      }
-    }
   }
 }
