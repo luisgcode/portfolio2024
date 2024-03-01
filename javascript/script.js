@@ -131,3 +131,13 @@ const dropdown = document.querySelector(".dropdown");
 dropDownActivator.addEventListener("click", function () {
   dropdown.classList.toggle("dropdownActivated");
 });
+
+// Hamburguer menu displaying
+const openNavBtn = document.querySelector(".wrapper-nav-icon");
+const navMenu = document.querySelector(".wrapper-nav-mobile");
+const wrappHeroImage = document.querySelector(".wrapper-hero");
+
+openNavBtn.addEventListener("click", function () {
+  navMenu.classList.toggle("active");
+  wrappHeroImage.classList.toggle("active");
+});

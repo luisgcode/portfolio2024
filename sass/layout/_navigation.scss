@@ -152,10 +152,13 @@
         }
 
         &-mobile {
-          display: flex;
           max-width: 90%;
           @include margin_center;
           margin-bottom: 3rem;
+          display: flex;
+          overflow: hidden;
+          border: 2px solid red;
+          transform: translateY(-150px);
 
           &-ul {
             display: flex;
@@ -175,6 +178,8 @@
       }
 
       &-hero {
+        transition: transform 0.3s ease;
+        border: 2px solid red;
         &-info {
           margin-bottom: 1rem;
         }
@@ -209,4 +214,17 @@
   &-text {
     max-width: 41rem;
   }
+}
+
+// testing the menu functionality
+.wrapper-nav-mobile.active {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+// Testing the hero movement smooth
+
+.wrapper-hero.active {
+  transform: translateY(25px);
+  transition: transform 0.3s ease;
 }
