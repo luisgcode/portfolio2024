@@ -800,7 +800,7 @@ li {
   width: 100%;
   height: calc(100% - 53px);
   position: absolute;
-  background: #ffffff;
+  background: red;
   z-index: 9;
   transform: translatex(100%);
   transition: all 0.2s ease;
