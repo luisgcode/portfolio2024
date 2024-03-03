@@ -542,6 +542,7 @@ li {
 
 .toolbar-mobile {
   position: fixed;
+  z-index: 99;
   bottom: 0;
   width: 100%;
   border: 5px 5px 0 0;
