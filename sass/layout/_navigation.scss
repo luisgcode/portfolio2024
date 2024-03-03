@@ -127,7 +127,7 @@
 // Hidden until clicking the nav open button
 .nav-mobile {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 53px);
   position: absolute;
   background: $bg-color;
   z-index: 9;
