@@ -133,7 +133,7 @@ dropDownActivator.addEventListener("click", function () {
 });
 
 // Hamburguer menu displaying
-const openNavBtn = document.querySelector(".wrapper-nav-icon");
+const openNavBtn = document.querySelector(".toolbar-mobile-ul-li-openBtn");
 const navMenu = document.querySelector(".nav-mobile");
 const wrappHeroImage = document.querySelector(".wrapper-hero");
 

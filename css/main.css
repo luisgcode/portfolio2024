@@ -558,7 +558,76 @@ li {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
+}
+.toolbar-mobile-ul-li-language {
+  height: 25px;
+}
+.toolbar-mobile-ul-li-increase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+}
+.toolbar-mobile-ul-li-increase button {
+  background: none;
+  border: 1.1px solid #1f2428;
+  cursor: pointer;
+  color: #5d5fef;
+  outline: none;
+  margin: 0 0.1rem;
+}
+.toolbar-mobile-ul-li-increase-regular {
+  border-radius: 5px 0 0 5px;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  width: 15px;
+}
+.toolbar-mobile-ul-li-increase-max {
+  border-radius: 0 5px 5px 0;
+  height: 2rem;
+  width: 20px;
+  padding: 0;
+  margin: 0;
+}
+.toolbar-mobile-ul-li-mode {
+  align-items: center;
+  border-radius: 50%;
+  border: 1.2px solid #1f2428;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  overflow: hidden;
+  width: 25px;
+}
+.toolbar-mobile-ul-li-mode-light {
+  background: rgb(255, 255, 255);
+  outline: none;
+  border: none;
+  border-radius: 50% 0 0 50%;
+  flex-basis: 50%;
+  height: 30px;
+  cursor: pointer;
+}
+.toolbar-mobile-ul-li-mode-dark {
+  background: #1f2428;
+  outline: none;
+  border: none;
+  border-radius: 0 50% 50% 0;
+  flex-basis: 50%;
+  height: 30px;
+  cursor: pointer;
+}
+.toolbar-mobile-ul-li-openBtn {
+  height: 25px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 2.2rem;
+  line-height: 0;
+  border: none;
 }
 
 @media (max-width: 650px) {
@@ -782,19 +851,6 @@ li {
 .wrapper-nav-desktop .dropdownActivated .cv {
   opacity: 1;
 }
-.wrapper-nav-icon {
-  background: transparent;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  font-size: 3rem;
-  width: 3rem;
-  height: 3rem;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  color: #1f2428;
-}
 
 .nav-mobile {
   width: 100%;
@@ -821,6 +877,7 @@ li {
 .nav-mobile-ul-li .social-network i {
   margin: 0 1rem;
 }
+
 .nav-mobile.active {
   transform: translatex(0%);
   transition: all 0.2s ease;

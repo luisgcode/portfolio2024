@@ -107,20 +107,6 @@
       opacity: 1;
     }
   }
-
-  // mobile navigation
-  &-icon {
-    background: transparent;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    font-size: 3rem;
-    width: 3rem;
-    height: 3rem;
-    @include flex_center;
-    justify-content: center;
-    color: $regular-color;
-  }
 }
 
 // Hidden until clicking the nav open button
@@ -150,10 +136,6 @@
 
       .social-network i {
         margin: 0 1rem;
-      }
-      &-mail {
-      }
-      &-cv {
       }
     }
   }

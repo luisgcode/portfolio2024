@@ -107,7 +107,90 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
+
+    // language
+    &-li-language {
+      height: 25px;
+    }
+
+    // Increase fonts
+    &-li-increase {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 25px;
+
+      button {
+        background: none;
+        border: 1.1px solid $regular-color;
+        cursor: pointer;
+        color: $details-color;
+        outline: none;
+        margin: 0 0.1rem;
+      }
+
+      &-regular {
+        border-radius: 5px 0 0 5px;
+        height: 2rem;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+        width: 15px;
+      }
+
+      &-max {
+        border-radius: 0 5px 5px 0;
+        height: 2rem;
+        width: 20px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    // Dark mode
+    &-li-mode {
+      align-items: center;
+      border-radius: 50%;
+      border: 1.2px solid $regular-color;
+      display: flex;
+      height: 25px;
+      justify-content: center;
+      overflow: hidden;
+      width: 25px;
+
+      &-light {
+        background: rgb(255, 255, 255);
+        outline: none;
+        border: none;
+        border-radius: 50% 0 0 50%;
+        flex-basis: 50%;
+        height: 30px;
+        cursor: pointer;
+      }
+
+      &-dark {
+        background: $regular-color;
+        outline: none;
+        border: none;
+        border-radius: 0 50% 50% 0;
+        flex-basis: 50%;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+
+    // mobile open btn navigation
+    &-li-openBtn {
+      height: 25px;
+      background: transparent;
+      cursor: pointer;
+      outline: none;
+      font-size: 2.2rem;
+      line-height: 0;
+      border: none;
+    }
   }
 }
 
