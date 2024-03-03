@@ -573,7 +573,7 @@ li {
   background: none;
   border: 1.1px solid #1f2428;
   cursor: pointer;
-  color: #5d5fef;
+  color: #ef5d5f;
   outline: none;
   margin: 0 0.1rem;
 }
@@ -621,13 +621,12 @@ li {
   cursor: pointer;
 }
 .toolbar-mobile-ul-li-openBtn {
-  height: 3rem;
+  padding: 0;
   background: transparent;
-  cursor: pointer;
   outline: none;
-  font-size: 2.2rem;
-  line-height: 0;
   border: none;
+  color: #ef5d5f;
+  font-size: 2rem;
 }
 
 @media (max-width: 650px) {
