@@ -56,7 +56,7 @@
       border-radius: 50%;
       border: 1.2px solid $regular-color;
       display: flex;
-      height: 25px;
+      height: 3rem;
       justify-content: center;
       margin-top: 1rem;
       margin-bottom: 0.8rem;
@@ -111,7 +111,7 @@
 
     // language
     &-li-language {
-      height: 25px;
+      height: 3rem;
     }
 
     // Increase fonts
@@ -120,7 +120,7 @@
       align-items: center;
       justify-content: center;
 
-      height: 25px;
+      height: 3rem;
 
       button {
         background: none;
@@ -155,10 +155,10 @@
       border-radius: 50%;
       border: 1.2px solid $regular-color;
       display: flex;
-      height: 25px;
+      height: 2.5rem;
       justify-content: center;
       overflow: hidden;
-      width: 25px;
+      width: 2.5rem;
 
       &-light {
         background: rgb(255, 255, 255);
@@ -183,7 +183,7 @@
 
     // mobile open btn navigation
     &-li-openBtn {
-      height: 25px;
+      height: 3rem;
       background: transparent;
       cursor: pointer;
       outline: none;
