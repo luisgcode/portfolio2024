@@ -798,9 +798,9 @@ li {
 
 .nav-mobile {
   width: 100%;
-  height: calc(100% - 53px);
+  height: 100%;
   position: absolute;
-  background: red;
+  background: #ffffff;
   z-index: 9;
   transform: translatex(100%);
   transition: all 0.2s ease;
