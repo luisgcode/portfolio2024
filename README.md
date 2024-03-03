@@ -10,7 +10,7 @@ Responsive portfolio to show my skills and improvements.
 | ---------- | ------------------------------------------------------------------------------------ |
 | HTML       | Basic structure.                                                                     |
 | CSS        | Style and animations.                                                                |
-| Sass       | To compile all the CSS style, I did use some variables, utilities and mixins from it |
+| SCSS       | To compile all the CSS style, I did use some variables, utilities and mixins from it |
 | JavaScript | All the interaction, mainly used in the testimonial section.                         |
 
 ## 🤗 Social Network 🤗
