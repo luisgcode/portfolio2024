@@ -92,6 +92,9 @@
   bottom: 0;
   width: 100%;
   border: 5px 5px 0 0;
+  // hidden until mobile
+  visibility: hidden;
+  opacity: 0;
 
   background-color: $bg-color;
   box-shadow: 0 -5px 20px 0 rgba(151, 151, 151, 0.2);
@@ -104,5 +107,12 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .toolbar-mobile {
+    visibility: visible;
+    opacity: 1;
   }
 }

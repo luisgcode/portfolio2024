@@ -134,7 +134,7 @@ dropDownActivator.addEventListener("click", function () {
 
 // Hamburguer menu displaying
 const openNavBtn = document.querySelector(".wrapper-nav-icon");
-const navMenu = document.querySelector(".wrapper-nav-mobile");
+const navMenu = document.querySelector(".nav-mobile");
 const wrappHeroImage = document.querySelector(".wrapper-hero");
 
 openNavBtn.addEventListener("click", function () {

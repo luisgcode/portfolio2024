@@ -70,6 +70,13 @@
 @media (max-width: 650px) {
   .header {
     .wrapper {
+      &-nav {
+        padding: 2rem 0;
+
+        .logo {
+          width: 130px;
+        }
+      }
       &-hero {
         flex-direction: column;
 
