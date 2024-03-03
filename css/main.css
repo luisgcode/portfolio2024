@@ -717,8 +717,6 @@ li {
   background: #5d5fef;
   border-radius: 5px;
   padding: 0.2rem 1rem;
-}
-.wrapper-nav-desktop .dropActivator a {
   color: #ffffff;
   font-weight: 600;
 }
@@ -802,7 +800,6 @@ li {
   position: absolute;
   background: #ffffff;
   z-index: 9;
-  transform: translatex(100%);
   transition: all 0.2s ease;
 }
 .nav-mobile-ul {
@@ -813,6 +810,14 @@ li {
 }
 .nav-mobile-ul-li a {
   font-size: 1.8rem;
+}
+.nav-mobile-ul-li:last-child {
+  background: #5d5fef;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.8rem;
+  color: #ffffff;
 }
 
 .nav-mobile.active {

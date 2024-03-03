@@ -33,11 +33,8 @@
       background: $details-color;
       border-radius: 5px;
       padding: 0.2rem 1rem;
-
-      a {
-        color: $bg-color;
-        font-weight: 600;
-      }
+      color: $bg-color;
+      font-weight: 600;
     }
 
     .dropdown {
@@ -131,7 +128,7 @@
   position: absolute;
   background: $bg-color;
   z-index: 9;
-  transform: translatex(100%);
+  // transform: translatex(100%);
   transition: all 0.2s ease;
 
   &-ul {
@@ -141,6 +138,16 @@
       margin: 2rem 0;
       a {
         font-size: 1.8rem;
+      }
+
+      // Contact items
+      &:last-child {
+        background: $details-color;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        font-size: 1.8rem;
+        color: $bg-color;
       }
     }
   }
