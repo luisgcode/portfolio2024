@@ -34,6 +34,7 @@
       border-radius: 5px;
       padding: 0.2rem 1rem;
       color: $bg-color;
+      cursor: pointer;
       font-weight: 600;
     }
 
@@ -80,6 +81,7 @@
           font-weight: normal;
           margin-bottom: 0.5rem;
           font-size: 1.4rem;
+          color: $regular-color;
         }
 
         a {
@@ -136,18 +138,22 @@
 
     &-li {
       margin: 2rem 0;
+
       a {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
+        color: $regular-color;
+
+        i {
+          color: $highlight-color;
+        }
       }
 
-      // Contact items
-      &:last-child {
-        background: $details-color;
-        border-radius: 5px;
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        font-size: 1.8rem;
-        color: $bg-color;
+      .social-network i {
+        margin: 0 1rem;
+      }
+      &-mail {
+      }
+      &-cv {
       }
     }
   }
