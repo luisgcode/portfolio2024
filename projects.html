@@ -60,7 +60,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header header-projects">
       <!-- mobile absolute nav menu -->
       <div class="nav-mobile">
         <ul class="nav-mobile-ul">
@@ -172,6 +172,39 @@
         </nav>
       </div>
     </header>
+
+    <!-- mobile toolbar -->
+    <div class="toolbar-mobile">
+      <ul class="toolbar-mobile-ul">
+        <li class="toolbar-mobile-ul-li-language">
+          <a href="#">
+            <img
+              src="images/icons/_svg/sidebar-language-en.svg"
+              alt="language"
+            />
+          </a>
+        </li>
+        <span class="toolbar-mobile-ul-li-increase">
+          <button class="toolbar-mobile-ul-li-increase-regular decreaseFont">
+            A
+          </button>
+          <button class="toolbar-mobile-ul-li-increase-max increaseFont">
+            +A
+          </button>
+        </span>
+        <span class="toolbar-mobile-ul-li-mode">
+          <button class="toolbar-mobile-ul-li-mode-light"></button>
+          <button class="toolbar-mobile-ul-li-mode-dark"></button>
+        </span>
+
+        <!-- OpenNav button -->
+        <button class="toolbar-mobile-ul-li-openBtn">
+          <i class="fa-solid fa-bars"></i>
+          <!-- Check later  -->
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </button>
+      </ul>
+    </div>
 
     <div class="main-wrapp">
       <main>
@@ -365,6 +398,8 @@
         <div class="bottom-license">Made with ❤️ by Luis G code</div>
       </div>
     </footer>
-    <script src="javascript/script.js"></script>
+
+    <script src="javascript/common.js" defer></script>
+    <script src="javascript/projects.js" defer></script>
   </body>
 </html>

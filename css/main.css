@@ -930,9 +930,8 @@ hr {
   padding: 0 5rem;
 }
 
-.header {
+.header-projects {
   height: 178px;
-  overflow: visible;
 }
 
 .projects-wrapper {
