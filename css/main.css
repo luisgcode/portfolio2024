@@ -265,9 +265,6 @@ li {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-.projects-wrapper .projects-card figure {
-  border-radius: 5px;
-}
 .projects-wrapper .projects-card-details, .projects-wrapper .projects-card-links {
   padding: 0 2rem;
 }

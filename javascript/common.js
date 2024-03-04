@@ -64,6 +64,7 @@ function commonFunction() {
 
   // play videos with hover
   const btnVideos = document.querySelectorAll(".videoBtn");
+  const videosCard = document.querySelectorAll("projects-card");
 
   btnVideos.forEach(function (video) {
     video.addEventListener("mouseover", function () {
