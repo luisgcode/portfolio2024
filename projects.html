@@ -61,24 +61,113 @@
 
   <body>
     <header class="header">
+      <!-- mobile absolute nav menu -->
+      <div class="nav-mobile">
+        <ul class="nav-mobile-ul">
+          <li class="nav-mobile-ul-li">
+            <a href="index.html">
+              <img
+                class="logo"
+                src="images/logos/luisgcode-black.svg"
+                alt="lgcode logo"
+              />
+            </a>
+          </li>
+
+          <hr />
+
+          <li class="nav-mobile-ul-li">
+            <a href="index.html">Home</a>
+          </li>
+
+          <hr />
+
+          <li class="nav-mobile-ul-li">
+            <a href="about.html">About</a>
+          </li>
+
+          <hr />
+
+          <li class="nav-mobile-ul-li">
+            <a href="projects.html">Projects</a>
+          </li>
+
+          <hr />
+
+          <li class="nav-mobile-ul-li">
+            <small>Social:</small>
+            <div class="social-network">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/luisgcode/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+
+            <br />
+
+            <small>Mail:</small> <br />
+            <a href="#">luisgcode@gmail.com</a>
+
+            <br />
+            <br />
+            <br />
+
+            <a href="#"
+              >Download cv <i class="fa-solid fa-file-arrow-down"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
       <div class="wrapper">
         <!-- nav menu -->
         <nav class="wrapper-nav">
+          <!-- Desktop logo -->
           <a href="index.html">
-            <img src="images/logos/luisgcode-black.svg" alt="lgcode logo" />
+            <img
+              class="logo"
+              src="images/logos/luisgcode-black.svg"
+              alt="lgcode logo"
+            />
           </a>
-          <ul class="wrapper-nav-ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-              <a href="about.html"><i class="fa-solid fa-envelope"></i></a>
+          <!-- desktop nav menu -->
+          <ul class="wrapper-nav-desktop">
+            <li class="wrapper-nav-desktop-li">
+              <a href="index.html">Home</a>
             </li>
-            <li>
-              <a href="projects.html"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
+            <li class="wrapper-nav-desktop-li">
+              <a href="about.html">About</a>
+            </li>
+            <li class="wrapper-nav-desktop-li">
+              <a href="projects.html">Projects</a>
+            </li>
+            <!-- Desktop behavior -->
+            <li class="dropActivator">
+              Contact &nbsp; <i class="fa-solid fa-chevron-down"></i>
+              <span class="dropdown">
+                <div class="dropdown-item social">
+                  <small>Social:</small>
+                  <div class="social-network">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/luisgcode/"
+                      ><i class="fa-brands fa-square-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <hr />
+                <div class="dropdown-item mailbox">
+                  <small>Mail:</small>
+                  <a href="#">luisgcode@gmail.com</a>
+                </div>
+                <hr />
+                <div class="dropdown-item cv">
+                  <a href="#"
+                    >Download CV <i class="fa-solid fa-file-arrow-down"></i
+                  ></a>
+                </div>
+              </span>
             </li>
           </ul>
         </nav>
@@ -90,7 +179,7 @@
               Hi <span class="hand-animation">👋</span>, <br />
               I am
               <span class="detailed">@luisgcode</span> <br />
-              A dedicated Web Developer Student.
+              A dedicated web developer student.
             </h1>
           </div>
           <figure class="wrapper-hero-banner">
@@ -103,9 +192,7 @@
       </div>
     </header>
     <main></main>
-    <footer class="footer">
-      <!-- top section -->
-
+    <footer class="footer scroll">
       <div class="top">
         <div class="top-logo">
           <img src="images/logos/luisgcode-black.svg" alt="footer logo" />
@@ -130,26 +217,6 @@
               alt="me photo"
               class="top-icon-graph-user"
             />
-
-            <span data-id="1" class="top-icon-graph-options">
-              <i class="fa-solid fa-envelope"></i>
-            </span>
-
-            <span data-id="2" class="top-icon-graph-options">
-              <i class="fa-brands fa-whatsapp"></i>
-            </span>
-
-            <span data-id="3 " class="top-icon-graph-options">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </span>
-
-            <div class="top-icon-graph-container">
-              <span class="dot-1 dots active"></span>
-              <span class="dot-2 dots"></span>
-              <span class="dot-3 dots"></span>
-              <span class="dot-4 dots"></span>
-              <div class="circle-mark"></div>
-            </div>
           </div>
           <div class="top-icon-info">
             <p class="top-icon-info-title">Get in touch</p>
@@ -163,7 +230,6 @@
 
       <hr />
 
-      <!-- bottom section -->
       <div class="bottom">
         <div class="bottom-rights">&copy; 2024 All rights reserved.</div>
         <div class="bottom-license">Made with ❤️ by Luis G code</div>
