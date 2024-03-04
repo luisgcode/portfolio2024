@@ -931,7 +931,8 @@ hr {
 }
 
 .header {
-  height: auto;
+  height: 178px;
+  overflow: visible;
 }
 
 .projects-wrapper {
