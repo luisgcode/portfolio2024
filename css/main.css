@@ -929,3 +929,13 @@ hr {
   margin: 0 auto;
   padding: 0 5rem;
 }
+
+.header {
+  height: auto;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}

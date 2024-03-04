@@ -1,0 +1,10 @@
+// Specific styles for the utilites in the projects page
+.header {
+  height: auto;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
