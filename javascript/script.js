@@ -125,19 +125,34 @@
 // });
 
 // Dropdown menu
-const dropDownActivator = document.querySelector(".dropActivator");
-const dropdown = document.querySelector(".dropdown");
+// const dropDownActivator = document.querySelector(".dropActivator");
+// const dropdown = document.querySelector(".dropdown");
 
-dropDownActivator.addEventListener("click", function () {
-  dropdown.classList.toggle("dropdownActivated");
+// dropDownActivator.addEventListener("click", function () {
+//   dropdown.classList.toggle("dropdownActivated");
+// });
+
+// // Hamburguer menu displaying
+// const openNavBtn = document.querySelector(".toolbar-mobile-ul-li-openBtn");
+// const navMenu = document.querySelector(".nav-mobile");
+// const wrappHeroImage = document.querySelector(".wrapper-hero");
+
+// openNavBtn.addEventListener("click", function () {
+//   navMenu.classList.toggle("active");
+//   wrappHeroImage.classList.toggle("active");
+// });
+
+// play videos with hover
+const btnVideos = document.querySelectorAll(".videoBtn");
+
+btnVideos.forEach(function (video) {
+  video.addEventListener("mouseover", function () {
+    video.play();
+  });
 });
 
-// Hamburguer menu displaying
-const openNavBtn = document.querySelector(".toolbar-mobile-ul-li-openBtn");
-const navMenu = document.querySelector(".nav-mobile");
-const wrappHeroImage = document.querySelector(".wrapper-hero");
-
-openNavBtn.addEventListener("click", function () {
-  navMenu.classList.toggle("active");
-  wrappHeroImage.classList.toggle("active");
+btnVideos.forEach(function (video) {
+  video.addEventListener("mouseout", function () {
+    video.pause();
+  });
 });
