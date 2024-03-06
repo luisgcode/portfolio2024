@@ -2,8 +2,8 @@
 
 function commonFunction() {
   // Font sizes
-  const btnIncreaseFonts = document.querySelectorAll(".increaseFont");
-  const btnDecreaseFonts = document.querySelectorAll(".decreaseFont");
+  const btnIncreaseFonts = document.querySelectorAll(".btn-increaseFont");
+  const btnDecreaseFonts = document.querySelectorAll(".btn-decreaseFont");
 
   const regularText = document.querySelectorAll("p");
 
@@ -45,7 +45,7 @@ function commonFunction() {
   });
 
   // // Hamburguer menu displaying
-  const openNavBtn = document.querySelector(".toolbar-mobile-ul-li-openBtn");
+  const openNavBtn = document.querySelector(".toolbar-mobile-ul-hamburguer");
   const navMenu = document.querySelectorAll(".nav-mobile");
   const wrappHeroImage = document.querySelector(".wrapper-hero");
 

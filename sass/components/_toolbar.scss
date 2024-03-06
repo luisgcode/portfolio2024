@@ -1,6 +1,6 @@
 .toolbar {
   border-radius: 1rem;
-  border: 1px solid $regular-color;
+  border: 0.5px solid $regular-color;
   display: flex;
   justify-content: center;
   padding: 1.5rem 0.5rem 1.1rem 0.5rem;
@@ -21,8 +21,29 @@
     justify-content: center;
     width: 100%;
 
-    // Increase fonts
-    .toolbar-ul-li-increase {
+    // Styles for all elements
+    li {
+      @include flex_center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    // Language
+    &-language {
+      button {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        // font-weight: 600;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+      }
+    }
+
+    // Increase
+    &-increase {
       display: flex;
       flex-direction: column;
       font-size: 1rem;
@@ -35,52 +56,47 @@
         border: 1.1px solid $regular-color;
         cursor: pointer;
         margin: 0.05rem 0;
-        color: $details-color;
+        color: $regular-color;
         outline: none;
-        padding: 0.2rem 0;
+        width: 100%;
       }
-
-      &-regular {
+      .btn-decreaseFont {
         border-radius: 5px 5px 0 0;
         font-size: 0.7rem;
       }
 
-      &-max {
+      .btn-increaseFont {
         border-radius: 0 0 5px 5px;
       }
     }
 
     // Dark mode
-    .toolbar-ul-li-mode {
-      align-items: center;
+    &-mode {
       border-radius: 50%;
-      border: 1.2px solid $regular-color;
-      display: flex;
-      height: 3rem;
-      justify-content: center;
-      margin-top: 1rem;
-      margin-bottom: 0.8rem;
+      border: 0.5px solid $regular-color;
+      height: 2.5rem;
       overflow: hidden;
-      width: 25px;
+      position: relative;
+      width: 2.5rem;
 
-      &-light {
-        background: rgb(255, 255, 255);
-        outline: none;
-        border: none;
-        border-radius: 50% 0 0 50%;
-        flex-basis: 50%;
-        height: 30px;
+      button {
         cursor: pointer;
+        border: none;
+        outline: none;
+        background: transparent;
+        position: absolute;
+        height: 25px;
+        width: 12.5px;
       }
 
-      &-dark {
+      .btn-light {
+        background: $bg-color;
+        left: 0;
+      }
+
+      .btn-dark {
         background: $regular-color;
-        outline: none;
-        border: none;
-        border-radius: 0 50% 50% 0;
-        flex-basis: 50%;
-        height: 30px;
-        cursor: pointer;
+        right: 0;
       }
     }
   }
@@ -109,8 +125,17 @@
     gap: 2rem;
 
     // language
-    &-li-language {
-      height: 3rem;
+    &-language {
+      button {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+      }
     }
 
     // Increase fonts
@@ -181,7 +206,7 @@
     }
 
     // mobile open btn navigation
-    &-li-openBtn {
+    &-hamburguer {
       padding: 0;
       background: transparent;
       outline: none;

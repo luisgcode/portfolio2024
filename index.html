@@ -195,33 +195,31 @@
     <!-- mobile toolbar -->
     <div class="toolbar-mobile">
       <ul class="toolbar-mobile-ul">
-        <li class="toolbar-mobile-ul-li-language">
+        <li class="toolbar-mobile-ul-language">
+          <button class="btn-language">SPA</button>
+          <!-- <button class="language-btn">ENG</button> -->
+        </li>
+        <li class="toolbar-mobile-ul-increase">
+          <button class="btn-decreaseFont">A</button>
+          <button class="btn-increaseFont">+A</button>
+        </li>
+        <li class="toolbar-mobile-ul-mode">
+          <button class="btn-light">&nbsp;</button>
+          <button class="btn-dark">&nbsp;</button>
+        </li>
+        <li class="toolbar-mobile-ul-print">
           <a href="#">
-            <img
-              src="images/icons/_svg/sidebar-language-en.svg"
-              alt="language"
-            />
+            <img src="images/icons/_svg/sidebar-print.svg" alt="print btn" />
           </a>
         </li>
-        <span class="toolbar-mobile-ul-li-increase">
-          <button class="toolbar-mobile-ul-li-increase-regular decreaseFont">
-            A
-          </button>
-          <button class="toolbar-mobile-ul-li-increase-max increaseFont">
-            +A
-          </button>
-        </span>
-        <span class="toolbar-mobile-ul-li-mode">
-          <button class="toolbar-mobile-ul-li-mode-light"></button>
-          <button class="toolbar-mobile-ul-li-mode-dark"></button>
-        </span>
-
-        <!-- OpenNav button -->
-        <button class="toolbar-mobile-ul-li-openBtn">
-          <i class="fa-solid fa-bars"></i>
-          <!-- Check later  -->
-          <!-- <i class="fa-solid fa-xmark"></i> -->
-        </button>
+        <li class="toolbar-mobile-ul-cv">
+          <a href="#">
+            <img src="images/icons/_svg/sidebar-download.svg" alt="language" />
+          </a>
+        </li>
+        <li class="toolbar-mobile-ul-hamburguer">
+          <a href="#"><i class="fa-solid fa-bars"></i> </a>
+        </li>
       </ul>
     </div>
 
@@ -229,32 +227,27 @@
       <aside class="scroll">
         <div class="toolbar">
           <ul class="toolbar-ul">
-            <li>
+            <li class="toolbar-ul-language">
+              <button class="btn-language">SPA</button>
+              <!-- <button class="language-btn">ENG</button> -->
+            </li>
+            <li class="toolbar-ul-increase">
+              <button class="btn-decreaseFont">A</button>
+              <button class="btn-increaseFont">+A</button>
+            </li>
+            <li class="toolbar-ul-mode">
+              <button class="btn-light">&nbsp;</button>
+              <button class="btn-dark">&nbsp;</button>
+            </li>
+            <li class="toolbar-ul-print">
               <a href="#">
                 <img
-                  src="images/icons/_svg/sidebar-language-en.svg"
-                  alt="language"
+                  src="images/icons/_svg/sidebar-print.svg"
+                  alt="print btn"
                 />
               </a>
             </li>
-            <span class="toolbar-ul-li-increase">
-              <button class="toolbar-ul-li-increase-regular decreaseFont">
-                A
-              </button>
-              <button class="toolbar-ul-li-increase-max increaseFont">
-                +A
-              </button>
-            </span>
-            <span class="toolbar-ul-li-mode">
-              <button class="toolbar-ul-li-mode-light"></button>
-              <button class="toolbar-ul-li-mode-dark"></button>
-            </span>
-            <li>
-              <a href="#">
-                <img src="images/icons/_svg/sidebar-print.svg" alt="language" />
-              </a>
-            </li>
-            <li>
+            <li class="toolbar-ul-cv">
               <a href="#">
                 <img
                   src="images/icons/_svg/sidebar-download.svg"
@@ -267,7 +260,7 @@
       </aside>
 
       <main>
-        <section class="intro scroll">
+        <!-- <section class="intro scroll">
           <div class="intro-wrapper">
             <figure class="intro-wrapper-eyes">
               <img src="images/banners/mirada.svg" alt="Luis Eyes" />
@@ -294,9 +287,9 @@
               >
             </div>
           </div>
-        </section>
+        </section> -->
 
-        <section class="stack scroll">
+        <!-- <section class="stack scroll">
           <div class="stack-wrapper">
             <h2><span class="detailed"> My tech </span>knowledge.</h2>
             <h3>Work in progress.</h3>
@@ -362,9 +355,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
-        <section class="abilities scroll">
+        <!-- <section class="abilities scroll">
           <div class="abilities-wrapper">
             <div class="abilities-wrapper-header">
               <h2><span class="detailed"> Abil</span>ites.</h2>
@@ -420,7 +413,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <section class="projects scroll">
           <div class="projects-heading">
@@ -432,6 +425,7 @@
             <div class="projects-card">
               <video class="videoBtn" width="100%" style="border-radius: 7px">
                 <!-- <source src="videos/meetpeoplevideo.mp4#t=3" type="video/mp4" /> -->
+                Your browser does not support the video tag.
               </video>
 
               <div class="projects-card-details">
@@ -460,6 +454,7 @@
             <div class="projects-card">
               <video class="videoBtn" width="100%" style="border-radius: 7px">
                 <source src="videos/encore-gym-web.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
 
               <div class="projects-card-details">
@@ -488,6 +483,7 @@
             <div class="projects-card">
               <video class="videoBtn" width="100%" style="border-radius: 7px">
                 <source src="videos/stores-infanti.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
 
               <div class="projects-card-details">
@@ -514,6 +510,7 @@
             <div class="projects-card">
               <video class="videoBtn" width="100%" style="border-radius: 7px">
                 <!-- <source src="videos/meetpeoplevideo.mp4#t=3" type="video/mp4" /> -->
+                Your browser does not support the video tag.
               </video>
 
               <div class="projects-card-details">
@@ -548,6 +545,7 @@
                   src="videos/slot-machine-college.mp4"
                   type="video/mp4"
                 />
+                Your browser does not support the video tag.
               </video>
 
               <div class="projects-card-details">
@@ -576,6 +574,7 @@
             <div class="projects-card">
               <video class="videoBtn" width="100% " style="border-radius: 7px">
                 <source src="videos/meetpeople-web.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
 
               <div class="projects-card-details">
@@ -604,7 +603,7 @@
         </section>
       </main>
     </div>
-
+    <!-- 
     <footer class="footer scroll">
       <div class="top">
         <div class="top-logo">
@@ -647,7 +646,7 @@
         <div class="bottom-rights">&copy; 2024 All rights reserved.</div>
         <div class="bottom-license">Made with ❤️ by Luis G code</div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="javascript/common.js" defer></script>
     <script src="javascript/main.js" defer></script>
