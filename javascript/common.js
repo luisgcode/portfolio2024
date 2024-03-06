@@ -44,16 +44,6 @@ function commonFunction() {
     section.classList.add("scroll-hidden");
   });
 
-  // // Hamburguer menu displaying
-  const openNavBtn = document.querySelector(".toolbar-mobile-ul-hamburguer");
-  const navMenu = document.querySelectorAll(".nav-mobile");
-  const wrappHeroImage = document.querySelector(".wrapper-hero");
-
-  openNavBtn.addEventListener("click", function () {
-    navMenu.classList.toggle("active");
-    wrappHeroImage.classList.toggle("active");
-  });
-
   // Dropdown menu
   const dropDownActivator = document.querySelector(".dropActivator");
   const dropdown = document.querySelector(".dropdown");
@@ -78,3 +68,17 @@ function commonFunction() {
     });
   });
 }
+
+// CHECK THIS, WHY IS NOT WORKING ON THE REST OF THE PAGE,
+// PROBABLY BECAUSE SOME CSS OF THE HEADER MAYBE
+// // Hamburguer menu displaying
+const openNavBtns = document.querySelectorAll(".toolbar-mobile-ul-hamburguer");
+const mobileMenus = document.querySelectorAll(".nav-mobile");
+
+openNavBtns.forEach(function (openBtn) {
+  openBtn.addEventListener("click", function () {
+    mobileMenus.forEach(function (mobileMenu) {
+      mobileMenu.classList.toggle("active");
+    });
+  });
+});

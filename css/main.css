@@ -574,7 +574,7 @@ li {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .toolbar-mobile-ul-increase {
   display: flex;
@@ -584,7 +584,7 @@ li {
 }
 .toolbar-mobile-ul-increase button {
   background: none;
-  border: 1.1px solid #1f2428;
+  border: 1px solid #1f2428;
   cursor: pointer;
   color: #ef5d5f;
   outline: none;
