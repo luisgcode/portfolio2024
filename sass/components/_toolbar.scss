@@ -129,7 +129,6 @@
       button {
         font-family: "Poppins", sans-serif;
         font-style: normal;
-
         background: transparent;
         border: none;
         outline: none;
@@ -139,11 +138,10 @@
     }
 
     // Increase fonts
-    &-li-increase {
+    &-increase {
       display: flex;
       align-items: center;
       justify-content: center;
-
       height: 3rem;
 
       button {
@@ -155,7 +153,7 @@
         margin: 0 0.1rem;
       }
 
-      &-regular {
+      .btn-decreaseFont {
         border-radius: 5px 0 0 5px;
         height: 2rem;
         font-size: 1rem;
@@ -164,7 +162,7 @@
         width: 15px;
       }
 
-      &-max {
+      .btn-increaseFont {
         border-radius: 0 5px 5px 0;
         height: 2rem;
         width: 20px;
@@ -174,7 +172,7 @@
     }
 
     // Dark mode
-    &-li-mode {
+    &-mode {
       align-items: center;
       border-radius: 50%;
       border: 1.2px solid $regular-color;
@@ -184,7 +182,7 @@
       overflow: hidden;
       width: 2.5rem;
 
-      &-light {
+      .btn-light {
         background: rgb(255, 255, 255);
         outline: none;
         border: none;
@@ -194,7 +192,7 @@
         cursor: pointer;
       }
 
-      &-dark {
+      .btn-dark {
         background: $regular-color;
         outline: none;
         border: none;

@@ -576,13 +576,13 @@ li {
   cursor: pointer;
   font-size: 1.2rem;
 }
-.toolbar-mobile-ul-li-increase {
+.toolbar-mobile-ul-increase {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 3rem;
 }
-.toolbar-mobile-ul-li-increase button {
+.toolbar-mobile-ul-increase button {
   background: none;
   border: 1.1px solid #1f2428;
   cursor: pointer;
@@ -590,7 +590,7 @@ li {
   outline: none;
   margin: 0 0.1rem;
 }
-.toolbar-mobile-ul-li-increase-regular {
+.toolbar-mobile-ul-increase .btn-decreaseFont {
   border-radius: 5px 0 0 5px;
   height: 2rem;
   font-size: 1rem;
@@ -598,14 +598,14 @@ li {
   margin: 0;
   width: 15px;
 }
-.toolbar-mobile-ul-li-increase-max {
+.toolbar-mobile-ul-increase .btn-increaseFont {
   border-radius: 0 5px 5px 0;
   height: 2rem;
   width: 20px;
   padding: 0;
   margin: 0;
 }
-.toolbar-mobile-ul-li-mode {
+.toolbar-mobile-ul-mode {
   align-items: center;
   border-radius: 50%;
   border: 1.2px solid #1f2428;
@@ -615,7 +615,7 @@ li {
   overflow: hidden;
   width: 2.5rem;
 }
-.toolbar-mobile-ul-li-mode-light {
+.toolbar-mobile-ul-mode .btn-light {
   background: rgb(255, 255, 255);
   outline: none;
   border: none;
@@ -624,7 +624,7 @@ li {
   height: 30px;
   cursor: pointer;
 }
-.toolbar-mobile-ul-li-mode-dark {
+.toolbar-mobile-ul-mode .btn-dark {
   background: #1f2428;
   outline: none;
   border: none;
