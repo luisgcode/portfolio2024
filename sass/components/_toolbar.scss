@@ -131,15 +131,26 @@
     margin: 0 auto;
     @include flex_center;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
 
     li {
-      @include flex_center;
+      min-width: 30px;
+      display: flex;
+      align-items: center;
       justify-content: center;
+      flex-direction: column;
 
-      a {
-        @include flex_center;
-        justify-content: center;
+      i {
+        color: $highlight-color;
+        font-size: 1.6rem;
+      }
+
+      .menu-detail {
+        color: $regular-color;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.497);
       }
     }
 
@@ -150,76 +161,31 @@
         font-style: normal;
         background: transparent;
         border: none;
+        font-weight: 500;
         outline: none;
         cursor: pointer;
-        font-size: 1.5rem;
         padding: 0;
+        color: $highlight-color;
+        font-size: 1.6rem;
       }
     }
 
     // Increase fonts
     &-increase {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 3rem;
-
       button {
         background: none;
-        border: 1px solid $regular-color;
+        border: none;
         cursor: pointer;
-        color: $highlight-color;
         outline: none;
-        margin: 0 0.1rem;
-      }
-
-      .btn-decreaseFont {
-        border-radius: 5px 0 0 5px;
-        height: 2rem;
-        font-size: 1rem;
-        padding: 0;
-        margin: 0;
-        width: 15px;
-      }
-
-      .btn-increaseFont {
-        border-radius: 0 5px 5px 0;
-        height: 2rem;
-        width: 20px;
-        padding: 0;
-        margin: 0;
       }
     }
 
     // Dark mode
     &-mode {
-      align-items: center;
-      border-radius: 50%;
-      border: 1.2px solid $regular-color;
-      display: flex;
-      height: 2.5rem;
-      justify-content: center;
-      overflow: hidden;
-      width: 2.5rem;
-
-      .btn-light {
-        background: rgb(255, 255, 255);
+      button {
+        background: transparent;
         outline: none;
         border: none;
-        border-radius: 50% 0 0 50%;
-        flex-basis: 50%;
-        height: 30px;
-        cursor: pointer;
-      }
-
-      .btn-dark {
-        background: $regular-color;
-        outline: none;
-        border: none;
-        border-radius: 0 50% 50% 0;
-        flex-basis: 50%;
-        height: 30px;
-        cursor: pointer;
       }
     }
 
@@ -229,11 +195,6 @@
       background: transparent;
       outline: none;
       border: none;
-      font-size: 2rem;
-
-      a {
-        color: $highlight-color;
-      }
     }
   }
 }
