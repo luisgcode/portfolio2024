@@ -20,6 +20,17 @@
   --bg-color: #1f2428;
 }
 
+.logo-dark {
+  display: none;
+}
+
+:root:has(.toggleBtn:checked) .logo-dark {
+  display: block;
+}
+:root:has(.toggleBtn:checked) .logo-light {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
 }

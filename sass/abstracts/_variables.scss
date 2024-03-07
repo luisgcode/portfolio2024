@@ -19,10 +19,18 @@
 
   --regular-color: #ffffff;
   --bg-color: #1f2428;
+}
 
-  // --details-color: #5d5fef;
-  // --highlight-color: #ef5d5f;
-  // --regular-color: #1f2428;
-  // --bg-color: #ffffff;
-  // --footer-bg: #eeeffd44;
+.logo-dark {
+  display: none;
+}
+// Changing logo for modes
+:root:has(.toggleBtn:checked) {
+  .logo-dark {
+    display: block;
+  }
+
+  .logo-light {
+    display: none;
+  }
 }
