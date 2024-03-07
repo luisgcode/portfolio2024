@@ -1,6 +1,6 @@
 @mixin primary_heading {
   font-family: "Poppins", sans-serif;
-  font-size: $primary-heading-font;
+  font-size: var(--primary-heading-font);
   font-weight: 600;
   margin: 1.2rem 0;
 }
@@ -8,7 +8,7 @@
 @mixin secondary_heading {
   display: inline;
   font-family: "Poppins", sans-serif;
-  font-size: $secondary-heading-font;
+  font-size: var(--secondary-heading-font);
   font-weight: 600;
   letter-spacing: 0.1rem;
   margin: 1rem 0;
@@ -16,20 +16,20 @@
 
 @mixin tertiary_heading {
   font-family: "Poppins", sans-serif;
-  font-size: $tertiary-heading-font;
+  font-size: var(--tertiary-heading-font);
   font-weight: 600;
   margin: 0.8rem 0;
 }
 
 @mixin quaternary_heading {
   font-family: "Poppins", sans-serif;
-  font-size: $quaternary-heading-font;
+  font-size: var(--quaternary-heading-font);
   margin: 0.8rem 0;
 }
 
 @mixin regular_text {
   font-family: "Open Sans", sans-serif;
-  font-size: $regular-text-font;
+  font-size: var(--regular-text-font);
   font-weight: 600;
   line-height: 2.4rem;
   margin: 0.8rem 0;

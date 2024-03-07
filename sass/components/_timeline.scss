@@ -9,7 +9,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: $highlight-color;
+    background-color: var(--highlight-color);
     border-radius: 0.5rem;
   }
 
@@ -36,7 +36,7 @@
       position: relative;
 
       &::after {
-        background-color: $regular-color;
+        background-color: var(--regular-color);
         border-radius: 0.5rem;
         content: "";
         // for now only
@@ -85,7 +85,7 @@
                   margin: 0 0.2rem;
                   padding: 0.2rem 0.5rem;
                   text-transform: uppercase;
-                  background: $highlight-color;
+                  background: var(--highlight-color);
                 }
               }
 
@@ -124,7 +124,7 @@
         &:nth-child(odd)::after {
           background-color: white;
           border-radius: 50%;
-          border: 0.1rem solid $highlight-color;
+          border: 0.1rem solid var(--highlight-color);
           content: "";
           height: 1.5rem;
           left: 50%;
@@ -145,7 +145,7 @@
         &:nth-child(even)::before {
           background-color: white;
           border-radius: 50%;
-          border: 0.1rem solid $highlight-color;
+          border: 0.1rem solid var(--highlight-color);
           content: "";
           height: 1.5rem;
           left: 50%;

@@ -172,59 +172,48 @@
           </ul>
         </nav>
 
-        <!-- hero section -->
-        <div class="wrapper-hero">
-          <div class="wrapper-hero-info">
-            <h1>
-              Hi <span class="hand-animation">👋</span>, <br />
-              I am
-              <span class="detailed">@luisgcode</span> <br />
-              A dedicated web developer student.
-            </h1>
-          </div>
-          <figure class="wrapper-hero-banner">
-            <img
-              src="images/banners/hero-alter.png"
-              alt="Luis Guaiquirian photo"
-            />
-          </figure>
-        </div>
+        <!-- hero section header could be here -->
       </div>
     </header>
 
-    <!-- mobile toolbar -->
+    <!-- mobile toolbar with its own design-->
     <div class="toolbar-mobile">
       <ul class="toolbar-mobile-ul">
         <li class="toolbar-mobile-ul-language">
           <button class="btn-language">SPA</button>
           <!-- <button class="language-btn">ENG</button> -->
+          <span class="menu-detail">language</span>
         </li>
         <li class="toolbar-mobile-ul-increase">
-          <button class="btn-decreaseFont">A</button>
-          <button class="btn-increaseFont">+A</button>
+          <button class="btn-increase">
+            <i class="fa-solid fa-text-height"></i>
+          </button>
+          <span class="menu-detail">Font size</span>
         </li>
         <li class="toolbar-mobile-ul-mode">
-          <button class="btn-light">&nbsp;</button>
-          <button class="btn-dark">&nbsp;</button>
+          <!-- <button class="btn-light">
+       <i class="fa-solid fa-sun"></i>
+          </button> -->
+          <button class="btn-dark">
+            <i class="fa-solid fa-moon"></i></button
+          ><span class="menu-detail">Dark mode</span>
         </li>
-        <li class="toolbar-mobile-ul-print">
-          <a href="#">
-            <img src="images/icons/_svg/sidebar-print.svg" alt="print btn" />
-          </a>
-        </li>
+        <!-- No print for mobile -->
         <li class="toolbar-mobile-ul-cv">
-          <a href="#">
-            <img src="images/icons/_svg/sidebar-download.svg" alt="language" />
-          </a>
+          <a href="images/Luis-velasquez.pdf" download="luisGcode CV">
+            <i class="fa-solid fa-file-arrow-down"></i> </a
+          ><span class="menu-detail">CV</span>
         </li>
+        <!-- Hamburguer menu -->
         <li class="toolbar-mobile-ul-hamburguer">
           <a href="#"><i class="fa-solid fa-bars"></i> </a>
+          <span class="menu-detail">menu</span>
         </li>
       </ul>
     </div>
 
     <!-- MISSING THE TOOLBAR DESKTOP VERSION -->
-    <!-- <main>
+    <main>
       <section class="timeline">
         <div class="timeline-wrapper">
           <!-- hero section -->
@@ -777,9 +766,9 @@
           </div>
         </div>
       </section>
-    </main> -->
+    </main>
 
-    <!-- <footer class="footer scroll">
+    <footer class="footer scroll">
       <div class="top">
         <div class="top-logo">
           <img src="images/logos/luisgcode-black.svg" alt="footer logo" />
@@ -821,7 +810,7 @@
         <div class="bottom-rights">&copy; 2024 All rights reserved.</div>
         <div class="bottom-license">Made with ❤️ by Luis G code</div>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="javascript/script.js"></script>
   </body>

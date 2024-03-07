@@ -12,15 +12,15 @@
           position: relative;
 
           &::before {
-            color: $regular-color;
-            color: lighten($regular-color, 70%);
+            color: var(--regular-color);
+            // color: lighten(var(--regular-color), 70%);
             content: "01101100 01110101";
             font-size: clamp(1rem, 2vw, 1.4rem);
             padding-right: 1.5rem;
           }
 
           &::after {
-            color: lighten($regular-color, 70%);
+            // color: lighten(var(--regular-color), 70%);
             content: "01101001 01110011";
             font-size: clamp(1rem, 2vw, 1.4rem);
             padding-left: 1.5rem;
@@ -35,7 +35,7 @@
         width: 60rem;
 
         .odometro-item-digits {
-          color: $details-color;
+          color: var(--details-color);
           font-size: clamp(1.5rem, 3vw, 3.4rem);
         }
       }

@@ -2,23 +2,13 @@
 
 function commonFunction() {
   // Font sizes
-  const btnIncreaseFonts = document.querySelectorAll(".btn-increaseFont");
-  const btnDecreaseFonts = document.querySelectorAll(".btn-decreaseFont");
-
+  const btnIncreaseFonts = document.querySelectorAll(".btn-increase");
   const regularText = document.querySelectorAll("p");
 
   btnIncreaseFonts.forEach(function (btn) {
     btn.addEventListener("click", function () {
       regularText.forEach(function (text) {
-        text.classList.add("agrandar");
-      });
-    });
-  });
-
-  btnDecreaseFonts.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      regularText.forEach(function (text) {
-        text.classList.remove("agrandar");
+        text.classList.toggle("increase");
       });
     });
   });

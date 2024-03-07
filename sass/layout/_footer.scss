@@ -1,5 +1,5 @@
 .footer {
-  background-color: $footer-bg;
+  background-color: var(--footer-bg);
 
   .top,
   .bottom {
@@ -53,7 +53,7 @@
 
     &-license {
       a {
-        color: $highlight-color;
+        color: var(--highlight-color);
         font-weight: bold;
       }
     }

@@ -6,7 +6,7 @@
 
     h3 {
       position: relative;
-      background: $bg-color;
+      background: var(--bg-color);
       margin-top: -15rem;
       width: 300px;
       margin: -1.7rem auto 0 auto;
@@ -59,15 +59,15 @@
         margin-top: 2rem;
 
         a {
-          color: $highlight-color;
-          border-bottom: 1px solid $highlight-color;
+          color: var(--highlight-color);
+          border-bottom: 1px solid var(--highlight-color);
           font-weight: bold;
           font-size: 1rem;
         }
 
         .projects-icons {
           font-size: 1rem;
-          color: $details-color;
+          color: var(--details-color);
         }
       }
     }

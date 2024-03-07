@@ -3,9 +3,9 @@ html {
 }
 
 body {
-  color: $regular-color;
+  color: var(--regular-color);
   font-family: "Open Sans", sans-serif;
-  font-size: $regular-text-font;
+  font-size: var(--regular-text-font);
   line-height: 1.6;
 }
 
@@ -42,7 +42,8 @@ p {
   transition: all 0.3s ease;
 }
 
-p.agrandar {
+// Trigger by the btn-increase button from javaScript
+p.increase {
   font-size: clamp(2rem, 2vw, 2rem);
   transition: all 0.3s ease;
   line-height: normal;
