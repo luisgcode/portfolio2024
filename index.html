@@ -192,13 +192,12 @@
       </div>
     </header>
 
-    <!-- mobile toolbar -->
+    <!-- mobile toolbar with its own design-->
     <div class="toolbar-mobile">
       <ul class="toolbar-mobile-ul">
         <li class="toolbar-mobile-ul-language">
           <button class="btn-language">SPA</button>
           <!-- <button class="language-btn">ENG</button> -->
-
           <span class="menu-detail">language</span>
         </li>
         <li class="toolbar-mobile-ul-increase">
@@ -220,6 +219,7 @@
           <a href="#"> <i class="fa-solid fa-file-arrow-down"></i> </a
           ><span class="menu-detail">CV</span>
         </li>
+        <!-- Hamburguer menu -->
         <li class="toolbar-mobile-ul-hamburguer">
           <a href="#"><i class="fa-solid fa-bars"></i> </a>
           <span class="menu-detail">menu</span>
@@ -227,44 +227,44 @@
       </ul>
     </div>
 
-    <!-- <div class="main-wrapp">
+    <div class="main-wrapp">
       <aside class="scroll">
         <div class="toolbar">
           <ul class="toolbar-ul">
             <li class="toolbar-ul-language">
               <button class="btn-language">SPA</button>
               <!-- <button class="language-btn">ENG</button> -->
-    <!-- </li>
+              <span class="menu-detail">lang</span>
+            </li>
             <li class="toolbar-ul-increase">
-              <button class="btn-decreaseFont">A</button>
-              <button class="btn-increaseFont">+A</button>
+              <button class="btn-decreaseFont">
+                <i class="fa-solid fa-text-height"></i>
+              </button>
+              <span class="menu-detail">Size</span>
             </li>
             <li class="toolbar-ul-mode">
-              <button class="btn-light">&nbsp;</button>
-              <button class="btn-dark">&nbsp;</button>
+              <!-- <button class="btn-light">
+       <i class="fa-solid fa-sun"></i>
+          </button> -->
+              <button class="btn-dark">
+                <i class="fa-solid fa-moon"></i>
+              </button>
+              <span class="menu-detail">Mode</span>
             </li>
             <li class="toolbar-ul-print">
-              <a href="#">
-                <img
-                  src="images/icons/_svg/sidebar-print.svg"
-                  alt="print btn"
-                />
-              </a>
+              <a href="#"><i class="fa-solid fa-print"></i> </a>
+              <span class="menu-detail">Print</span>
             </li>
             <li class="toolbar-ul-cv">
-              <a href="#">
-                <img
-                  src="images/icons/_svg/sidebar-download.svg"
-                  alt="language"
-                />
-              </a>
+              <a href="#"> <i class="fa-solid fa-file-arrow-down"></i> </a>
+              <span class="menu-detail">CV</span>
             </li>
           </ul>
         </div>
-      </aside> -->
+      </aside>
 
-    <!-- <main> -->
-    <!-- <section class="intro scroll">
+      <main>
+        <section class="intro scroll">
           <div class="intro-wrapper">
             <figure class="intro-wrapper-eyes">
               <img src="images/banners/mirada.svg" alt="Luis Eyes" />
@@ -291,9 +291,9 @@
               >
             </div>
           </div>
-        </section> -->
+        </section>
 
-    <!-- <section class="stack scroll">
+        <section class="stack scroll">
           <div class="stack-wrapper">
             <h2><span class="detailed"> My tech </span>knowledge.</h2>
             <h3>Work in progress.</h3>
@@ -359,9 +359,9 @@
               </div>
             </div>
           </div>
-        </section> -->
+        </section>
 
-    <!-- <section class="abilities scroll">
+        <section class="abilities scroll">
           <div class="abilities-wrapper">
             <div class="abilities-wrapper-header">
               <h2><span class="detailed"> Abil</span>ites.</h2>
@@ -417,19 +417,19 @@
               </div>
             </div>
           </div>
-        </section> -->
+        </section>
 
-    <!-- <section class="projects scroll">
-          <div class="projects-heading"> -->
-    <!-- <h3><span class="detailed"> LATEST</span> PROJECTS</h3>
+        <section class="projects scroll">
+          <div class="projects-heading">
+            <h3><span class="detailed"> LATEST</span> PROJECTS</h3>
             <p>Projects I've built so far</p>
           </div>
-          <div class="projects-wrapper"> -->
-    <!-- portfolio -->
-    <!-- <div class="projects-card">
-              <video class="videoBtn" width="100%" style="border-radius: 7px"> -->
-    <!-- <source src="videos/meetpeoplevideo.mp4#t=3" type="video/mp4" /> -->
-    <!-- Your browser does not support the video tag.
+          <div class="projects-wrapper">
+            <!-- portfolio -->
+            <div class="projects-card">
+              <video class="videoBtn" width="100%" style="border-radius: 7px">
+                <source src="videos/meetpeoplevideo.mp4#t=3" type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
 
               <div class="projects-card-details">
@@ -442,20 +442,20 @@
                 <br />
                 <small>Mobile responsive ✔️</small>
               </div>
-              <div class="projects-card-links"> -->
-    <!-- <a href="https://luisgcode.github.io/meetpeople-sass/"
-      ><i class="projects-icons fa-solid fa-link"></i> Live site</a
-    > -->
-    <!-- <a
+              <div class="projects-card-links">
+                <a href="https://luisgcode.github.io/meetpeople-sass/"
+                  ><i class="projects-icons fa-solid fa-link"></i> Live site</a
+                >
+                <a
                   href="https://github.com/luisgcode/portfolio2024"
                   target="_blank"
                   ><i class="projects-icons fa-brands fa-github"></i> View
                   Code</a
                 >
               </div>
-            </div> -->
-    <!-- EncoreGym -->
-    <!-- <div class="projects-card">
+            </div>
+            <!-- EncoreGym -->
+            <div class="projects-card">
               <video class="videoBtn" width="100%" style="border-radius: 7px">
                 <source src="videos/encore-gym-web.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -482,9 +482,10 @@
                   Code</a
                 >
               </div>
-            </div> -->
-    <!-- Our stores Infanti -->
-    <!-- <div class="projects-card">
+            </div>
+
+            <!-- Our stores Infanti -->
+            <div class="projects-card">
               <video class="videoBtn" width="100%" style="border-radius: 7px">
                 <source src="videos/stores-infanti.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -509,9 +510,9 @@
                   Code</a
                 >
               </div>
-            </div> -->
-    <!-- Final project js 1 college -->
-    <!-- <div class="projects-card">
+            </div>
+            <!-- Final project js 1 college -->
+            <div class="projects-card">
               <video class="videoBtn" width="100%" style="border-radius: 7px">
                 Your browser does not support the video tag.
               </video>
@@ -524,9 +525,9 @@
                 <small
                   >Tech stacks:<span> HTML, CSS, and JavaSCript </span>
                 </small>
-                <br /> -->
-    <!-- <small>Mobile responsive ✔️</small> -->
-    <!-- </div>
+                <br />
+                <small>Mobile responsive ✔️</small>
+              </div>
               <div class="projects-card-links">
                 <a
                   href="https://luisgcode.github.io/firstTermFinalProjectFanshaweJS/"
@@ -540,9 +541,9 @@
                   Code</a
                 >
               </div>
-            </div> -->
-    <!-- Slot machine college -->
-    <!-- <div class="projects-card">
+            </div>
+            <!-- Slot machine college -->
+            <div class="projects-card">
               <video class="videoBtn" width="100% " style="border-radius: 7px">
                 <source
                   src="videos/slot-machine-college.mp4"
@@ -572,9 +573,9 @@
                   Code</a
                 >
               </div>
-            </div> -->
-    <!-- MEETpeople -->
-    <!-- <div class="projects-card">
+            </div>
+            <!-- MEETpeople -->
+            <div class="projects-card">
               <video class="videoBtn" width="100% " style="border-radius: 7px">
                 <source src="videos/meetpeople-web.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -601,13 +602,12 @@
                   Code</a
                 >
               </div>
-            </div> -->
-    <!-- </div>
-        </section> -->
-    <!-- </main>
-    </div> -->
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
 
-    <!-- 
     <footer class="footer scroll">
       <div class="top">
         <div class="top-logo">
@@ -650,7 +650,7 @@
         <div class="bottom-rights">&copy; 2024 All rights reserved.</div>
         <div class="bottom-license">Made with ❤️ by Luis G code</div>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="javascript/common.js" defer></script>
     <script src="javascript/main.js" defer></script>
