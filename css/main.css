@@ -20,10 +20,6 @@
   --bg-color: #1f2428;
 }
 
-.logo-dark {
-  display: none;
-}
-
 :root:has(.toggleBtn:checked) .logo-dark {
   display: block;
 }
@@ -876,6 +872,10 @@ li {
 .nav-mobile.active {
   transform: translatex(0%);
   transition: all 0.2s ease;
+}
+
+.logo-dark {
+  display: none;
 }
 
 @media (max-width: 650px) {

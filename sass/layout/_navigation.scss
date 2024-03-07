@@ -146,6 +146,11 @@
   transition: all 0.2s ease;
 }
 
+// Dark mode logo hidden
+.logo-dark {
+  display: none;
+}
+
 @media (max-width: 650px) {
   .header {
     .wrapper {

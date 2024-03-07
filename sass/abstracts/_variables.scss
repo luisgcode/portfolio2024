@@ -1,3 +1,4 @@
+// Default variables
 :root {
   --details-color: #5d5fef;
   --highlight-color: #ef5d5f;
@@ -12,19 +13,17 @@
   --regular-text-font: clamp(1.2rem, 2vw, 1.4rem);
 }
 
+// Variables when dark mode activates
 :root:has(.toggleBtn:checked) {
   --details-color: #5d5fef;
   --highlight-color: #ef5d5f;
+  // Find a better color for this one
   --footer-bg: #eeeffd44;
-
   --regular-color: #ffffff;
   --bg-color: #1f2428;
 }
 
-.logo-dark {
-  display: none;
-}
-// Changing logo for modes
+// Logo changing according to mode
 :root:has(.toggleBtn:checked) {
   .logo-dark {
     display: block;
