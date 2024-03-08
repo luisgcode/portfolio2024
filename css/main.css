@@ -14,9 +14,9 @@
 }
 
 :root:has(.toggleMode:checked) {
-  --details-color: #5d5fef;
-  --highlight-color: #ef5d5f;
-  --footer-bg: #eeeffd44;
+  --details-color: #ef5d5f;
+  --highlight-color: #5d5fef;
+  --footer-bg: #34365144;
   --regular-color: #ffffff;
   --bg-color: #1f2428;
   --box-shadow: rgba(255, 255, 255, 0.2);
