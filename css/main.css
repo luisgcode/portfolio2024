@@ -266,6 +266,17 @@ li {
     transform: rotate(0deg);
   }
 }
+.regular-btn {
+  background: var(--details-color);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: var(--bg-color);
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 3rem;
+  display: inline-block;
+}
+
 .intro {
   padding: 10rem 0;
 }
