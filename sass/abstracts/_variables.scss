@@ -5,6 +5,7 @@
   --regular-color: #1f2428;
   --bg-color: #ffffff;
   --footer-bg: #eeeffd44;
+  --box-shadow: rgba(0, 0, 0, 0.2);
 
   --primary-heading-font: clamp(2.3rem, 5vw, 3.8rem);
   --secondary-heading-font: clamp(2rem, 5vw, 3rem);
@@ -14,22 +15,25 @@
 }
 
 // Variables when dark mode activates
-:root:has(.toggleBtn:checked) {
+:root:has(.toggleMode:checked) {
   --details-color: #5d5fef;
   --highlight-color: #ef5d5f;
   // Find a better color for this one
   --footer-bg: #eeeffd44;
   --regular-color: #ffffff;
   --bg-color: #1f2428;
+  --box-shadow: rgba(255, 255, 255, 0.2);
 }
 
 // Logo changing according to mode
-:root:has(.toggleBtn:checked) {
-  .logo-dark {
+:root:has(.toggleMode:checked) {
+  .logo-dark,
+  .fa-sun {
     display: block;
   }
 
-  .logo-light {
+  .logo-light,
+  .fa-moon {
     display: none;
   }
 }

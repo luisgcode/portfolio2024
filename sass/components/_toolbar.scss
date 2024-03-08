@@ -1,7 +1,7 @@
 .toolbar {
   border-radius: 1rem;
   border: none;
-  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px 0px var(--box-shadow);
   display: flex;
   justify-content: center;
   padding: 1.5rem 0.5rem 1.1rem 0.5rem;
@@ -73,13 +73,33 @@
 
     // Dark mode
     &-mode {
-      overflow: hidden;
+      position: relative;
 
-      button {
-        background: transparent;
+      input[type="checkbox"] {
+        appearance: none;
+        width: 30px;
+        height: 18px;
+        border-radius: 12px;
         outline: none;
-        border: none;
+
         cursor: pointer;
+        position: relative;
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -90%);
+        z-index: -1;
+      }
+
+      .fa-moon {
+        display: block;
+      }
+
+      .fa-sun {
+        display: none;
       }
     }
 
@@ -157,10 +177,33 @@
 
     // Dark mode
     &-mode {
-      button {
-        background: transparent;
+      position: relative;
+
+      input[type="checkbox"] {
+        appearance: none;
+        width: 30px;
+        height: 19px;
+        border-radius: 12px;
         outline: none;
-        border: none;
+
+        cursor: pointer;
+        position: relative;
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -125%);
+        z-index: -1;
+      }
+
+      .fa-moon {
+        display: block;
+      }
+
+      .fa-sun {
+        display: none;
       }
     }
 
