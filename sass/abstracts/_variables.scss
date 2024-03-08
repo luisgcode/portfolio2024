@@ -37,3 +37,42 @@
     display: none;
   }
 }
+
+// Languages from the whole page
+.spa {
+  display: none;
+}
+
+:has(.toggleLanguage:checked) .spa {
+  display: block;
+}
+
+:has(.toggleLanguage:checked) .eng {
+  display: none;
+}
+
+// Hidden ENG and SPA from toolbar mobile
+.toolbar-mobile-ul-language::after {
+  display: none;
+}
+
+:has(.toggleLanguage:checked) .toolbar-mobile-ul-language::after {
+  display: block;
+}
+
+:has(.toggleLanguage:checked) .toolbar-mobile-ul-language::before {
+  display: none;
+}
+
+// Hidden ENG and SPA from toolbar desktop
+.toolbar-ul-language::after {
+  display: none;
+}
+
+:has(.toggleLanguage:checked) .toolbar-ul-language::after {
+  display: block;
+}
+
+:has(.toggleLanguage:checked) .toolbar-ul-language::before {
+  display: none;
+}

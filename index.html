@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
 
+    <!-- Para la versión en inglés -->
+    <link rel="alternate" href="url_en" hreflang="en" />
+
+    <!-- Para la versión en español -->
+    <link rel="alternate" href="url_es" hreflang="es" />
+
     <title>@luisGcode Portfolio</title>
 
     <!-- NORMALIZE-->
@@ -144,16 +150,29 @@
           <!-- desktop nav menu -->
           <ul class="wrapper-nav-desktop">
             <li class="wrapper-nav-desktop-li">
-              <a href="index.html">Home</a>
+              <!-- Eng -->
+              <a class="eng" href="index.html">Home</a>
+
+              <!-- Spa -->
+              <a class="spa" href="index.html">Inicio</a>
             </li>
             <li class="wrapper-nav-desktop-li">
-              <a href="about.html">About</a>
+              <!-- Eng -->
+              <a class="eng" href="about.html">About</a>
+
+              <!-- Spa -->
+              <a class="spa" href="about.html">Sobre mi</a>
             </li>
             <li class="wrapper-nav-desktop-li">
-              <a href="projects.html">Projects</a>
+              <!-- Eng -->
+              <a class="eng" href="projects.html">Projects</a>
+
+              <!-- Spa -->
+              <a class="spa" href="projects.html">Proyectos</a>
             </li>
             <!-- Desktop behavior -->
-            <li class="dropActivator">
+            <!-- Eng -->
+            <li class="dropActivator eng">
               Contact &nbsp; <i class="fa-solid fa-chevron-down"></i>
               <span class="dropdown">
                 <div class="dropdown-item social">
@@ -179,17 +198,52 @@
                 </div>
               </span>
             </li>
+            <!-- Spa -->
+            <li class="dropActivator spa">
+              Contactar &nbsp; <i class="fa-solid fa-chevron-down"></i>
+              <span class="dropdown">
+                <div class="dropdown-item social">
+                  <small>Redes:</small>
+                  <div class="social-network">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/luisgcode/"
+                      ><i class="fa-brands fa-square-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <hr />
+                <div class="dropdown-item mailbox">
+                  <small>Correo:</small>
+                  <a href="#">luisgcode@gmail.com</a>
+                </div>
+                <hr />
+                <div class="dropdown-item cv">
+                  <a href="images/Luis-velasquez.pdf" download="luisGcode CV"
+                    >Descargar CV <i class="fa-solid fa-file-arrow-down"></i
+                  ></a>
+                </div>
+              </span>
+            </li>
           </ul>
         </nav>
 
         <!-- hero section -->
         <div class="wrapper-hero">
           <div class="wrapper-hero-info">
-            <h1>
+            <!-- Eng -->
+            <h1 class="eng">
               Hi <span class="hand-animation">👋</span>, <br />
               I am
               <span class="detailed">@luisgcode</span> <br />
               A dedicated web developer student.
+            </h1>
+            <!-- Spa -->
+            <h1 class="spa">
+              Hola <span class="hand-animation">👋</span>, <br />
+              Yo soy
+              <span class="detailed">@luisgcode</span> <br />
+              Un dedicado estudiante de Desarrollo Web.
             </h1>
           </div>
           <figure class="wrapper-hero-banner">
@@ -206,9 +260,8 @@
     <div class="toolbar-mobile">
       <ul class="toolbar-mobile-ul">
         <li class="toolbar-mobile-ul-language">
-          <button class="btn-language">SPA</button>
-          <!-- <button class="language-btn">ENG</button> -->
-          <span class="menu-detail">language</span>
+          <input type="checkbox" name="toggleLanguage" class="toggleLanguage" />
+          <span class="menu-detail">lang</span>
         </li>
         <li class="toolbar-mobile-ul-increase">
           <button class="btn-increase">
@@ -241,8 +294,12 @@
         <div class="toolbar">
           <ul class="toolbar-ul">
             <li class="toolbar-ul-language">
-              <button class="btn-language">SPA</button>
-              <!-- <button class="language-btn">ENG</button> -->
+              <input
+                type="checkbox"
+                name="toggleLanguage"
+                class="toggleLanguage"
+                value="eng"
+              />
               <span class="menu-detail">lang</span>
             </li>
             <!-- Increase font -->
@@ -278,19 +335,46 @@
             <figure class="intro-wrapper-eyes">
               <img src="images/banners/mirada.svg" alt="Luis Eyes" />
             </figure>
-            <div class="intro-wrapper-info">
+            <!-- Eng -->
+            <div class="intro-wrapper-info eng">
               <h2>
                 <span class="detailed"> Please get to</span>
                 know me.
               </h2>
+
               <p>
-                My programming journey began years ago and is ongoing. I
-                consistently enhance my skills through diverse experiences.
-                Today, I focus on becoming a premier web developer. Lorem ipsum
-                dolor, sit amet consectetur adipisicing elit. Amet quam esse
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                corporis lorem ipsum sigrut
+                Ingles Ingles Ingles Ingles Ingles My programming journey began
+                years ago and is ongoing. I consistently enhance my skills
+                through diverse experiences. Today, I focus on becoming a
+                premier web developer. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Amet quam esse Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Modi, corporis lorem ipsum sigrut
               </p>
+
+              <br />
+              <hr />
+              <small
+                >I'm ready to participate on a team or do the freelance job as
+                need it.- contact me to at
+                <span class="details"> luisgcode@gmail.com</span></small
+              >
+            </div>
+            <!-- Spa -->
+            <div class="intro-wrapper-info spa">
+              <h2>
+                <span class="detailed">Por favor</span>
+                probando.
+              </h2>
+
+              <p>
+                spa spa spa spa My programming journey began years ago and is
+                ongoing. I consistently enhance my skills through diverse
+                experiences. Today, I focus on becoming a premier web developer.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+                quam esse Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Modi, corporis lorem ipsum sigrut
+              </p>
+
               <br />
               <hr />
               <small

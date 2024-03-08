@@ -27,7 +27,7 @@
       flex-direction: column;
 
       &:active {
-        transform: scale(0.9);
+        transform: scale(1.1);
         transition: transform 0.3s ease;
       }
 
@@ -45,16 +45,38 @@
 
     // Language
     &-language {
-      button {
+      position: relative;
+
+      &::after {
+        content: "ENG";
+        position: absolute;
+        top: -2px;
+        z-index: -1;
         font-family: "Poppins", sans-serif;
-        background: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 0;
         color: var(--highlight-color);
         font-size: 1.4rem;
         font-weight: 500;
+        display: none;
+      }
+
+      &::before {
+        content: "SPA";
+        position: absolute;
+        top: -2px;
+        z-index: -1;
+        font-family: "Poppins", sans-serif;
+        color: var(--highlight-color);
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+
+      input[type="checkbox"] {
+        appearance: none;
+        width: 30px;
+        height: 18px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
       }
     }
 
@@ -79,9 +101,7 @@
         appearance: none;
         width: 30px;
         height: 18px;
-        border-radius: 12px;
         outline: none;
-
         cursor: pointer;
         position: relative;
       }
@@ -153,16 +173,38 @@
 
     // language
     &-language {
-      button {
+      position: relative;
+
+      &::after {
+        content: "ENG";
+        position: absolute;
+        top: -2px;
+        z-index: -1;
         font-family: "Poppins", sans-serif;
-        font-style: normal;
-        background: transparent;
-        border: none;
-        font-weight: 500;
-        outline: none;
-        padding: 0;
         color: var(--highlight-color);
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        display: none;
+      }
+
+      &::before {
+        content: "SPA";
+        position: absolute;
+        top: -2px;
+        z-index: -1;
+        font-family: "Poppins", sans-serif;
+        color: var(--highlight-color);
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+
+      input[type="checkbox"] {
+        appearance: none;
+        width: 30px;
+        height: 18px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
       }
     }
 
@@ -185,7 +227,6 @@
         height: 19px;
         border-radius: 12px;
         outline: none;
-
         cursor: pointer;
         position: relative;
       }

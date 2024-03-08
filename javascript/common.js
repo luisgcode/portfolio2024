@@ -5,13 +5,17 @@ function commonFunction() {
   const btnIncreaseFonts = document.querySelectorAll(".btn-increase");
   const regularText = document.querySelectorAll("p");
 
-  btnIncreaseFonts.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      regularText.forEach(function (text) {
-        text.classList.toggle("increase");
+  const increaseSizeFont = function () {
+    btnIncreaseFonts.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        regularText.forEach(function (text) {
+          text.classList.toggle("increase");
+        });
       });
     });
-  });
+  };
+
+  increaseSizeFont();
 
   // // Scroll Revealing //
   const allRevealSections = document.querySelectorAll(".scroll");
@@ -35,11 +39,19 @@ function commonFunction() {
   });
 
   // Dropdown menu
-  const dropDownActivator = document.querySelector(".dropActivator");
-  const dropdown = document.querySelector(".dropdown");
+  const dropDownActivators = document.querySelectorAll(".dropActivator");
 
-  dropDownActivator.addEventListener("click", function () {
-    dropdown.classList.toggle("dropdownActivated");
+  dropDownActivators.forEach(function (activator) {
+    activator.addEventListener("click", function () {
+      // Find the corresponding dropdown within the common parent container
+      const dropdown = activator
+        .closest(".dropActivator")
+        .querySelector(".dropdown");
+
+      if (dropdown) {
+        dropdown.classList.toggle("dropdownActivated");
+      }
+    });
   });
 
   // play videos with hover
