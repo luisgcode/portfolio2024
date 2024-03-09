@@ -5,21 +5,19 @@
 @import "base/utilities";
 @import "base/reset";
 
-// @import "components/app";
-
 @import "components/abilites";
 @import "components/animations";
 @import "components/buttons";
 @import "components/introduction";
-@import "components/lasttprojects";
+@import "components/_latest_projects";
 @import "components/stacks";
 @import "components/timeline";
 @import "components/toolbar";
 
 @import "layout/footer";
 @import "layout/header";
-// @import "layout/main";
 @import "layout/navigation";
 
+@import "pages/about";
 @import "pages/home";
-@import "pages/projectsPage";
+@import "pages/projects";
