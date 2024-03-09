@@ -19,12 +19,12 @@
   }
 
   &-wrapper {
-    border: 1px solid red;
+    border: 0.1rem solid red;
     margin: 3rem auto;
     max-width: 95%;
     overflow: hidden;
     text-align: center;
-    width: 900px;
+    width: 90rem;
 
     // title hero section
     &-hero {
@@ -35,7 +35,7 @@
       height: 30rem;
       overflow-y: scroll;
       padding-top: 1rem;
-      border: 1px solid red;
+      border: 0.1rem solid red;
       display: flex;
       flex-direction: column;
       position: relative;

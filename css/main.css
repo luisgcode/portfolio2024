@@ -268,7 +268,7 @@ li {
 }
 .regular-btn {
   background: var(--details-color);
-  border-radius: 5px;
+  border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   color: var(--bg-color);
   cursor: pointer;
@@ -315,31 +315,28 @@ li {
 }
 .projects-heading {
   text-align: center;
-  border-top: 1px solid rgba(128, 128, 128, 0.353);
+  border-top: 0.1rem solid rgba(128, 128, 128, 0.353);
 }
 .projects-heading h3 {
   position: relative;
   background: var(--bg-color);
   margin-top: -15rem;
-  width: 300px;
+  width: 30rem;
   margin: -1.7rem auto 0 auto;
 }
 .projects-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   margin-top: 2rem;
 }
 .projects-wrapper .projects-card {
   width: 31%;
   padding: 1rem;
-  box-shadow: 0 1px 4px 0px var(--box-shadow);
-  border-radius: 5px;
+  box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
+  border-radius: 0.5rem;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 .projects-wrapper .projects-card:hover {
-  box-shadow: 0px 4px 8px 0px var(--box-shadow);
+  box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
   transition: all 0.3s ease;
 }
 .projects-wrapper .projects-card-details, .projects-wrapper .projects-card-links {
@@ -356,6 +353,7 @@ li {
   font-weight: normal;
 }
 .projects-wrapper .projects-card-links {
+  align-items: center;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -363,7 +361,7 @@ li {
 }
 .projects-wrapper .projects-card-links a {
   color: var(--highlight-color);
-  border-bottom: 1px solid var(--highlight-color);
+  border-bottom: 0.1rem solid var(--highlight-color);
   font-weight: bold;
   font-size: 1rem;
 }
@@ -420,12 +418,12 @@ li {
   border-radius: 0.5rem;
 }
 .timeline-wrapper {
-  border: 1px solid red;
+  border: 0.1rem solid red;
   margin: 3rem auto;
   max-width: 95%;
   overflow: hidden;
   text-align: center;
-  width: 900px;
+  width: 90rem;
 }
 .timeline-wrapper-hero {
   padding: 2rem;
@@ -434,7 +432,7 @@ li {
   height: 30rem;
   overflow-y: scroll;
   padding-top: 1rem;
-  border: 1px solid red;
+  border: 0.1rem solid red;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -545,7 +543,7 @@ li {
 .toolbar {
   border-radius: 1rem;
   border: none;
-  box-shadow: 0 1px 4px 0px var(--box-shadow);
+  box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
   display: flex;
   justify-content: center;
   padding: 1.5rem 0.5rem 1.1rem 0.5rem;
@@ -587,7 +585,7 @@ li {
 .toolbar-ul-language::after {
   content: "ENG";
   position: absolute;
-  top: -2px;
+  top: -0.2rem;
   z-index: -1;
   font-family: "Poppins", sans-serif;
   color: var(--highlight-color);
@@ -598,7 +596,7 @@ li {
 .toolbar-ul-language::before {
   content: "SPA";
   position: absolute;
-  top: -2px;
+  top: -0.2rem;
   z-index: -1;
   font-family: "Poppins", sans-serif;
   color: var(--highlight-color);
@@ -607,8 +605,8 @@ li {
 }
 .toolbar-ul-language input[type=checkbox] {
   appearance: none;
-  width: 30px;
-  height: 18px;
+  width: 3rem;
+  height: 1.8rem;
   outline: none;
   cursor: pointer;
   position: relative;
@@ -628,8 +626,8 @@ li {
 }
 .toolbar-ul-mode input[type=checkbox] {
   appearance: none;
-  width: 30px;
-  height: 18px;
+  width: 3rem;
+  height: 1.8rem;
   outline: none;
   cursor: pointer;
   position: relative;
@@ -652,15 +650,15 @@ li {
   z-index: 99;
   bottom: 0;
   width: 100%;
-  border: 5px 5px 0 0;
+  border: 0.5rem 0.5rem 0 0;
   visibility: hidden;
   opacity: 0;
   background-color: var(--bg-color);
-  box-shadow: 0 -5px 20px 0 rgba(151, 151, 151, 0.2);
+  box-shadow: 0 -0.5rem 2rem 0 rgba(151, 151, 151, 0.2);
 }
 .toolbar-mobile-ul {
   padding: 1rem 0;
-  width: 350px;
+  width: 35rem;
   margin: 0 auto;
   align-items: center;
   display: flex;
@@ -668,7 +666,7 @@ li {
   gap: 3rem;
 }
 .toolbar-mobile-ul li {
-  min-width: 30px;
+  min-width: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -691,7 +689,7 @@ li {
 .toolbar-mobile-ul-language::after {
   content: "ENG";
   position: absolute;
-  top: -2px;
+  top: -0.2rem;
   z-index: -1;
   font-family: "Poppins", sans-serif;
   color: var(--highlight-color);
@@ -702,7 +700,7 @@ li {
 .toolbar-mobile-ul-language::before {
   content: "SPA";
   position: absolute;
-  top: -2px;
+  top: -0.2rem;
   z-index: -1;
   font-family: "Poppins", sans-serif;
   color: var(--highlight-color);
@@ -711,8 +709,8 @@ li {
 }
 .toolbar-mobile-ul-language input[type=checkbox] {
   appearance: none;
-  width: 30px;
-  height: 18px;
+  width: 3rem;
+  height: 1.8rem;
   outline: none;
   cursor: pointer;
   position: relative;
@@ -727,9 +725,9 @@ li {
 }
 .toolbar-mobile-ul-mode input[type=checkbox] {
   appearance: none;
-  width: 30px;
-  height: 19px;
-  border-radius: 12px;
+  width: 3rem;
+  height: 1.9rem;
+  border-radius: 1.2rem;
   outline: none;
   cursor: pointer;
   position: relative;
@@ -802,6 +800,7 @@ li {
   justify-content: space-between;
   max-width: 120rem;
   padding-bottom: 2rem;
+  margin-top: 2rem;
 }
 .footer .bottom-license a {
   color: var(--highlight-color);
@@ -827,7 +826,7 @@ li {
 .header .wrapper {
   display: flex;
   flex-direction: column;
-  width: 1000px;
+  width: 100rem;
   max-width: 95%;
   margin: 0 auto;
 }
@@ -870,7 +869,7 @@ li {
     padding: 2rem 0;
   }
   .header .wrapper-nav .logo {
-    width: 130px;
+    width: 13rem;
   }
   .header .wrapper-hero {
     flex-direction: column;
@@ -908,7 +907,7 @@ li {
 .wrapper-nav-desktop .dropActivator {
   position: relative;
   background: var(--details-color);
-  border-radius: 5px;
+  border-radius: 0.5rem;
   padding: 0.2rem 1rem;
   color: var(--bg-color);
   cursor: pointer;
@@ -917,7 +916,7 @@ li {
 .wrapper-nav-desktop .dropdown {
   background: var(--bg-color);
   border-radius: 0.5rem;
-  box-shadow: 0 1px 4px 0px var(--box-shadow);
+  box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
   position: absolute;
   right: 0;
   text-align: left;
@@ -934,14 +933,14 @@ li {
 }
 .wrapper-nav-desktop .dropdown::before {
   content: "";
-  border-radius: 4px 0;
-  box-shadow: -1px -1px 2px var(--box-shadow);
-  height: 16px;
+  border-radius: 0.4rem 0;
+  box-shadow: -0.1rem -0.1rem 0.2rem var(--box-shadow);
+  height: 1.6rem;
   right: 3.6rem;
   position: absolute;
   top: -0.3rem;
   transform: rotate(45deg) translate(-50%);
-  width: 16px;
+  width: 1.6rem;
   background: var(--bg-color);
 }
 .wrapper-nav-desktop .dropdown-item {
@@ -1070,11 +1069,13 @@ hr {
   margin-bottom: 7rem;
 }
 .header-projects .wrapper-hero {
+  align-items: center;
   display: flex;
   width: 100%;
 }
 
 .projects-wrapper {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;

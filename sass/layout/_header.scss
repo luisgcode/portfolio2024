@@ -9,7 +9,7 @@
   .wrapper {
     display: flex;
     flex-direction: column;
-    width: 1000px;
+    width: 100rem;
     max-width: 95%;
     @include margin_center;
 
@@ -74,7 +74,7 @@
         padding: 2rem 0;
 
         .logo {
-          width: 130px;
+          width: 13rem;
         }
       }
       &-hero {

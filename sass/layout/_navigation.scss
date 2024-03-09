@@ -31,7 +31,7 @@
     .dropActivator {
       position: relative;
       background: var(--details-color);
-      border-radius: 5px;
+      border-radius: 0.5rem;
       padding: 0.2rem 1rem;
       color: var(--bg-color);
       cursor: pointer;
@@ -41,7 +41,7 @@
     .dropdown {
       background: var(--bg-color);
       border-radius: 0.5rem;
-      box-shadow: 0 1px 4px 0px var(--box-shadow);
+      box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
       position: absolute;
       right: 0;
       text-align: left;
@@ -58,14 +58,14 @@
 
       &::before {
         content: "";
-        border-radius: 4px 0;
-        box-shadow: -1px -1px 2px var(--box-shadow);
-        height: 16px;
+        border-radius: 0.4rem 0;
+        box-shadow: -0.1rem -0.1rem 0.2rem var(--box-shadow);
+        height: 1.6rem;
         right: 3.6rem;
         position: absolute;
         top: -0.3rem;
         transform: rotate(45deg) translate(-50%);
-        width: 16px;
+        width: 1.6rem;
         background: var(--bg-color);
       }
 
