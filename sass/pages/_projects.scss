@@ -1,7 +1,15 @@
 // Specific styles for the utilites in the projects page
 .header-projects {
-  height: 178px;
   height: auto;
+
+  .wrapper {
+    margin-bottom: 7rem;
+    // Hero section
+    &-hero {
+      display: flex;
+      width: 100%;
+    }
+  }
 }
 
 .projects-wrapper {

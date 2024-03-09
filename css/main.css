@@ -420,19 +420,23 @@ li {
   border-radius: 0.5rem;
 }
 .timeline-wrapper {
-  margin: 0 auto;
-  width: 95rem;
+  border: 1px solid red;
+  margin: 3rem auto;
+  max-width: 95%;
   overflow: hidden;
+  text-align: center;
+  width: 900px;
 }
 .timeline-wrapper-hero {
-  padding: 2rem 0 4rem 0;
+  padding: 2rem;
 }
 .timeline-wrapper-items {
-  height: 45rem;
+  height: 30rem;
   overflow-y: scroll;
+  padding-top: 1rem;
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   position: relative;
   /* Each item style */
 }
@@ -449,6 +453,7 @@ li {
 }
 .timeline-wrapper-items .item {
   display: flex;
+  text-align: left;
   margin: 0 0 1rem 0;
   transition: all 1s ease;
   width: 100%;
@@ -488,12 +493,12 @@ li {
 .timeline-wrapper-items .item_container_info--header .time {
   font-size: 1.2rem;
 }
-.timeline-wrapper-items .item_container_info--details {
-  font-size: 1.4rem;
-}
 .timeline-wrapper-items .item_container_info--details .comment {
   margin: 1rem 0;
   font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+.timeline-wrapper-items .item_container_info--details .btn {
+  color: var(--details-color);
 }
 .timeline-wrapper-items .item_container .highlight::after {
   content: "⭐";
@@ -1043,6 +1048,10 @@ hr {
   opacity: 30%;
 }
 
+#header-about {
+  height: 100px;
+}
+
 .main-wrapp {
   display: flex;
   max-width: 110rem;
@@ -1055,8 +1064,14 @@ hr {
 }
 
 .header-projects {
-  height: 178px;
   height: auto;
+}
+.header-projects .wrapper {
+  margin-bottom: 7rem;
+}
+.header-projects .wrapper-hero {
+  display: flex;
+  width: 100%;
 }
 
 .projects-wrapper {
