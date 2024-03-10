@@ -234,9 +234,15 @@
         </nav>
         <!-- hero section -->
         <div class="wrapper-hero">
-          <h1>
+          <!-- Eng -->
+          <h1 class="eng">
             More than <span class="detailed"> +20 projects </span> <br />
             that I made with ❤️
+          </h1>
+          <!-- Spa -->
+          <h1 class="spa">
+            Más de <span class="detailed"> +20 proyectos </span> <br />
+            que he hecho ❤️
           </h1>
         </div>
       </div>
@@ -328,7 +334,8 @@
             <option value="Bootstrap">Bootstrap</option>
           </select> -->
           <div class="projects-heading">
-            <h3><span class="detailed"> MY </span> PROJECTS</h3>
+            <h3 class="eng"><span class="detailed"> MY </span> PROJECTS</h3>
+            <h3 class="spa"><span class="detailed"> MIS </span> PROYECTOS</h3>
           </div>
           <div class="projects-wrapper">
             <!-- portfolio -->
@@ -576,20 +583,48 @@
 
     <footer class="footer scroll">
       <div class="top">
-        <div class="top-logo">
-          <img src="images/logos/luisgcodelight.svg" alt="footer logo" />
+        <div class="top-footer">
+          <img
+            class="logo logo-light"
+            src="images/logos/luisgcodelight.svg"
+            alt="lgcode logo"
+          />
+          <img
+            class="logo logo-dark"
+            src="images/logos/luisgcodedark.svg"
+            alt="lgcode logo"
+          />
         </div>
         <div class="top-nav">
           <ul class="top-nav-ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <!-- Eng -->
+            <li class="eng"><a href="index.html">Home</a></li>
+            <!-- Spa -->
+            <li class="spa"><a href="index.html">Inicio</a></li>
+            <!-- Eng -->
+            <li class="eng"><a href="projects.html">Projects</a></li>
+            <!-- Spa -->
+            <li class="spa"><a href="projects.html">Proyectos</a></li>
+            <!-- Eng -->
+            <li class="eng"><a href="about.html">About</a></li>
+            <!-- Spa -->
+            <li class="spa"><a href="about.html">Sobre mí</a></li>
+            <!-- Eng -->
+            <li class="eng"><a href="contact.html">Contact</a></li>
+            <!-- Spa -->
+            <li class="spa"><a href="contact.html">Contactar</a></li>
           </ul>
-          <div class="top-nav-text">
+          <!-- Eng -->
+          <div class="eng top-nav-text">
             luisgcode.com is my starting professional portfolio for Web
-            Development. Lorem ipsum dolor sit amet, consectetur adipisi ips
-            natus ea.
+            Development. I'm excited about working for a great team and learning
+            new skills.
+          </div>
+          <!-- Spa -->
+          <div class="spa top-nav-text">
+            luisgcode.com es mi primer portafolio como un Web Developer
+            profesional. Me emociona ser parte de un gran equipo y aprender
+            nuevas habilidades
           </div>
         </div>
         <div class="top-icon">
@@ -601,10 +636,19 @@
             />
           </div>
           <div class="top-icon-info">
-            <p class="top-icon-info-title">Get in touch</p>
-            <p class="top-icon-info-text">
+            <!-- Eng -->
+            <p class="eng top-icon-info-title">Get in touch</p>
+            <!-- Spa -->
+            <p class="spa top-icon-info-title">Contactame</p>
+            <!-- Eng -->
+            <p class="eng top-icon-info-text">
               For any project inquiry or for more information about what I do,
               please feel free to get in touch.
+            </p>
+            <!-- Spa -->
+            <p class="spa top-icon-info-text">
+              Por cualquier consulta sobre un proyecto o solicitar más
+              información sobre lo que hago. Por favor no dudes en contactarme
             </p>
           </div>
         </div>
