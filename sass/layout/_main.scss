@@ -5,12 +5,20 @@
   @include margin_center;
   position: relative;
 
-  aside {
-    // asside styles
-  }
+  // aside {
+  //   // asside styles
+  // }
 
   main {
     @include margin_center;
     padding: 0 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-wrapp {
+    main {
+      padding: 0 2rem;
+    }
   }
 }
