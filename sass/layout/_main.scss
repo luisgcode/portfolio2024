@@ -1,0 +1,16 @@
+// Stylles that apply for all the web
+.main-wrapp {
+  display: flex;
+  max-width: 110rem;
+  @include margin_center;
+  position: relative;
+
+  aside {
+    // asside styles
+  }
+
+  main {
+    @include margin_center;
+    padding: 0 5rem;
+  }
+}

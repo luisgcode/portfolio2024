@@ -1045,10 +1045,6 @@ hr {
   opacity: 30%;
 }
 
-#header-about {
-  height: 100px;
-}
-
 .main-wrapp {
   display: flex;
   max-width: 110rem;
@@ -1058,6 +1054,10 @@ hr {
 .main-wrapp main {
   margin: 0 auto;
   padding: 0 5rem;
+}
+
+#header-about {
+  height: 100px;
 }
 
 .header-projects {
