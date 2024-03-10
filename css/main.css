@@ -406,8 +406,8 @@ li {
   /* Estilo general para todos los navegadores */
 }
 .timeline ::-webkit-scrollbar {
-  width: 1rem;
   -webkit-appearance: none;
+  width: 1rem;
 }
 .timeline ::-webkit-scrollbar-thumb {
   background-color: var(--highlight-color);
@@ -418,7 +418,6 @@ li {
   border-radius: 0.5rem;
 }
 .timeline-wrapper {
-  border: 0.1rem solid red;
   margin: 3rem auto;
   max-width: 95%;
   overflow: hidden;
@@ -429,30 +428,29 @@ li {
   padding: 2rem;
 }
 .timeline-wrapper-items {
-  height: 30rem;
-  overflow-y: scroll;
-  padding-top: 1rem;
-  border: 0.1rem solid red;
   display: flex;
   flex-direction: column;
+  height: 35rem;
+  overflow-y: scroll;
+  padding-top: 1rem;
   position: relative;
   /* Each item style */
 }
 .timeline-wrapper-items::after {
-  background-color: var(--regular-color);
+  background-color: var(--highlight-color);
   border-radius: 0.5rem;
   content: "";
   height: 307rem;
   left: 50%;
   position: absolute;
   transform: translate(-50%) translateY(-2rem);
-  width: 0.1rem;
+  width: 0.3rem;
   z-index: -1;
 }
 .timeline-wrapper-items .item {
   display: flex;
-  text-align: left;
   margin: 0 0 1rem 0;
+  text-align: left;
   transition: all 1s ease;
   width: 100%;
 }
@@ -460,7 +458,7 @@ li {
   width: 50%;
 }
 .timeline-wrapper-items .item_container_info {
-  background-color: white;
+  background-color: var(--bg-color);
   border-radius: 1rem;
   box-shadow: 0.1rem 0.2rem 0.3rem var(--box-shadow);
   margin: 0 auto;
@@ -477,8 +475,9 @@ li {
 }
 .timeline-wrapper-items .item_container_info--header .labels .label {
   align-items: center;
+  background: var(--highlight-color);
   border-radius: 0.3rem;
-  color: white;
+  color: var(--bg-color);
   display: flex;
   font-size: 1rem;
   font-weight: bold;
@@ -486,7 +485,6 @@ li {
   margin: 0 0.2rem;
   padding: 0.2rem 0.5rem;
   text-transform: uppercase;
-  background: var(--highlight-color);
 }
 .timeline-wrapper-items .item_container_info--header .time {
   font-size: 1.2rem;
@@ -510,9 +508,9 @@ li {
   position: relative;
 }
 .timeline-wrapper-items .item:nth-child(odd)::after {
-  background-color: white;
+  background-color: var(--bg-color);
   border-radius: 50%;
-  border: 0.1rem solid var(--highlight-color);
+  border: 0.3rem solid var(--highlight-color);
   content: "";
   height: 1.5rem;
   left: 50%;
@@ -527,9 +525,9 @@ li {
   position: relative;
 }
 .timeline-wrapper-items .item:nth-child(even)::before {
-  background-color: white;
+  background-color: var(--bg-color);
   border-radius: 50%;
-  border: 0.1rem solid var(--highlight-color);
+  border: 0.3rem solid var(--highlight-color);
   content: "";
   height: 1.5rem;
   left: 50%;

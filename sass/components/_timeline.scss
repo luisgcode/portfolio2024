@@ -4,8 +4,8 @@
 
   /* Estilo general para todos los navegadores */
   ::-webkit-scrollbar {
-    width: 1rem;
     -webkit-appearance: none;
+    width: 1rem;
   }
 
   ::-webkit-scrollbar-thumb {
@@ -19,7 +19,6 @@
   }
 
   &-wrapper {
-    border: 0.1rem solid red;
     margin: 3rem auto;
     max-width: 95%;
     overflow: hidden;
@@ -31,17 +30,18 @@
       padding: 2rem;
     }
 
+    // Container of items
     &-items {
-      height: 30rem;
-      overflow-y: scroll;
-      padding-top: 1rem;
-      border: 0.1rem solid red;
       display: flex;
       flex-direction: column;
+      height: 35rem;
+      overflow-y: scroll;
+      padding-top: 1rem;
       position: relative;
 
+      // The line that cross all the items down
       &::after {
-        background-color: var(--regular-color);
+        background-color: var(--highlight-color);
         border-radius: 0.5rem;
         content: "";
         // for now only
@@ -49,23 +49,25 @@
         left: 50%;
         position: absolute;
         transform: translate(-50%) translateY(-2rem);
-        width: 0.1rem;
+        width: 0.3rem;
         z-index: -1;
       }
 
       /* Each item style */
       .item {
         display: flex;
-        text-align: left;
         margin: 0 0 1rem 0;
+        text-align: left;
         transition: all 1s ease;
         width: 100%;
 
+        // the entire horizontal row in which each item is place
         &_container {
           width: 50%;
 
+          // Each item specifically
           &_info {
-            background-color: white;
+            background-color: var(--bg-color);
             border-radius: 1rem;
             box-shadow: 0.1rem 0.2rem 0.3rem var(--box-shadow);
             margin: 0 auto;
@@ -73,6 +75,7 @@
             position: relative;
             width: 90%;
 
+            // date & tags section
             &--header {
               align-items: center;
               display: flex;
@@ -82,8 +85,9 @@
 
                 .label {
                   align-items: center;
+                  background: var(--highlight-color);
                   border-radius: 0.3rem;
-                  color: white;
+                  color: var(--bg-color);
                   display: flex;
                   font-size: 1rem;
                   font-weight: bold;
@@ -91,7 +95,6 @@
                   margin: 0 0.2rem;
                   padding: 0.2rem 0.5rem;
                   text-transform: uppercase;
-                  background: var(--highlight-color);
                 }
               }
 
@@ -130,9 +133,9 @@
 
         // Circles
         &:nth-child(odd)::after {
-          background-color: white;
+          background-color: var(--bg-color);
           border-radius: 50%;
-          border: 0.1rem solid var(--highlight-color);
+          border: 0.3rem solid var(--highlight-color);
           content: "";
           height: 1.5rem;
           left: 50%;
@@ -151,9 +154,9 @@
 
         // Circles
         &:nth-child(even)::before {
-          background-color: white;
+          background-color: var(--bg-color);
           border-radius: 50%;
-          border: 0.1rem solid var(--highlight-color);
+          border: 0.3rem solid var(--highlight-color);
           content: "";
           height: 1.5rem;
           left: 50%;
