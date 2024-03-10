@@ -1,172 +1,220 @@
+// title hero section
+.hero {
+  margin-bottom: 5rem;
+}
+
 .timeline {
-  @include margin_center;
-  padding-bottom: 12rem;
+  border-radius: 15px;
+  margin-bottom: 25rem;
+  padding: 2rem;
+  box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
 
-  /* Estilo general para todos los navegadores */
-  ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 1rem;
-  }
+  // Items box
+  .item {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
 
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--highlight-color);
-    border-radius: 0.5rem;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: #f1f1f1b0;
-    border-radius: 0.5rem;
-  }
-
-  &-wrapper {
-    margin: 3rem auto;
-    max-width: 95%;
-    overflow: hidden;
-    text-align: center;
-    width: 90rem;
-
-    // title hero section
-    &-hero {
-      padding: 2rem;
-    }
-
-    // Container of items
-    &-items {
-      display: flex;
-      flex-direction: column;
-      height: 35rem;
-      overflow-y: scroll;
-      padding-top: 1rem;
+    &-dates {
+      color: var(--regular-color);
+      overflow: hidden;
       position: relative;
+      padding: 1rem;
+      // Achicar esto para mobile
+      min-width: 110px;
 
-      // The line that cross all the items down
-      &::after {
-        background-color: var(--highlight-color);
-        border-radius: 0.5rem;
-        content: "";
-        // for now only
-        height: 307rem;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%) translateY(-2rem);
-        width: 0.3rem;
-        z-index: -1;
+      text-align: center;
+
+      time {
+        position: relative;
       }
 
-      /* Each item style */
-      .item {
+      .line {
+        position: absolute;
+        height: 100%;
+        top: 4rem;
+        background: var(--highlight-color);
+        width: 1px;
+        z-index: -1;
+        left: 50%;
+        border-radius: 5px;
+      }
+    }
+
+    // each card
+    &-container {
+      padding: 1rem;
+      width: 100%;
+      max-width: 100%;
+      border-bottom: 1px solid lightgray;
+
+      &-labels {
         display: flex;
-        margin: 0 0 1rem 0;
-        text-align: left;
-        transition: all 1s ease;
-        width: 100%;
+        gap: 1rem;
 
-        // the entire horizontal row in which each item is place
-        &_container {
-          width: 50%;
-
-          // Each item specifically
-          &_info {
-            background-color: var(--bg-color);
-            border-radius: 1rem;
-            box-shadow: 0.1rem 0.2rem 0.3rem var(--box-shadow);
-            margin: 0 auto;
-            padding: 1rem;
-            position: relative;
-            width: 90%;
-
-            // date & tags section
-            &--header {
-              align-items: center;
-              display: flex;
-
-              .labels {
-                display: flex;
-
-                .label {
-                  align-items: center;
-                  background: var(--highlight-color);
-                  border-radius: 0.3rem;
-                  color: var(--bg-color);
-                  display: flex;
-                  font-size: 1rem;
-                  font-weight: bold;
-                  justify-content: center;
-                  margin: 0 0.2rem;
-                  padding: 0.2rem 0.5rem;
-                  text-transform: uppercase;
-                }
-              }
-
-              .time {
-                font-size: 1.2rem;
-              }
-            }
-
-            &--details {
-              .comment {
-                margin: 1rem 0;
-                font-size: clamp(1.2rem, 2vw, 1.4rem);
-              }
-
-              .btn {
-                color: var(--details-color);
-              }
-            }
-          }
-
-          // stars in each info block
-          .highlight::after {
-            content: "⭐";
-            position: absolute;
-            right: -0.8rem;
-            top: -1rem;
-            transform: rotate(10deg);
-          }
+        .label {
+          padding: 0.2rem 0.5rem;
+          font-size: clamp(0.8rem, 2vw, 0.8rem);
+          border-radius: 5px;
+          background: var(--highlight-color);
+          color: white;
+          text-transform: uppercase;
         }
+      }
 
-        // horizontal container bg
-        &:nth-child(odd) {
-          justify-content: flex-end;
-          position: relative;
-        }
+      &-comment {
+        margin: 1rem 0 0.5rem 0;
+      }
 
-        // Circles
-        &:nth-child(odd)::after {
-          background-color: var(--bg-color);
-          border-radius: 50%;
-          border: 0.3rem solid var(--highlight-color);
-          content: "";
-          height: 1.5rem;
-          left: 50%;
-          position: absolute;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          width: 1.5rem;
-          z-index: 9;
-        }
-
-        // horizontal container bg
-        &:nth-child(even) {
-          justify-content: flex-start;
-          position: relative;
-        }
-
-        // Circles
-        &:nth-child(even)::before {
-          background-color: var(--bg-color);
-          border-radius: 50%;
-          border: 0.3rem solid var(--highlight-color);
-          content: "";
-          height: 1.5rem;
-          left: 50%;
-          position: absolute;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          width: 1.5rem;
-          z-index: 9;
-        }
+      .btn {
+        color: var(--details-color);
       }
     }
   }
+
+  // old style
+
+  // &-wrapper {
+  //   border: 1px solid red;
+
+  //   // Container of items
+  //   &-items {
+  //     display: flex;
+  //     flex-direction: column;
+  //     height: 35rem;
+  //     overflow-y: scroll;
+  //     padding-top: 1rem;
+  //     position: relative;
+
+  //     // The line that cross all the items down
+  //     &::after {
+  //       background-color: var(--highlight-color);
+  //       border-radius: 0.5rem;
+  //       content: "";
+  //       // for now only
+  //       height: 307rem;
+  //       left: 50%;
+  //       position: absolute;
+  //       transform: translate(-50%) translateY(-2rem);
+  //       width: 0.3rem;
+  //       z-index: -1;
+  //     }
+
+  //     /* Each item style */
+  //     .item {
+  //       display: flex;
+  //       margin: 0 0 1rem 0;
+  //       text-align: left;
+  //       transition: all 1s ease;
+  //       width: 100%;
+
+  //       // the entire horizontal row in which each item is place
+  //       &_container {
+  //         width: 50%;
+
+  //         // Each item specifically
+  //         &_info {
+  //           background-color: var(--bg-color);
+  //           border-radius: 1rem;
+  //           box-shadow: 0.1rem 0.2rem 0.3rem var(--box-shadow);
+  //           margin: 0 auto;
+  //           padding: 1rem;
+  //           position: relative;
+  //           width: 90%;
+
+  //           // date & tags section
+  //           &--header {
+  //             align-items: center;
+  //             display: flex;
+
+  //             .labels {
+  //               display: flex;
+
+  //               .label {
+  //                 align-items: center;
+  //                 background: var(--highlight-color);
+  //                 border-radius: 0.3rem;
+  //                 color: var(--bg-color);
+  //                 display: flex;
+  //                 font-size: 1rem;
+  //                 font-weight: bold;
+  //                 justify-content: center;
+  //                 margin: 0 0.2rem;
+  //                 padding: 0.2rem 0.5rem;
+  //                 text-transform: uppercase;
+  //               }
+  //             }
+
+  //             .time {
+  //               font-size: 1.2rem;
+  //             }
+  //           }
+
+  //           &--details {
+  //             .comment {
+  //               margin: 1rem 0;
+  //               font-size: clamp(1.2rem, 2vw, 1.4rem);
+  //             }
+
+  //             .btn {
+  //               color: var(--details-color);
+  //             }
+  //           }
+  //         }
+
+  //         // stars in each info block
+  //         .highlight::after {
+  //           content: "⭐";
+  //           position: absolute;
+  //           right: -0.8rem;
+  //           top: -1rem;
+  //           transform: rotate(10deg);
+  //         }
+  //       }
+
+  //       // horizontal container bg
+  //       &:nth-child(odd) {
+  //         justify-content: flex-end;
+  //         position: relative;
+  //       }
+
+  //       // Circles
+  //       &:nth-child(odd)::after {
+  //         background-color: var(--bg-color);
+  //         border-radius: 50%;
+  //         border: 0.3rem solid var(--highlight-color);
+  //         content: "";
+  //         height: 1.5rem;
+  //         left: 50%;
+  //         position: absolute;
+  //         top: 50%;
+  //         transform: translate(-50%, -50%);
+  //         width: 1.5rem;
+  //         z-index: 9;
+  //       }
+
+  //       // horizontal container bg
+  //       &:nth-child(even) {
+  //         justify-content: flex-start;
+  //         position: relative;
+  //       }
+
+  //       // Circles
+  //       &:nth-child(even)::before {
+  //         background-color: var(--bg-color);
+  //         border-radius: 50%;
+  //         border: 0.3rem solid var(--highlight-color);
+  //         content: "";
+  //         height: 1.5rem;
+  //         left: 50%;
+  //         position: absolute;
+  //         top: 50%;
+  //         transform: translate(-50%, -50%);
+  //         width: 1.5rem;
+  //         z-index: 9;
+  //       }
+  //     }
+  //   }
+  // }
 }
