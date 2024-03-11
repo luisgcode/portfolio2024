@@ -377,15 +377,17 @@ li {
 }
 .stack-wrapper-icons {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 5rem;
+  gap: 1rem;
 }
 .stack-wrapper-icons-box {
-  flex-basis: 20%;
   align-items: center;
   display: flex;
+  width: 110px;
   flex-direction: column;
-  padding: 2rem;
+  margin: 1rem 0;
 }
 .stack-wrapper-icons-box .tech-name {
   margin-top: 0.5rem;
@@ -395,8 +397,8 @@ li {
   color: var(--details-color);
 }
 .stack-wrapper-icons img {
-  max-width: 7rem;
-  min-height: 7rem;
+  max-width: 5rem;
+  min-height: 5rem;
 }
 
 .timeline {
