@@ -943,9 +943,6 @@ li {
     width: 60%;
   }
 }
-.top-nav {
-  min-width: 50rem;
-}
 .top-nav-ul {
   display: flex;
   gap: 4.5rem;
