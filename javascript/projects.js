@@ -86,6 +86,24 @@ document.addEventListener("DOMContentLoaded", function () {
     "https://github.com/luisgcode/slotMachineJSCollegeTerm1"
   );
 
+  let pro_catalogs_infanti = new project_constructor(
+    "videos/catalos-infanti.mp4",
+    "Catalogs | Infanti.cl",
+    "Tech stacks:<span> HTML, CSS </span>",
+    "Mobile responsive ✔️",
+    "https://infanti.cl/catalogos",
+    ""
+  );
+
+  let pro_benefits_infanti = new project_constructor(
+    "videos/benefits-infanti.mp4",
+    "Benefits | Infanti.cl",
+    "Tech stacks:<span> HTML, CSS </span>",
+    "Mobile responsive ✔️",
+    "https://infanti.cl/",
+    ""
+  );
+
   projects_array.push(
     pro_portfolio,
     pro_encoreGym,
@@ -93,7 +111,9 @@ document.addEventListener("DOMContentLoaded", function () {
     pro_final_project_js,
     pro_meet_people,
     pro_timer_infant,
-    pro_slot_machine
+    pro_slot_machine,
+    pro_catalogs_infanti,
+    pro_benefits_infanti
   );
 
   projects_array.forEach(function (project) {
