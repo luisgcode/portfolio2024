@@ -64,3 +64,9 @@
     padding: 0 2rem;
   }
 }
+
+@media (max-width: 950px) {
+  .top-icon-graph {
+    display: none;
+  }
+}

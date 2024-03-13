@@ -733,6 +733,11 @@ li {
     padding: 0 2rem;
   }
 }
+@media (max-width: 950px) {
+  .top-icon-graph {
+    display: none;
+  }
+}
 .header {
   height: 90vh;
   margin: 0 auto;
