@@ -309,6 +309,21 @@ li {
   color: var(--details-color);
 }
 
+@media (max-width: 1000px) {
+  .intro {
+    padding: 5rem 0;
+  }
+  .intro-wrapper {
+    height: auto;
+  }
+  .intro-wrapper-eyes {
+    display: none;
+  }
+  .intro-wrapper-info {
+    flex-basis: 100%;
+    height: auto;
+  }
+}
 .projects {
   padding-bottom: 11rem;
 }
@@ -734,8 +749,20 @@ li {
   }
 }
 @media (max-width: 950px) {
-  .top-icon-graph-user {
+  .footer .top-icon {
     display: none;
+  }
+}
+@media (max-width: 700px) {
+  .footer .top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer .top-nav {
+    text-align: center;
+  }
+  .footer .top-nav-ul {
+    justify-content: center;
   }
 }
 .header {

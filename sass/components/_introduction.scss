@@ -35,3 +35,22 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .intro {
+    padding: 5rem 0;
+  }
+
+  .intro-wrapper {
+    height: auto;
+
+    &-eyes {
+      display: none;
+    }
+
+    &-info {
+      flex-basis: 100%;
+      height: auto;
+    }
+  }
+}
