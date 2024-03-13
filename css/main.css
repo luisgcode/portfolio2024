@@ -734,7 +734,7 @@ li {
   }
 }
 @media (max-width: 950px) {
-  .top-icon-graph {
+  .top-icon-graph-user {
     display: none;
   }
 }
