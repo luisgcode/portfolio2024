@@ -895,6 +895,9 @@ li {
 .wrapper-nav-desktop-li a:hover {
   color: var(--highlight-color);
 }
+.wrapper-nav-desktop-li a i {
+  font-size: 2rem;
+}
 
 .nav-mobile {
   width: 100%;
