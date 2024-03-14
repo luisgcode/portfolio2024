@@ -54,14 +54,6 @@
     .wrapper {
       &-hero {
         padding: 0 2rem;
-
-        &-info {
-        }
-
-        &-banner {
-          img {
-          }
-        }
       }
     }
   }
@@ -89,5 +81,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    max-height: 70vh;
   }
 }

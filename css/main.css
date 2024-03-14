@@ -241,7 +241,7 @@ li {
 
 @media (max-width: 700px) {
   .abilities-wrapper h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .abilities-wrapper-counter-top {
     justify-content: center;
@@ -322,7 +322,7 @@ li {
 
 @media (max-width: 1000px) {
   .intro {
-    padding: 5rem 0;
+    padding-top: 0;
   }
   .intro-wrapper {
     height: auto;
@@ -336,7 +336,7 @@ li {
   }
 }
 .projects {
-  padding-bottom: 11rem;
+  padding-bottom: 10rem;
 }
 .projects-heading {
   text-align: center;
@@ -865,6 +865,11 @@ li {
   }
   .header .wrapper-hero-banner {
     justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    max-height: 70vh;
   }
 }
 .wrapper-nav {
