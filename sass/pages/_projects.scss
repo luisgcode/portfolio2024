@@ -1,4 +1,79 @@
-// Specific styles for the utilites in the projects page
 .header-projects {
   height: auto;
+
+  .wrapper {
+    &-hero {
+      width: 100%;
+    }
+    margin-bottom: 10rem;
+  }
+}
+
+.projects {
+  &-heading {
+    height: auto;
+  }
+
+  &-wrapper {
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .projects-card {
+    width: 31%;
+    min-height: 31.5rem;
+    padding: 1rem;
+    box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
+      transition: all 0.3s ease;
+    }
+
+    &-details,
+    &-links {
+      padding: 0 1rem;
+    }
+
+    &-details {
+      h4 {
+        margin: 0.5rem 0 1rem 0;
+        font-weight: normal;
+      }
+
+      small {
+        font-size: 1rem;
+
+        span {
+          font-weight: normal;
+        }
+      }
+    }
+
+    &-links {
+      @include flex_center;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 2rem;
+
+      a {
+        color: var(--highlight-color);
+        border-bottom: 0.1rem solid var(--highlight-color);
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      .projects-icons {
+        font-size: 1rem;
+        color: var(--details-color);
+      }
+    }
+  }
 }

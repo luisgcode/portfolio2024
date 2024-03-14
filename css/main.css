@@ -1061,3 +1061,64 @@ hr {
 .header-projects {
   height: auto;
 }
+.header-projects .wrapper {
+  margin-bottom: 10rem;
+}
+.header-projects .wrapper-hero {
+  width: 100%;
+}
+
+.projects-heading {
+  height: auto;
+}
+.projects-wrapper {
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.projects .projects-card {
+  width: 31%;
+  min-height: 31.5rem;
+  padding: 1rem;
+  box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.projects .projects-card:hover {
+  box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
+  transition: all 0.3s ease;
+}
+.projects .projects-card-details, .projects .projects-card-links {
+  padding: 0 1rem;
+}
+.projects .projects-card-details h4 {
+  margin: 0.5rem 0 1rem 0;
+  font-weight: normal;
+}
+.projects .projects-card-details small {
+  font-size: 1rem;
+}
+.projects .projects-card-details small span {
+  font-weight: normal;
+}
+.projects .projects-card-links {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.projects .projects-card-links a {
+  color: var(--highlight-color);
+  border-bottom: 0.1rem solid var(--highlight-color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.projects .projects-card-links .projects-icons {
+  font-size: 1rem;
+  color: var(--details-color);
+}
