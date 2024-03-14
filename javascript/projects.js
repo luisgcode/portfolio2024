@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   let pro_encoreGym = new project_constructor(
-    "videos/encore-gym-web.mp4",
+    "videos/encore-gym-web.mp4#t=2",
     "EncoreGym website",
     "Tech stacks:<span> HTML, CSS, and JavaSCript </span>",
     "Mobile responsive ✔️",
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   let pro_stores_infanti = new project_constructor(
-    "videos/stores-infanti.mp4",
+    "videos/stores-infanti.mp4#t=2",
     "Our stores | Infanti.cl",
     "Tech stacks:<span> HTML, SCSS, CSS, and JavaSCript",
     "Mobile responsive ✔️",
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   let pro_timer_infant = new project_constructor(
-    "videos/timer-infanti.mp4",
+    "videos/timer-infanti.mp4#t=1",
     "Offers timer | Infanti.cl",
     "Tech stacks:<span> HTML, CSS, and JavaSCript </span>",
     "Mobile responsive ✔️",
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   let pro_slot_machine = new project_constructor(
-    "videos/slot-machine-college.mp4",
+    "videos/slot-machine-college.mp4#t=1",
     "Slot machine | College",
     "Tech stacks:<span> HTML, CSS, and JavaSCript </span>",
     "Mobile responsive ✔️",
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   let pro_catalogs_infanti = new project_constructor(
-    "videos/catalos-infanti.mp4",
+    "videos/catalos-infanti.mp4#t=1",
     "Catalogs | Infanti.cl",
     "Tech stacks:<span> HTML, CSS </span>",
     "Mobile responsive ✔️",
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   let pro_benefits_infanti = new project_constructor(
-    "videos/benefits-infanti.mp4",
+    "videos/benefits-infanti.mp4#t=2",
     "Benefits | Infanti.cl",
     "Tech stacks:<span> HTML, CSS </span>",
     "Mobile responsive ✔️",
