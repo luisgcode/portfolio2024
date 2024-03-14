@@ -14,12 +14,9 @@
 
       &-box {
         @include flex_center;
-
         width: 110px;
-
         flex-direction: column;
         margin: 1rem 0;
-
         .tech-name {
           margin-top: 0.5rem;
           font-size: 1rem;
@@ -40,5 +37,10 @@
 @media (max-width: 500px) {
   .stack-wrapper-icons-box {
     width: 60px;
+
+    img {
+      max-width: 3rem;
+      min-height: 3rem;
+    }
   }
 }

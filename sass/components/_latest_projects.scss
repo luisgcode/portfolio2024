@@ -1,5 +1,6 @@
 .projects {
   padding-bottom: 11rem;
+
   &-heading {
     text-align: center;
     border-top: 0.1rem solid rgba(128, 128, 128, 0.353);
@@ -13,11 +14,16 @@
     }
   }
 
-  &-wrapper {
-    margin-top: 2rem;
+  &-home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
 
     .projects-card {
       width: 31%;
+      min-height: 31.5rem;
       padding: 1rem;
       box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
       border-radius: 0.5rem;
@@ -31,7 +37,7 @@
 
       &-details,
       &-links {
-        padding: 0 2rem;
+        padding: 0 1rem;
       }
 
       &-details {
@@ -68,5 +74,17 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .projects-card {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects-card {
+    flex-basis: 100%;
   }
 }
