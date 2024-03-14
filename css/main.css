@@ -240,9 +240,14 @@ li {
 }
 
 @media (max-width: 700px) {
-  .abilities,
-  footer {
-    display: none;
+  .abilities-wrapper h3 {
+    font-size: 2rem;
+  }
+  .abilities-wrapper-counter-top {
+    justify-content: center;
+    gap: 5rem;
+    height: auto;
+    width: 100%;
   }
 }
 @keyframes shake {
@@ -784,7 +789,7 @@ li {
     display: none;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   .footer .top {
     flex-direction: column;
     gap: 2rem;

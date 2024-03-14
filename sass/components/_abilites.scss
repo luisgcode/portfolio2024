@@ -46,8 +46,18 @@
 // DELETE THIS SECTION
 
 @media (max-width: 700px) {
-  .abilities,
-  footer {
-    display: none;
+  .abilities-wrapper {
+    h3 {
+      font-size: 2rem;
+    }
+
+    &-counter {
+      &-top {
+        justify-content: center;
+        gap: 5rem;
+        height: auto;
+        width: 100%;
+      }
+    }
   }
 }
