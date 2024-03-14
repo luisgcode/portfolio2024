@@ -866,10 +866,8 @@ li {
   .header .wrapper-hero-banner {
     justify-content: center;
   }
-}
-@media (max-width: 500px) {
-  .header {
-    max-height: 70vh;
+  .header .wrapper-hero-banner img {
+    min-width: 270px;
   }
 }
 .wrapper-nav {

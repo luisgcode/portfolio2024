@@ -69,6 +69,7 @@
           width: 13rem;
         }
       }
+
       &-hero {
         flex-direction: column;
 
@@ -78,14 +79,11 @@
 
         &-banner {
           justify-content: center;
+          img {
+            min-width: 270px;
+          }
         }
       }
     }
-  }
-}
-
-@media (max-width: 500px) {
-  .header {
-    max-height: 70vh;
   }
 }
