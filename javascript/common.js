@@ -38,22 +38,6 @@ function commonFunction() {
     section.classList.add("scroll-hidden");
   });
 
-  // Dropdown menu
-  const dropDownActivators = document.querySelectorAll(".dropActivator");
-
-  dropDownActivators.forEach(function (activator) {
-    activator.addEventListener("click", function () {
-      // Find the corresponding dropdown within the common parent container
-      const dropdown = activator
-        .closest(".dropActivator")
-        .querySelector(".dropdown");
-
-      if (dropdown) {
-        dropdown.classList.toggle("dropdownActivated");
-      }
-    });
-  });
-
   // play videos with hover
   const btnVideos = document.querySelectorAll(".videoBtn");
   const videosCard = document.querySelectorAll("projects-card");

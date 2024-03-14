@@ -895,76 +895,6 @@ li {
 .wrapper-nav-desktop-li a:hover {
   color: var(--highlight-color);
 }
-.wrapper-nav-desktop .dropActivator {
-  position: relative;
-  background: var(--details-color);
-  border-radius: 0.5rem;
-  padding: 0.2rem 1rem;
-  color: var(--bg-color);
-  cursor: pointer;
-  font-weight: 600;
-}
-.wrapper-nav-desktop .dropdown {
-  background: var(--bg-color);
-  border-radius: 0.5rem;
-  box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
-  position: absolute;
-  right: 0;
-  text-align: left;
-  top: 5rem;
-  z-index: 1;
-  transition: opacity 0.2s ease;
-  visibility: hidden;
-  opacity: 0;
-  font-size: 1.3rem;
-  padding: 2rem 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.wrapper-nav-desktop .dropdown::before {
-  content: "";
-  border-radius: 0.4rem 0;
-  box-shadow: -0.1rem -0.1rem 0.2rem var(--box-shadow);
-  height: 1.6rem;
-  right: 3.6rem;
-  position: absolute;
-  top: -0.3rem;
-  transform: rotate(45deg) translate(-50%);
-  width: 1.6rem;
-  background: var(--bg-color);
-}
-.wrapper-nav-desktop .dropdown-item {
-  display: flex;
-  flex-direction: column;
-}
-.wrapper-nav-desktop .dropdown-item .social-network i {
-  margin-right: 1rem;
-}
-.wrapper-nav-desktop .dropdown-item small {
-  font-weight: normal;
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
-  color: var(--regular-color);
-}
-.wrapper-nav-desktop .dropdown-item a {
-  color: var(--regular-color);
-  font-size: 1.4rem;
-}
-.wrapper-nav-desktop .dropdownActivated {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.2s ease;
-}
-.wrapper-nav-desktop .dropdownActivated .social {
-  opacity: 1;
-}
-.wrapper-nav-desktop .dropdownActivated .mailbox {
-  opacity: 1;
-}
-.wrapper-nav-desktop .dropdownActivated .cv {
-  opacity: 1;
-}
 
 .nav-mobile {
   width: 100%;
@@ -1052,7 +982,7 @@ hr {
   }
 }
 #header-about {
-  height: 200px;
+  height: 350px;
 }
 
 .main-about {

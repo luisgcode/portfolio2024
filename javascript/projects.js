@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
   projects_array.forEach(function (project) {
     let projects_iteration = `
     <div class="projects-card">
-    <video class="videoBtn" width="100% " style="border-radius: 7px">
+    <video class="videoBtn" width="100% " style="border-radius: 7px" >
       <source src="${project.video_src}" type="video/mp4" alt="video" />
     </video>
 
