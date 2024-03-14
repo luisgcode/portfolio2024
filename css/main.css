@@ -423,6 +423,11 @@ li {
   min-height: 5rem;
 }
 
+@media (max-width: 500px) {
+  .stack-wrapper-icons-box {
+    width: 60px;
+  }
+}
 .timeline {
   border-radius: 15px;
   padding: 2rem;
