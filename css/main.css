@@ -345,9 +345,8 @@ li {
 .projects-heading h3 {
   position: relative;
   background: var(--bg-color);
-  margin-top: -15rem;
-  width: 30rem;
-  margin: -1.7rem auto 0 auto;
+  width: 30%;
+  margin: -1rem auto 0 auto;
 }
 .projects-home {
   display: flex;
@@ -406,6 +405,9 @@ li {
   }
 }
 @media (max-width: 500px) {
+  .projects-heading h3 {
+    width: 50%;
+  }
   .projects-card {
     flex-basis: 100%;
   }
@@ -1068,18 +1070,25 @@ hr {
   width: 100%;
 }
 
-.projects-heading {
-  height: auto;
+.projects-filter {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
+  color: var(--highlight-color);
+  font-weight: 500;
+  padding: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 .projects-wrapper {
-  padding-top: 3rem;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
 }
-.projects .projects-card {
+.projects-wrapper .projects-card {
   width: 31%;
   min-height: 31.5rem;
   padding: 1rem;
@@ -1088,37 +1097,37 @@ hr {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.projects .projects-card:hover {
+.projects-wrapper .projects-card:hover {
   box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
   transition: all 0.3s ease;
 }
-.projects .projects-card-details, .projects .projects-card-links {
+.projects-wrapper .projects-card-details, .projects-wrapper .projects-card-links {
   padding: 0 1rem;
 }
-.projects .projects-card-details h4 {
+.projects-wrapper .projects-card-details h4 {
   margin: 0.5rem 0 1rem 0;
   font-weight: normal;
 }
-.projects .projects-card-details small {
+.projects-wrapper .projects-card-details small {
   font-size: 1rem;
 }
-.projects .projects-card-details small span {
+.projects-wrapper .projects-card-details small span {
   font-weight: normal;
 }
-.projects .projects-card-links {
+.projects-wrapper .projects-card-links {
   align-items: center;
   display: flex;
   width: 100%;
   justify-content: space-between;
   margin-top: 2rem;
 }
-.projects .projects-card-links a {
+.projects-wrapper .projects-card-links a {
   color: var(--highlight-color);
   border-bottom: 0.1rem solid var(--highlight-color);
   font-weight: bold;
   font-size: 1rem;
 }
-.projects .projects-card-links .projects-icons {
+.projects-wrapper .projects-card-links .projects-icons {
   font-size: 1rem;
   color: var(--details-color);
 }

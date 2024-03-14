@@ -326,7 +326,18 @@
             <h3 class="eng"><span class="detailed"> MY </span> PROJECTS</h3>
             <h3 class="spa"><span class="detailed"> MIS </span> PROYECTOS</h3>
           </div>
-          <div class="projects-wrapper scroll"></div>
+          <select class="projects-filter">
+            <option>All</option>
+            <option value="scssOp">SCSS</option>
+            <option value="cssOp">CSS</option>
+            <option value="jsOp">JavaScript</option>
+            <option value="reactOp">React</option>
+            <option value="vueOp">Vue</option>
+            <option value="tailOp">Tailwind CSS</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="mysql">MySQL</option>
+          </select>
+          <div class="projects-wrapper"></div>
         </section>
       </main>
     </div>
@@ -411,17 +422,6 @@
         <div class="bottom-license">Made with ❤️ by Luis G code</div>
       </div>
     </footer>
-    <!--_____________________ CONTINUE THIS FILTER LATER  _____________________-->
-    <!-- <select class="">
-            <option>All</option>
-            <option value="scssOp">SCSS</option>
-            <option value="cssOp">CSS</option>
-            <option value="jsOp">JavaSCript</option>
-            <option value="reactOp">React</option>
-            <option value="vueOp">Vue</option>
-            <option value="tailOp">Tailwind CSS</option>
-            <option value="Bootstrap">Bootstrap</option>
-          </select> -->
     <script src="javascript/common.js" defer></script>
     <script src="javascript/projects.js" defer></script>
   </body>

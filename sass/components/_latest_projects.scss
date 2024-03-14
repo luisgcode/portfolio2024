@@ -8,9 +8,8 @@
     h3 {
       position: relative;
       background: var(--bg-color);
-      margin-top: -15rem;
-      width: 30rem;
-      margin: -1.7rem auto 0 auto;
+      width: 30%;
+      margin: -1rem auto 0 auto;
     }
   }
 
@@ -84,6 +83,13 @@
 }
 
 @media (max-width: 500px) {
+  .projects {
+    &-heading {
+      h3 {
+        width: 50%;
+      }
+    }
+  }
   .projects-card {
     flex-basis: 100%;
   }
