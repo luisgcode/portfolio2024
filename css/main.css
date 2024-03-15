@@ -276,17 +276,6 @@ li {
     transform: rotate(0deg);
   }
 }
-.regular-btn {
-  background: var(--details-color);
-  border-radius: 0.5rem;
-  padding: 0.2rem 1rem;
-  color: var(--bg-color);
-  cursor: pointer;
-  font-weight: 600;
-  margin-top: 3rem;
-  display: inline-block;
-}
-
 .contact {
   align-items: center;
   backdrop-filter: blur(0.5px);
@@ -361,16 +350,6 @@ li {
 .contact-modal-form .form-row input::placeholder {
   color: var(--regular-color);
 }
-.contact-modal-form .open-modal {
-  outline: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: none;
-  background: var(--details-color);
-  cursor: pointer;
-  color: #ffffff;
-  font-weight: 600;
-}
 .contact-modal-form .close-modal {
   position: absolute;
   right: 2rem;
@@ -389,6 +368,11 @@ li {
   transform: scale(1.1);
 }
 
+@media (max-width: 650px) {
+  .contact-modal {
+    flex-direction: column;
+  }
+}
 .hidden {
   visibility: hidden;
   opacity: 0;

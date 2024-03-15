@@ -78,17 +78,6 @@
         }
       }
 
-      .open-modal {
-        outline: none;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        border: none;
-        background: var(--details-color);
-        cursor: pointer;
-        color: #ffffff;
-        font-weight: 600;
-      }
-
       .close-modal {
         position: absolute;
         right: 2rem;
@@ -108,6 +97,12 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-modal {
+    flex-direction: column;
   }
 }
 
