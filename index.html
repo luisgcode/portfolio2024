@@ -182,7 +182,7 @@
             </li>
             <!-- contact button -->
             <li class="wrapper-nav-desktop-li">
-              <a class="contact-btn" href="#">Contact</a>
+              <a class="open-modal" href="#">Contact</a>
             </li>
             <li class="wrapper-nav-desktop-li">
               <a href="#"><i class="fa-brands fa-github"></i> </a>
@@ -819,9 +819,11 @@
             <!-- Spa -->
             <li class="spa"><a href="about.html">Sobre mí</a></li>
             <!-- Eng -->
-            <li class="eng"><a href="contact.html">Contact</a></li>
+            <li class="eng open-modal"><a href="contact.html">Contact</a></li>
             <!-- Spa -->
-            <li class="spa"><a href="contact.html">Contactar</a></li>
+            <li class="spa open-modal">
+              <a href="contact.html">Contactar</a>
+            </li>
           </ul>
           <!-- Eng -->
           <div class="eng top-nav-text">
@@ -872,7 +874,7 @@
       </div>
     </footer>
 
-    <div class="contact">
+    <div class="contact hidden">
       <div class="contact-modal">
         <!-- left side -->
         <div class="contact-modal-content">
@@ -893,6 +895,7 @@
         </div>
         <!-- right side -->
         <form class="contact-modal-form">
+          <span class="close-modal">X</span>
           <h3>Contact me</h3>
 
           <div class="form-row">
@@ -921,11 +924,11 @@
             />
           </div>
 
-          <button class="contact-btn">Send</button>
+          <button class="open-modal">Send</button>
         </form>
       </div>
     </div>
-
+    <div class="overlay hidden"></div>
     <script src="javascript/common.js" defer></script>
     <script src="javascript/main.js" defer></script>
   </body>

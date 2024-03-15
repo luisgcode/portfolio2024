@@ -1,82 +1,87 @@
-// .contact {
-//   width: 600px;
-//   max-width: 95%;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   background: var(--bg-color);
-//   box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
-//   border-radius: 5px;
-//   z-index: 10;
+.contact {
+  width: 600px;
+  max-width: 95%;
+  background: var(--bg-color);
+  box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
+  border-radius: 5px;
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-//   &-modal {
-//     display: flex;
-//     border-radius: 5px;
+  &-modal {
+    display: flex;
+    border-radius: 5px;
 
-//     &-content {
-//       flex-basis: 40%;
-//       padding: 2rem;
-//       border-radius: 5px 0 0 5px;
-//       background: var(--details-color);
-//       position: relative;
+    &-content {
+      flex-basis: 40%;
+      padding: 2rem;
+      border-radius: 5px 0 0 5px;
+      background: var(--details-color);
+      position: relative;
 
-//       h3,
-//       p,
-//       small {
-//         color: #ffffff;
-//       }
-//     }
+      h3,
+      p,
+      small {
+        color: #ffffff;
+      }
+    }
 
-//     &-form {
-//       padding: 2rem;
-//       flex-basis: 60%;
+    &-form {
+      padding: 2rem;
+      flex-basis: 60%;
 
-//       .form-row {
-//         width: 100%;
-//         margin: 2rem 0;
+      .form-row {
+        width: 100%;
+        margin: 2rem 0;
 
-//         textarea {
-//           width: 100%;
-//           resize: vertical;
-//           outline: none;
-//           border-radius: 5px;
-//           border: none;
-//           box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
-//           padding: 1rem 1.5rem;
-//           background: transparent;
-//           color: var(--regular-color);
-//           &::placeholder {
-//             color: var(--regular-color);
-//           }
-//         }
+        textarea {
+          width: 100%;
+          resize: vertical;
+          outline: none;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
+          padding: 1rem 1.5rem;
+          background: transparent;
+          color: var(--regular-color);
+          &::placeholder {
+            color: var(--regular-color);
+          }
+        }
 
-//         input {
-//           width: 100%;
-//           outline: none;
-//           background: transparent;
-//           border-radius: 5px;
-//           border: none;
-//           box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
-//           padding: 1rem 1.5rem;
-//           color: var(--regular-color);
+        input {
+          width: 100%;
+          outline: none;
+          background: transparent;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
+          padding: 1rem 1.5rem;
+          color: var(--regular-color);
 
-//           &::placeholder {
-//             color: var(--regular-color);
-//           }
-//         }
-//       }
+          &::placeholder {
+            color: var(--regular-color);
+          }
+        }
+      }
 
-//       .contact-btn {
-//         outline: none;
-//         padding: 0.5rem 1rem;
-//         border-radius: 5px;
-//         border: none;
-//         background: var(--details-color);
-//         cursor: pointer;
-//         color: #ffffff;
-//         font-weight: 600;
-//       }
-//     }
-//   }
-// }
+      .open-modal {
+        outline: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        border: none;
+        background: var(--details-color);
+        cursor: pointer;
+        color: #ffffff;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
