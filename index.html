@@ -66,7 +66,6 @@
   </head>
 
   <body>
-    <div class="overlay"></div>
     <header class="header">
       <!-- mobile absolute nav menu -->
       <div class="nav-mobile">
@@ -816,14 +815,6 @@
             <li class="spa"><a href="projects.html">Proyectos</a></li>
             <!-- Eng -->
             <li class="eng"><a href="about.html">About</a></li>
-            <!-- Spa -->
-            <li class="spa"><a href="about.html">Sobre mí</a></li>
-            <!-- Eng -->
-            <li class="eng open-modal"><a href="contact.html">Contact</a></li>
-            <!-- Spa -->
-            <li class="spa open-modal">
-              <a href="contact.html">Contactar</a>
-            </li>
           </ul>
           <!-- Eng -->
           <div class="eng top-nav-text">
@@ -874,6 +865,7 @@
       </div>
     </footer>
 
+    <!-- contact modal -->
     <div class="contact hidden">
       <div class="contact-modal">
         <!-- left side -->
@@ -895,7 +887,9 @@
         </div>
         <!-- right side -->
         <form class="contact-modal-form">
-          <span class="close-modal">X</span>
+          <span class="close-modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
           <h3>Contact me</h3>
 
           <div class="form-row">
@@ -928,7 +922,7 @@
         </form>
       </div>
     </div>
-    <div class="overlay hidden"></div>
+
     <script src="javascript/common.js" defer></script>
     <script src="javascript/main.js" defer></script>
   </body>

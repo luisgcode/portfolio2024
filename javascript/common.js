@@ -3,31 +3,27 @@
 function commonFunction() {
   // contact modal
   const modal = document.querySelector(".contact");
-  const overlay = document.querySelector(".overlay");
   const btnOpenModal = document.querySelector(".open-modal");
   const btnCloseModal = document.querySelector(".close-modal");
 
   const openModal = function (e) {
     e.preventDefault();
     modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");
+    console.log("hola");
   };
 
   const closeModal = function () {
     modal.classList.add("hidden");
-    overlay.classList.add("hidden");
   };
 
   btnOpenModal.addEventListener("click", openModal);
   btnCloseModal.addEventListener("click", closeModal);
 
-  // document.addEventListener("keydown", function (e) {
-  //   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-  //     closeModal();
-  //   }
-  // });
-
-  // ===========================================
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+      closeModal();
+    }
+  });
 
   // Font sizes
   const btnIncreaseFonts = document.querySelectorAll(".btn-increase");
