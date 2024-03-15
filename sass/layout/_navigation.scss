@@ -30,6 +30,17 @@
           font-size: 2rem;
         }
       }
+
+      .contact-btn {
+        background: var(--details-color);
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        color: var(--bg-color);
+
+        &:hover {
+          color: var(--bg-color);
+        }
+      }
     }
   }
 }
