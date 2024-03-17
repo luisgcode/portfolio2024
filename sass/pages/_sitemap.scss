@@ -1,0 +1,34 @@
+#header-sitemap {
+  height: 30rem;
+
+  .wrapper-hero {
+    width: 100%;
+    border: 1px solid red;
+  }
+}
+// style for about pages only
+
+.sitemap {
+  margin-top: 7rem;
+  border: 1px solid red;
+
+  &-ul {
+    display: flex;
+    gap: 5rem;
+
+    &-li {
+      font-size: 2rem;
+      a {
+        color: var(--regular-color);
+        border-bottom: 1px solid gray;
+      }
+      .inner-ul {
+        margin-left: 1.5rem;
+        li {
+          font-size: 1.5rem;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}

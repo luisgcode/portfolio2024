@@ -1,10 +1,10 @@
 :root {
-  --details-color: #321a7f;
   --highlight-color: #5d5fef;
   --regular-color: #1f2428;
   --bg-color: #ffffff;
   --footer-bg: #eeeffd44;
   --box-shadow: rgba(0, 0, 0, 0.2);
+  --details-color: #321a7f;
   --primary-heading-font: clamp(2.3rem, 5vw, 3.8rem);
   --secondary-heading-font: clamp(2rem, 5vw, 3rem);
   --tertiary-heading-font: clamp(1.8rem, 5vw, 1.9);
@@ -13,11 +13,10 @@
 }
 
 :root:has(.toggleMode:checked) {
-  --details-color: #ef5d5f;
-  --highlight-color: #5d5fef;
-  --footer-bg: #34365144;
+  --highlight-color: #a9aaf9;
   --regular-color: #d2d2d2;
   --bg-color: #1f2428;
+  --footer-bg: #16191c;
   --box-shadow: rgba(255, 255, 255, 0.2);
 }
 
@@ -235,7 +234,7 @@ li {
   width: 60rem;
 }
 .abilities-wrapper-counter-top .odometro-item-digits {
-  color: var(--details-color);
+  color: var(--highlight-color);
   font-size: clamp(1.5rem, 3vw, 3.4rem);
 }
 
@@ -307,7 +306,7 @@ li {
   flex-basis: 40%;
   padding: 2rem;
   border-radius: 5px 0 0 5px;
-  background: var(--details-color);
+  background: var(--highlight-color);
   position: relative;
 }
 .contact-modal-content h3,
@@ -409,7 +408,7 @@ li {
   margin: -1rem 0 0 0;
 }
 .intro-wrapper-info .details {
-  color: var(--details-color);
+  color: var(--highlight-color);
 }
 
 @media (max-width: 1000px) {
@@ -488,7 +487,7 @@ li {
 }
 .projects-home .projects-card-links .projects-icons {
   font-size: 1rem;
-  color: var(--details-color);
+  color: var(--highlight-color);
 }
 
 @media (max-width: 800px) {
@@ -529,7 +528,7 @@ li {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   font-weight: bold;
-  color: var(--details-color);
+  color: var(--highlight-color);
 }
 .stack-wrapper-icons img {
   max-width: 5rem;
@@ -599,7 +598,7 @@ li {
   margin: 1rem 0 0.5rem 0;
 }
 .timeline .item-container .btn {
-  color: var(--details-color);
+  color: var(--highlight-color);
 }
 
 .toolbar {
@@ -610,7 +609,7 @@ li {
   justify-content: center;
   padding: 1.5rem 0.5rem 1.1rem 0.5rem;
   margin-left: -4rem;
-  margin-top: 10.3rem;
+  margin-top: 8.1rem;
   position: sticky;
   top: 10rem;
   width: 4rem;
@@ -993,7 +992,7 @@ li {
   font-size: 2rem;
 }
 .wrapper-nav-desktop-li .open-modal {
-  background: var(--details-color);
+  background: var(--highlight-color);
   padding: 0.2rem 0.8rem;
   border-radius: 5px;
   color: var(--bg-color);
@@ -1165,5 +1164,36 @@ hr {
 }
 .projects-wrapper .projects-card-links .projects-icons {
   font-size: 1rem;
-  color: var(--details-color);
+  color: var(--highlight-color);
+}
+
+#header-sitemap {
+  height: 30rem;
+}
+#header-sitemap .wrapper-hero {
+  width: 100%;
+  border: 1px solid red;
+}
+
+.sitemap {
+  margin-top: 7rem;
+  border: 1px solid red;
+}
+.sitemap-ul {
+  display: flex;
+  gap: 5rem;
+}
+.sitemap-ul-li {
+  font-size: 2rem;
+}
+.sitemap-ul-li a {
+  color: var(--regular-color);
+  border-bottom: 1px solid gray;
+}
+.sitemap-ul-li .inner-ul {
+  margin-left: 1.5rem;
+}
+.sitemap-ul-li .inner-ul li {
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }

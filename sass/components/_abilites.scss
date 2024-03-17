@@ -35,7 +35,7 @@
         width: 60rem;
 
         .odometro-item-digits {
-          color: var(--details-color);
+          color: var(--highlight-color);
           font-size: clamp(1.5rem, 3vw, 3.4rem);
         }
       }
