@@ -9,6 +9,7 @@
   .wrapper {
     display: flex;
     flex-direction: column;
+
     width: 100rem;
     max-width: 95%;
     @include margin_center;
@@ -18,7 +19,9 @@
     // Hero header
     &-hero {
       @include flex_center;
+
       @include margin_center;
+      margin-top: 5rem;
 
       &-info {
         flex-basis: 60%;
@@ -35,11 +38,12 @@
       &-banner {
         @include flex_center;
         flex-basis: 50%;
-        justify-content: flex-end;
+        justify-content: center;
 
         img {
           transform: rotate(2deg);
-          width: 70%;
+          width: 60%;
+          margin-left: 2rem;
         }
       }
     }

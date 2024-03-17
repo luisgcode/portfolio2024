@@ -380,7 +380,7 @@ li {
 }
 
 .intro {
-  padding: 10rem 0;
+  padding: 8rem 0 10rem 0;
 }
 .intro-wrapper {
   align-items: center;
@@ -914,6 +914,7 @@ li {
   align-items: center;
   display: flex;
   margin: 0 auto;
+  margin-top: 5rem;
 }
 .header .wrapper-hero-info {
   flex-basis: 60%;
@@ -929,11 +930,12 @@ li {
   align-items: center;
   display: flex;
   flex-basis: 50%;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .header .wrapper-hero-banner img {
   transform: rotate(2deg);
-  width: 70%;
+  width: 60%;
+  margin-left: 2rem;
 }
 
 /*************************************************
