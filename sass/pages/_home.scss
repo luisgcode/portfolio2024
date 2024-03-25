@@ -1,1 +1,63 @@
-// style for the main page with the toolbar included
+// only for home page
+.main-header {
+  position: relative;
+  overflow-x: hidden;
+  margin: 0 auto;
+  //   To limit the width
+  max-width: 250rem;
+  height: 90vh;
+  //   To limit the height
+  max-height: 70rem;
+
+  .hero {
+    max-width: 100%;
+    width: 100rem;
+    @include margin_center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11.5rem;
+
+    &-info {
+      flex-basis: 60%;
+
+      .hand-animation {
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-name: shake;
+        display: inline-block;
+        transform-origin: 70% 70%;
+      }
+    }
+
+    &-banner {
+      @include flex_center;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1rem;
+
+      img {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+/*************************************************
+  ****************Responsive styles****************
+  **************************************************/
+@media (max-width: 1050px) {
+  .main-header {
+    .hero {
+      padding: 0 2rem;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}

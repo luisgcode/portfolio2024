@@ -1,17 +1,18 @@
 // top nav menu
-.wrapper-nav {
-  margin-bottom: 5rem;
-  padding: 3rem 0 4rem 0;
+.nav {
   display: flex;
-  width: 100%;
+  width: 100rem;
+  max-width: 96%;
   justify-content: space-between;
   align-items: center;
+  @include margin_center;
+  padding: 3rem 0;
+  margin-bottom: 5rem;
 
   // Desktop navigation
   &-desktop {
     display: flex;
     align-items: center;
-
     gap: 3rem;
 
     &-li {
@@ -49,7 +50,7 @@
 .nav-mobile {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   background: var(--bg-color);
   z-index: 9;
   transform: translatex(100%);
@@ -88,27 +89,21 @@
 }
 
 @media (max-width: 650px) {
-  .header {
-    .wrapper {
-      &-nav {
-        margin-bottom: 0;
-        justify-content: center;
-        &-desktop {
-          display: none;
-        }
-      }
+  .nav {
+    margin-bottom: 0;
+    justify-content: center;
 
-      &-hero {
-        &-info {
-          margin-bottom: 1rem;
-        }
+    .logo {
+      width: 13rem;
+    }
+    &-desktop {
+      display: none;
+    }
+  }
 
-        &-banner {
-          img {
-            width: 60%;
-          }
-        }
-      }
+  .hero {
+    &-banner {
+      margin-right: 1rem;
     }
   }
 }
