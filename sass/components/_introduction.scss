@@ -2,35 +2,14 @@
   padding: 8rem 0 10rem 0;
 
   &-wrapper {
-    @include flex_center;
-    @include margin_center;
-    gap: 2rem;
-    height: 26rem;
-    justify-content: center;
-
-    &-eyes {
-      max-width: 42.8rem;
-      height: 26rem;
-      flex-basis: 50%;
-
-      img {
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-    }
-
     &-info {
-      flex-basis: 50%;
-      height: 100%;
-
-      h2 {
-        display: block;
-        margin: -1rem 0 0 0;
-      }
-
       .details {
         color: var(--highlight-color);
+      }
+
+      h2 {
+        margin-bottom: 1rem;
+        display: inline-block;
       }
     }
   }

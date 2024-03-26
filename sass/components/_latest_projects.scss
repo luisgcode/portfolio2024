@@ -2,14 +2,13 @@
   padding-bottom: 10rem;
 
   &-heading {
-    text-align: center;
     border-top: 0.1rem solid rgba(128, 128, 128, 0.353);
 
     h3 {
       position: relative;
       background: var(--bg-color);
-      width: 30%;
-      margin: -1rem auto 0 auto;
+      width: 25%;
+      margin-top: -2rem;
     }
   }
 
@@ -61,7 +60,7 @@
         margin-top: 2rem;
 
         a {
-          color: var(--highlight-color);
+          color: var(--details-color);
           border-bottom: 0.1rem solid var(--highlight-color);
           font-weight: bold;
           font-size: 1rem;
@@ -69,7 +68,6 @@
 
         .projects-icons {
           font-size: 1rem;
-          color: var(--highlight-color);
         }
       }
     }

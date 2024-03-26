@@ -1,38 +1,35 @@
 @mixin primary_heading {
-  font-family: "Poppins", sans-serif;
   font-size: var(--primary-heading-font);
   font-weight: 600;
   margin: 1.2rem 0;
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 @mixin secondary_heading {
   display: inline;
-  font-family: "Poppins", sans-serif;
   font-size: var(--secondary-heading-font);
-  font-weight: 600;
   letter-spacing: 0.1rem;
+  font-family: "Crete Round", serif;
+  font-weight: 400;
   margin: 1rem 0;
 }
 
 @mixin tertiary_heading {
-  font-family: "Poppins", sans-serif;
   font-size: var(--tertiary-heading-font);
-  font-weight: 600;
   margin: 0.8rem 0;
 }
 
 @mixin quaternary_heading {
-  font-family: "Poppins", sans-serif;
   font-size: var(--quaternary-heading-font);
   margin: 0.8rem 0;
 }
 
 @mixin regular_text {
-  font-family: "Open Sans", sans-serif;
   font-size: var(--regular-text-font);
-  font-weight: 600;
-  line-height: 2.4rem;
   margin: 0.8rem 0;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 600;
+  line-height: 2;
 }
 
 // Centering margin

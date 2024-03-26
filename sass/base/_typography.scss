@@ -4,7 +4,6 @@ html {
 
 body {
   color: var(--regular-color);
-  font-family: "Open Sans", sans-serif;
   font-size: var(--regular-text-font);
   line-height: 1.6;
 }
@@ -36,7 +35,6 @@ figure {
   padding: 0;
 }
 
-// Still for improvement
 p {
   @include regular_text;
   transition: all 0.3s ease;

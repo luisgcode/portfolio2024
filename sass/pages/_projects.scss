@@ -1,10 +1,16 @@
+.projects-intro {
+  max-width: 110rem;
+  margin: 0 auto 6rem auto;
+  padding: 0 5rem;
+}
+
 .projects {
   &-filter {
     border-radius: 5px;
     border: none;
     outline: none;
     box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
-    color: var(--highlight-color);
+    color: var(--details-color);
     font-weight: 500;
     padding: 0.3rem;
     margin-top: 2rem;
@@ -59,7 +65,7 @@
         margin-top: 2rem;
 
         a {
-          color: var(--highlight-color);
+          color: var(--details-color);
           border-bottom: 0.1rem solid var(--highlight-color);
           font-weight: bold;
           font-size: 1rem;
@@ -67,9 +73,15 @@
 
         .projects-icons {
           font-size: 1rem;
-          color: var(--highlight-color);
+          color: var(--details-color);
         }
       }
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-intro {
+    padding: 0 2rem;
   }
 }
