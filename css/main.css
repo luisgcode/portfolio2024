@@ -633,8 +633,8 @@ li {
 .toolbar-ul li {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  height: auto;
 }
 .toolbar-ul li:active {
   transform: scale(1.1);
@@ -642,13 +642,19 @@ li {
 }
 .toolbar-ul li i {
   color: var(--highlight-color);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+}
+.toolbar-ul li a {
+  font-size: 1rem;
+  line-height: 1;
 }
 .toolbar-ul li .menu-detail {
   color: var(--regular-color);
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
   font-family: "Merriweather Sans", sans-serif;
+  line-height: 1;
 }
 .toolbar-ul-language {
   position: relative;
@@ -656,22 +662,20 @@ li {
 .toolbar-ul-language::after {
   content: "ENG";
   position: absolute;
-  top: -0.2rem;
   z-index: -1;
   font-family: "Merriweather Sans", sans-serif;
   color: var(--highlight-color);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
   display: none;
 }
 .toolbar-ul-language::before {
   content: "SPA";
   position: absolute;
-  top: -0.2rem;
   z-index: -1;
   font-family: "Merriweather Sans", sans-serif;
   color: var(--highlight-color);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .toolbar-ul-language input[type=checkbox] {
@@ -685,20 +689,23 @@ li {
 .toolbar-ul-increase {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0.2rem;
 }
 .toolbar-ul-increase button {
   background: none;
   border: none;
   cursor: pointer;
   outline: none;
+  padding: 0;
 }
 .toolbar-ul-mode {
   position: relative;
+  margin-bottom: 0.3rem;
 }
 .toolbar-ul-mode input[type=checkbox] {
   appearance: none;
   width: 3rem;
-  height: 1.8rem;
+  height: 1.5rem;
   outline: none;
   cursor: pointer;
   position: relative;
@@ -716,6 +723,13 @@ li {
 .toolbar-ul-mode .fa-sun {
   display: none;
 }
+.toolbar-ul-print {
+  margin-bottom: 0.3rem;
+}
+.toolbar-ul-cv {
+  margin-bottom: 0.6rem;
+}
+
 .toolbar-mobile {
   position: fixed;
   z-index: 99;
