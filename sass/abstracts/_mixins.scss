@@ -6,30 +6,28 @@
 }
 
 @mixin secondary_heading {
-  display: inline;
   font-size: var(--secondary-heading-font);
   letter-spacing: 0.1rem;
   font-family: "Crete Round", serif;
-  font-weight: 400;
+  font-weight: 600;
   margin: 1rem 0;
+  color: var(--details-color);
 }
 
 @mixin tertiary_heading {
   font-size: var(--tertiary-heading-font);
   margin: 0.8rem 0;
-}
-
-@mixin quaternary_heading {
-  font-size: var(--quaternary-heading-font);
-  margin: 0.8rem 0;
+  font-family: "Crete Round", serif;
+  font-weight: normal;
+  color: var(--details-color);
 }
 
 @mixin regular_text {
   font-size: var(--regular-text-font);
   margin: 0.8rem 0;
   font-family: "Martel Sans", sans-serif;
-  font-weight: 600;
   line-height: 2;
+  font-weight: 600;
 }
 
 // Centering margin

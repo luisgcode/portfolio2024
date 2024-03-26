@@ -9,7 +9,6 @@
       justify-content: space-around;
       flex-wrap: wrap;
       margin-top: 5rem;
-
       gap: 1rem;
 
       &-box {
@@ -17,11 +16,13 @@
         width: 110px;
         flex-direction: column;
         margin: 1rem 0;
+
         .tech-name {
           margin-top: 0.5rem;
-          font-size: 1rem;
           letter-spacing: 0.1rem;
+          font-size: 1rem;
           font-weight: bold;
+          font-family: "Merriweather Sans", sans-serif;
           color: var(--highlight-color);
         }
       }
