@@ -119,13 +119,16 @@
     li {
       a {
         color: var(--highlight-color);
-        font-weight: bold;
+        font-size: 1.4rem;
+        font-family: "Merriweather Sans", sans-serif;
       }
     }
   }
 
   &-text {
     max-width: 41rem;
+    font-weight: normal;
+    font-size: 1.4rem;
   }
 }
 

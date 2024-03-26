@@ -1,26 +1,45 @@
 // style for about pages only
+.main-sitemap {
+  overflow-x: hidden;
+}
 
 .sitemap {
-  margin-top: 7rem;
-  border: 1px solid red;
+  width: 100vw;
+  margin-left: 3rem;
+}
 
-  &-ul {
-    display: flex;
-    gap: 5rem;
+a {
+  font-size: 2rem;
+}
 
-    &-li {
-      font-size: 2rem;
-      a {
-        color: var(--regular-color);
-        border-bottom: 1px solid gray;
-      }
-      .inner-ul {
-        margin-left: 1.5rem;
-        li {
-          font-size: 1.5rem;
-          margin: 1rem 0;
-        }
-      }
-    }
-  }
+.sitemap-ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+.sitemap-ul-li {
+  margin-bottom: 10px;
+}
+
+.sitemap-ul-li a {
+  text-decoration: none;
+}
+
+.inner-ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.inner-ul li {
+  margin-bottom: 5px;
+}
+
+.inner-ul li a {
+  color: #555;
+  text-decoration: none;
+}
+.inner-ul li a:hover {
+  text-decoration: underline;
 }
