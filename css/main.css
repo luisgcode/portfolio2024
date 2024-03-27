@@ -598,7 +598,6 @@ li {
   font-size: clamp(1.2rem, 2vw, 1.4rem);
 }
 .timeline .item-dates {
-  color: var(--regular-color);
   overflow: hidden;
   position: relative;
   padding: 1rem;
@@ -612,8 +611,8 @@ li {
   position: absolute;
   height: 100%;
   top: 4rem;
-  background: var(--highlight-color);
-  width: 1px;
+  background: var(--box-shadow);
+  width: 0.5px;
   z-index: -1;
   left: 50%;
   border-radius: 5px;
@@ -629,20 +628,15 @@ li {
   gap: 1rem;
 }
 .timeline .item-container-labels .label {
-  padding: 0.2rem 0.5rem;
-  font-size: clamp(0.8rem, 2vw, 0.8rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
   border-radius: 5px;
-  background: var(--highlight-color);
-  color: white;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: auto;
 }
-.timeline .item-container-comment {
-  margin: 1rem 0 0.5rem 0;
-}
-.timeline .item-container .btn {
-  color: var(--highlight-color);
-}
-
 .toolbar {
   border-radius: 1rem;
   border: none;
@@ -1125,6 +1119,15 @@ hr {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 650px) {
+  .presentation {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  .presentation-about {
+    margin-bottom: 7rem;
+  }
+}
 .main-header {
   position: relative;
   overflow-x: hidden;

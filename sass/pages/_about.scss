@@ -44,3 +44,14 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .presentation {
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+    &-about {
+      margin-bottom: 7rem;
+    }
+  }
+}
