@@ -73,6 +73,7 @@ body {
   color: var(--regular-color);
   font-size: var(--regular-text-font);
   line-height: 1.6;
+  font-family: "Martel Sans", sans-serif;
 }
 
 h1 {
@@ -228,6 +229,11 @@ small {
 .scroll-hidden {
   opacity: 0;
   transform: translateY(3rem);
+}
+
+.li-separator {
+  opacity: 20%;
+  color: var(--highlight-color);
 }
 
 * {
@@ -1081,6 +1087,44 @@ hr {
     padding: 0 2rem;
   }
 }
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+.presentation-about {
+  flex-basis: 40%;
+}
+.presentation-about h1 {
+  line-height: 1;
+}
+.presentation-about h2 {
+  margin-bottom: 4rem;
+  position: relative;
+}
+.presentation-about h2::before {
+  content: "";
+  position: absolute;
+  width: 11.7rem;
+  bottom: -5px;
+  border-top: 5px double var(--highlight-color);
+  left: 2px;
+  z-index: -1;
+}
+.presentation .presentation-ul {
+  display: flex;
+  gap: 3rem;
+}
+.presentation .presentation-ul li a {
+  color: var(--highlight-color);
+}
+.presentation-detail {
+  flex-basis: 50%;
+}
+.presentation-detail p {
+  margin-bottom: 2rem;
+}
+
 .main-header {
   position: relative;
   overflow-x: hidden;
@@ -1136,7 +1180,7 @@ hr {
 }
 .projects-intro {
   max-width: 110rem;
-  margin: 0 auto 6rem auto;
+  margin: 0 auto 15rem auto;
   padding: 0 5rem;
 }
 
@@ -1148,8 +1192,8 @@ hr {
   color: var(--details-color);
   font-weight: 500;
   padding: 0.3rem;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 .projects-wrapper {
   display: flex;
@@ -1173,10 +1217,6 @@ hr {
 }
 .projects-wrapper .projects-card-details, .projects-wrapper .projects-card-links {
   padding: 0 1rem;
-}
-.projects-wrapper .projects-card-details h4 {
-  margin: 0.5rem 0 1rem 0;
-  font-weight: normal;
 }
 .projects-wrapper .projects-card-details small {
   font-size: 1rem;

@@ -61,3 +61,8 @@ small {
   opacity: 0;
   transform: translateY(3rem);
 }
+
+.li-separator {
+  opacity: 20%;
+  color: var(--highlight-color);
+}
