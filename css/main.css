@@ -222,7 +222,7 @@ small {
 }
 
 .scroll {
-  transition: transform 1s, opacity 1.5s;
+  transition: transform 0.5s, opacity 1s;
 }
 
 .scroll-hidden {
@@ -478,6 +478,7 @@ li {
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 .projects-home .projects-card {
   width: 31%;
@@ -487,7 +488,6 @@ li {
   border-radius: 0.5rem;
   transition: all 0.3s ease;
   cursor: pointer;
-  margin-bottom: 2rem;
 }
 .projects-home .projects-card:hover {
   box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
@@ -502,14 +502,6 @@ li {
 }
 .projects-home .projects-card-details small {
   font-size: 1rem;
-}
-.projects-home .projects-card-details small:nth-child(2) {
-  color: var(--regular-color);
-}
-.projects-home .projects-card-details small:nth-child(3) {
-  color: var(--regular-color);
-}
-.projects-home .projects-card-details small:nth-child(4) {
   color: var(--regular-color);
 }
 .projects-home .projects-card-details small span {
@@ -656,6 +648,7 @@ li {
   margin-top: 7.3rem;
   position: sticky;
   width: 4rem;
+  top: 5rem;
 }
 .toolbar-ul {
   align-items: center;
@@ -1186,6 +1179,7 @@ hr {
 }
 .projects-wrapper .projects-card-details small {
   font-size: 1rem;
+  color: var(--regular-color);
 }
 .projects-wrapper .projects-card-details small span {
   font-weight: normal;
@@ -1202,6 +1196,7 @@ hr {
   border-bottom: 0.1rem solid var(--highlight-color);
   font-weight: bold;
   font-size: 1rem;
+  font-family: "Merriweather Sans", sans-serif;
 }
 .projects-wrapper .projects-card-links .projects-icons {
   font-size: 1rem;

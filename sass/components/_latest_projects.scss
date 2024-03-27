@@ -19,6 +19,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 2rem;
+    margin-bottom: 5rem;
 
     .projects-card {
       width: 31%;
@@ -28,7 +29,6 @@
       border-radius: 0.5rem;
       transition: all 0.3s ease;
       cursor: pointer;
-      margin-bottom: 2rem;
 
       &:hover {
         box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
@@ -48,17 +48,7 @@
 
         small {
           font-size: 1rem;
-
-          &:nth-child(2) {
-            color: var(--regular-color);
-          }
-
-          &:nth-child(3) {
-            color: var(--regular-color);
-          }
-          &:nth-child(4) {
-            color: var(--regular-color);
-          }
+          color: var(--regular-color);
 
           span {
             font-weight: normal;

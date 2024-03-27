@@ -51,6 +51,7 @@
 
         small {
           font-size: 1rem;
+          color: var(--regular-color);
 
           span {
             font-weight: normal;
@@ -68,7 +69,9 @@
           color: var(--details-color);
           border-bottom: 0.1rem solid var(--highlight-color);
           font-weight: bold;
+
           font-size: 1rem;
+          font-family: "Merriweather Sans", sans-serif;
         }
 
         .projects-icons {
