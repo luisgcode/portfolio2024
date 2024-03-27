@@ -20,6 +20,10 @@ h3 {
   @include tertiary_heading;
 }
 
+h4 {
+  @include quaternary_heading;
+}
+
 a {
   margin: 0;
   padding: 0;

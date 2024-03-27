@@ -8,6 +8,7 @@
   --primary-heading-font: clamp(2.3rem, 5vw, 4rem);
   --secondary-heading-font: clamp(2rem, 5vw, 2.5rem);
   --tertiary-heading-font: clamp(1.6rem, 5vw, 1.8rem);
+  --quaternary-heading-font: clamp(1.3rem, 5vw, 1.6rem);
   --regular-text-font: clamp(1.4rem, 2vw, 1.6rem);
 }
 
@@ -96,6 +97,14 @@ h3 {
   font-family: "Crete Round", serif;
   font-weight: normal;
   color: var(--details-color);
+}
+
+h4 {
+  font-size: var(--quaternary-heading-font);
+  margin: 0.8rem 0;
+  font-family: "Crete Round", serif;
+  font-weight: normal;
+  color: var(--regular-color);
 }
 
 a {
@@ -252,7 +261,7 @@ li {
   position: relative;
 }
 .abilities-wrapper-counter-heading h3::before {
-  color: var(--regular-color);
+  color: var(--highlight-color);
   content: "01101100 01110101";
   font-size: clamp(1rem, 2vw, 1.4rem);
   padding-right: 1.5rem;
@@ -271,6 +280,9 @@ li {
 .abilities-wrapper-counter-top .odometro-item-digits {
   color: var(--highlight-color);
   font-size: clamp(1.5rem, 3vw, 3.4rem);
+}
+.abilities-wrapper-counter-top span {
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 @media (max-width: 700px) {
@@ -310,6 +322,17 @@ li {
     transform: rotate(0deg);
   }
 }
+.regular-btn {
+  background: var(--highlight-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: var(--bg-color);
+  font-size: 1.6rem;
+}
+.regular-btn:hover {
+  color: var(--bg-color);
+}
+
 .contact {
   align-items: center;
   backdrop-filter: blur(0.5px);
@@ -440,13 +463,14 @@ li {
   padding-bottom: 10rem;
 }
 .projects-heading {
+  margin-bottom: 3rem;
   border-top: 0.1rem solid rgba(128, 128, 128, 0.353);
 }
-.projects-heading h3 {
-  position: relative;
+.projects-heading h2 {
   background: var(--bg-color);
-  width: 25%;
-  margin-top: -2rem;
+  width: max-content;
+  padding: 0 2rem 0 0;
+  margin-top: -2.3rem;
 }
 .projects-home {
   display: flex;
@@ -463,6 +487,7 @@ li {
   border-radius: 0.5rem;
   transition: all 0.3s ease;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 .projects-home .projects-card:hover {
   box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
@@ -477,6 +502,15 @@ li {
 }
 .projects-home .projects-card-details small {
   font-size: 1rem;
+}
+.projects-home .projects-card-details small:nth-child(2) {
+  color: var(--regular-color);
+}
+.projects-home .projects-card-details small:nth-child(3) {
+  color: var(--regular-color);
+}
+.projects-home .projects-card-details small:nth-child(4) {
+  color: var(--regular-color);
 }
 .projects-home .projects-card-details small span {
   font-weight: normal;
@@ -493,6 +527,7 @@ li {
   border-bottom: 0.1rem solid var(--highlight-color);
   font-weight: bold;
   font-size: 1rem;
+  font-family: "Merriweather Sans", sans-serif;
 }
 .projects-home .projects-card-links .projects-icons {
   font-size: 1rem;
@@ -618,9 +653,8 @@ li {
   justify-content: center;
   padding: 1.5rem 0.5rem 1.1rem 0.5rem;
   margin-left: -4rem;
-  margin-top: 5.5rem;
+  margin-top: 7.3rem;
   position: sticky;
-  top: 10rem;
   width: 4rem;
 }
 .toolbar-ul {
@@ -956,7 +990,7 @@ li {
 }
 .nav-desktop-li .open-modal {
   background: var(--highlight-color);
-  padding: 0.2rem 0.8rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   color: var(--bg-color);
 }

@@ -1,0 +1,11 @@
+.regular-btn {
+  background: var(--highlight-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: var(--bg-color);
+  font-size: 1.6rem;
+
+  &:hover {
+    color: var(--bg-color);
+  }
+}

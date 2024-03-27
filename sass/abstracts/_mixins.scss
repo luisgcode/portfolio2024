@@ -21,6 +21,13 @@
   font-weight: normal;
   color: var(--details-color);
 }
+@mixin quaternary_heading {
+  font-size: var(--quaternary-heading-font);
+  margin: 0.8rem 0;
+  font-family: "Crete Round", serif;
+  font-weight: normal;
+  color: var(--regular-color);
+}
 
 @mixin regular_text {
   font-size: var(--regular-text-font);

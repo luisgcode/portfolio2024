@@ -12,15 +12,13 @@
           position: relative;
 
           &::before {
-            color: var(--regular-color);
-            // color: lighten(var(--regular-color), 70%);
+            color: var(--highlight-color);
             content: "01101100 01110101";
             font-size: clamp(1rem, 2vw, 1.4rem);
             padding-right: 1.5rem;
           }
 
           &::after {
-            // color: lighten(var(--regular-color), 70%);
             content: "01101001 01110011";
             font-size: clamp(1rem, 2vw, 1.4rem);
             padding-left: 1.5rem;
@@ -37,6 +35,11 @@
         .odometro-item-digits {
           color: var(--highlight-color);
           font-size: clamp(1.5rem, 3vw, 3.4rem);
+        }
+
+        // text from the js inserted
+        span {
+          font-family: "Merriweather Sans", sans-serif;
         }
       }
     }
