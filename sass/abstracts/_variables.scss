@@ -5,8 +5,8 @@
   --bg-color: #ffffff;
   --footer-bg: #eeeffd44;
   --box-shadow: rgba(0, 0, 0, 0.2);
-
   --details-color: #321a7f;
+  --links: rgba(4, 4, 173, 0.784);
 
   --primary-heading-font: clamp(2.3rem, 5vw, 4rem);
   --secondary-heading-font: clamp(2rem, 5vw, 2.5rem);
@@ -17,12 +17,13 @@
 
 // Variables when dark mode activates
 :root:has(.toggleMode:checked) {
-  --highlight-color: #a9aaf9;
-  --regular-color: #d2d2d2;
+  --regular-color: #f0f0f0;
   --bg-color: #1f2428;
   --footer-bg: #16191c;
-
   --box-shadow: rgba(255, 255, 255, 0.2);
+  --highlight-color: #fc6666;
+  --details-color: #aeafeb;
+  --links: rgba(62, 152, 255, 0.784);
 }
 
 // Logo changing according to mode

@@ -5,6 +5,7 @@
   --footer-bg: #eeeffd44;
   --box-shadow: rgba(0, 0, 0, 0.2);
   --details-color: #321a7f;
+  --links: rgba(4, 4, 173, 0.784);
   --primary-heading-font: clamp(2.3rem, 5vw, 4rem);
   --secondary-heading-font: clamp(2rem, 5vw, 2.5rem);
   --tertiary-heading-font: clamp(1.6rem, 5vw, 1.8rem);
@@ -13,11 +14,13 @@
 }
 
 :root:has(.toggleMode:checked) {
-  --highlight-color: #a9aaf9;
-  --regular-color: #d2d2d2;
+  --regular-color: #f0f0f0;
   --bg-color: #1f2428;
   --footer-bg: #16191c;
   --box-shadow: rgba(255, 255, 255, 0.2);
+  --highlight-color: #fc6666;
+  --details-color: #aeafeb;
+  --links: rgba(62, 152, 255, 0.784);
 }
 
 :root:has(.toggleMode:checked) .logo-dark,
@@ -467,7 +470,6 @@ li {
 }
 .intro-wrapper-info h2 {
   margin-bottom: 1rem;
-  background: white;
   display: inline-block;
 }
 
@@ -585,7 +587,7 @@ li {
   font-size: 1rem;
   font-weight: bold;
   font-family: "Merriweather Sans", sans-serif;
-  color: var(--highlight-color);
+  color: var(--details-color);
 }
 .stack-wrapper-icons img {
   max-width: 5rem;
@@ -651,7 +653,7 @@ li {
   align-items: center;
   justify-content: center;
   padding: 0.3rem 0.5rem;
-  background: var(--details-color);
+  background: var(--highlight-color);
   color: #ffffff;
   letter-spacing: 1px;
   border: 1px solid var(--box-shadow);
@@ -665,6 +667,7 @@ li {
 .timeline .item-container .btn {
   font-size: 1.2rem;
   text-decoration: underline;
+  color: var(--links);
 }
 
 .toolbar {
@@ -1059,18 +1062,15 @@ li {
   text-align: center;
 }
 .nav-mobile-ul-li {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 .nav-mobile-ul-li a {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: var(--regular-color);
   font-family: "Merriweather Sans", sans-serif;
 }
-.nav-mobile-ul-li a i {
-  color: var(--highlight-color);
-}
-.nav-mobile-ul-li .social-network i {
-  margin: 0 1rem;
+.nav-mobile-ul .nav-desktop-li {
+  margin-top: 5rem;
 }
 
 .nav-mobile.active {

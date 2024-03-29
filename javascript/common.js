@@ -3,21 +3,25 @@
 function commonFunction() {
   // contact modal
   const modal = document.querySelector(".contact");
-  const btnOpenModal = document.querySelector(".open-modal");
-  const btnCloseModal = document.querySelector(".close-modal");
+  const btnOpenModal = document.querySelectorAll(".open-modal");
+  const btnCloseModal = document.querySelectorAll(".close-modal");
 
   const openModal = function (e) {
     e.preventDefault();
     modal.classList.remove("hidden");
-    console.log("hola");
   };
 
   const closeModal = function () {
     modal.classList.add("hidden");
   };
 
-  btnOpenModal.addEventListener("click", openModal);
-  btnCloseModal.addEventListener("click", closeModal);
+  btnOpenModal.forEach(function (btn) {
+    btn.addEventListener("click", openModal);
+  });
+
+  btnCloseModal.forEach(function (btn) {
+    btn.addEventListener("click", closeModal);
+  });
 
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && !modal.classList.contains("hidden")) {

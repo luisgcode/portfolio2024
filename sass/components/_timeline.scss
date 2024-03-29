@@ -55,7 +55,7 @@
           align-items: center;
           justify-content: center;
           padding: 0.3rem 0.5rem;
-          background: var(--details-color);
+          background: var(--highlight-color);
           color: #ffffff;
           letter-spacing: 1px;
           border: 1px solid var(--box-shadow);
@@ -72,6 +72,7 @@
       .btn {
         font-size: 1.2rem;
         text-decoration: underline;
+        color: var(--links);
       }
     }
   }

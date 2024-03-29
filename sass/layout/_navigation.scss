@@ -61,21 +61,17 @@
     text-align: center;
 
     &-li {
-      margin: 2rem 0;
+      margin: 1.5rem 0;
 
       a {
-        font-size: 2.2rem;
+        font-size: 2rem;
         color: var(--regular-color);
         font-family: "Merriweather Sans", sans-serif;
-
-        i {
-          color: var(--highlight-color);
-        }
       }
+    }
 
-      .social-network i {
-        margin: 0 1rem;
-      }
+    .nav-desktop-li {
+      margin-top: 5rem;
     }
   }
 }
