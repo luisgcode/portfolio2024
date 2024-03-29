@@ -456,7 +456,8 @@ li {
 @media (max-width: 650px) {
   .contact-modal {
     flex-direction: column;
-    top: 1%;
+    top: -5%;
+    max-width: 90%;
   }
   .contact-modal p {
     display: none;
@@ -475,6 +476,7 @@ li {
     margin: 0 auto;
     display: inline-block;
     margin: 1.5rem 0 2rem 0;
+    padding: 1rem;
   }
 }
 .hidden {
