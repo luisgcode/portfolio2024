@@ -345,7 +345,6 @@ li {
 
 .contact {
   align-items: center;
-  backdrop-filter: blur(0.9px);
   border-radius: 5px;
   display: flex;
   height: 100%;
@@ -457,6 +456,25 @@ li {
 @media (max-width: 650px) {
   .contact-modal {
     flex-direction: column;
+    top: 1%;
+  }
+  .contact-modal p {
+    display: none;
+  }
+  .close-modal {
+    color: var(--bg-color);
+  }
+  .contact-modal-form {
+    padding: 0 1rem;
+  }
+  .contact-modal-form .form-row {
+    margin: 1rem 0;
+  }
+  .regular-btn {
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 2rem;
   }
 }
 .hidden {
