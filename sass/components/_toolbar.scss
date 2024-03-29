@@ -161,11 +161,11 @@
 
   &-ul {
     padding: 1rem 0;
-
     width: 35rem;
+
     margin: 0 auto;
     @include flex_center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 3rem;
 
     li {
@@ -176,6 +176,8 @@
 
       height: 4.2rem;
       overflow: hidden;
+      min-width: 4.5rem;
+      text-align: center;
 
       i {
         color: var(--highlight-color);
