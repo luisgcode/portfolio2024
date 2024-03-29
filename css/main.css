@@ -824,6 +824,7 @@ li {
 .toolbar-mobile-ul li .menu-detail {
   text-transform: uppercase;
   font-size: 0.8rem;
+  font-weight: bold;
   color: var(--regular-color);
   font-family: "Merriweather Sans", sans-serif;
 }
@@ -838,7 +839,7 @@ li {
   z-index: -1;
   font-family: "Merriweather Sans", sans-serif;
   color: var(--highlight-color);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   display: none;
 }
@@ -850,7 +851,7 @@ li {
   z-index: -1;
   font-family: "Merriweather Sans", sans-serif;
   color: var(--highlight-color);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 .toolbar-mobile-ul-language input[type=checkbox] {
@@ -865,6 +866,9 @@ li {
   background: none;
   border: none;
   outline: none;
+}
+.toolbar-mobile-ul-increase button i {
+  font-size: 1.6rem;
 }
 .toolbar-mobile-ul-mode {
   position: relative;
