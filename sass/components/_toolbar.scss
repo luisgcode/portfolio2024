@@ -161,6 +161,7 @@
 
   &-ul {
     padding: 1rem 0;
+
     width: 35rem;
     margin: 0 auto;
     @include flex_center;
@@ -168,23 +169,23 @@
     gap: 3rem;
 
     li {
-      min-width: 3rem;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       flex-direction: column;
+
+      height: 4.2rem;
+      overflow: hidden;
 
       i {
         color: var(--highlight-color);
-        font-size: 1.6rem;
       }
 
+      // items names
       .menu-detail {
-        color: var(--regular-color);
-        margin-top: 0.5rem;
         text-transform: uppercase;
-        font-size: 1rem;
-        color: var(--details-color);
+        font-size: 0.8rem;
+        color: var(--regular-color);
         font-family: "Merriweather Sans", sans-serif;
       }
     }
@@ -196,7 +197,8 @@
       &::after {
         content: "ENG";
         position: absolute;
-        top: -0.2rem;
+        line-height: 1;
+        margin-top: 0.1rem;
         z-index: -1;
         font-family: "Merriweather Sans", sans-serif;
         color: var(--highlight-color);
@@ -208,7 +210,8 @@
       &::before {
         content: "SPA";
         position: absolute;
-        top: -0.2rem;
+        margin-top: 0.1rem;
+        line-height: 1;
         z-index: -1;
         font-family: "Merriweather Sans", sans-serif;
         color: var(--highlight-color);
@@ -219,6 +222,7 @@
       input[type="checkbox"] {
         appearance: none;
         width: 3rem;
+
         height: 1.8rem;
         outline: none;
         cursor: pointer;
@@ -242,7 +246,7 @@
       input[type="checkbox"] {
         appearance: none;
         width: 3rem;
-        height: 1.9rem;
+        height: 2rem;
         border-radius: 1.2rem;
         outline: none;
         cursor: pointer;
@@ -253,25 +257,44 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -125%);
+        transform: translate(-50%, -140%);
         z-index: -1;
       }
 
       .fa-moon {
         display: block;
+        font-size: 1.6rem;
+        margin-top: 0.3rem;
       }
 
       .fa-sun {
         display: none;
+        font-size: 1.6rem;
+        margin-top: 0.3rem;
+      }
+    }
+
+    // Cv
+    &-cv {
+      width: auto;
+      padding-top: 0.1rem;
+      a {
+        padding: 0;
+        margin: 0;
+        line-height: 0.8;
+        font-size: 1.6rem;
+      }
+
+      span {
+        margin-right: 0.1rem;
       }
     }
 
     // mobile open btn navigation
     &-hamburguer {
-      padding: 0;
-      background: transparent;
-      outline: none;
-      border: none;
+      a {
+        line-height: 1;
+      }
     }
   }
 }

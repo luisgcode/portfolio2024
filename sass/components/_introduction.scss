@@ -5,6 +5,7 @@
     &-info {
       h2 {
         margin-bottom: 1rem;
+        background: white;
         display: inline-block;
       }
     }
@@ -13,14 +14,11 @@
 
 @media (max-width: 1000px) {
   .intro {
-    padding-top: 0;
+    padding: 0 0 8rem 0;
   }
+
   .intro-wrapper {
     height: auto;
-
-    &-eyes {
-      display: none;
-    }
 
     &-info {
       flex-basis: 100%;

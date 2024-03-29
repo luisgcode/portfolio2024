@@ -1,6 +1,6 @@
 .contact {
   align-items: center;
-  backdrop-filter: blur(0.5px);
+  backdrop-filter: blur(0.9px);
   border-radius: 5px;
   display: flex;
   height: 100%;
@@ -31,11 +31,34 @@
       border-radius: 5px 0 0 5px;
       background: var(--highlight-color);
       position: relative;
+      color: var(--bg-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
 
-      h3,
-      p,
+      p {
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
+        font-weight: normal;
+      }
+
+      h3 {
+        color: var(--bg-color);
+        text-decoration: underline;
+      }
+
+      ul {
+        display: flex;
+        gap: 2rem;
+
+        i {
+          color: var(--bg-color);
+        }
+      }
+
       small {
-        color: #ffffff;
+        font-size: 1.2rem;
+        color: var(--bg-color);
+        font-weight: normal;
       }
     }
 
