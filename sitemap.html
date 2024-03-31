@@ -85,16 +85,12 @@
             </a>
           </li>
 
-          <hr />
-
           <li class="nav-mobile-ul-li">
             <!-- Eng -->
             <a class="eng" href="index.html">Home</a>
             <!-- Spa -->
             <a class="spa" href="index.html">Inicio</a>
           </li>
-
-          <hr />
 
           <li class="nav-mobile-ul-li">
             <!-- Eng -->
@@ -103,8 +99,6 @@
             <a class="spa" href="projects.html">Proyectos</a>
           </li>
 
-          <hr />
-
           <li class="nav-mobile-ul-li">
             <!-- Eng -->
             <a class="eng" href="about.html">About</a>
@@ -112,7 +106,6 @@
             <a class="spa" href="about.html">Sobre mí</a>
           </li>
 
-          <hr />
           <!-- contact button -->
           <li class="nav-desktop-li">
             <a class="open-modal" href="#">Contact</a>
@@ -173,17 +166,27 @@
     <div class="toolbar-mobile">
       <ul class="toolbar-mobile-ul">
         <li class="toolbar-mobile-ul-language">
-          <input type="checkbox" name="toggleLanguage" class="toggleLanguage" />
+          <input
+            type="checkbox"
+            name="toggleLanguage"
+            class="toggleLanguage"
+            aria-label="Button to change the language"
+          />
           <span class="menu-detail">lang</span>
         </li>
         <li class="toolbar-mobile-ul-increase">
-          <button class="btn-increase">
+          <button class="btn-increase" aria-label="Increase font size">
             <i class="fa-solid fa-text-height"></i>
           </button>
           <span class="menu-detail">Font size</span>
         </li>
         <li class="toolbar-mobile-ul-mode">
-          <input type="checkbox" name="toggleMode" class="toggleMode" />
+          <input
+            type="checkbox"
+            name="toggleMode"
+            class="toggleMode"
+            aria-label="button to change between Light and Dark mode"
+          />
           <i class="fa-solid fa-moon"></i>
           <i class="fa-solid fa-sun"></i>
           <span class="menu-detail">Dark mode</span>
@@ -217,13 +220,18 @@
             </li>
             <!-- Increase font -->
             <li class="toolbar-ul-increase">
-              <button class="btn-increase">
+              <button class="btn-increase" aria-label="Increase font size">
                 <i class="fa-solid fa-text-height"></i>
               </button>
               <span class="menu-detail">Size</span>
             </li>
             <li class="toolbar-ul-mode">
-              <input type="checkbox" name="toggleMode" class="toggleMode" />
+              <input
+                type="checkbox"
+                name="toggleMode"
+                class="toggleMode"
+                aria-label="button to change between Light and Dark mode"
+              />
               <i class="fa-solid fa-moon"></i>
               <i class="fa-solid fa-sun"></i>
               <span class="menu-detail">Mode</span>
@@ -436,7 +444,9 @@
             />
           </div>
 
-          <button class="regular-btn">Send message</button>
+          <button class="regular-btn" aria-label="Send Message">
+            Send message
+          </button>
         </form>
       </div>
     </div>
