@@ -963,9 +963,8 @@ a {
   font-weight: bold;
 }
 .footer .top-icon-info-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
-  text-align: justify;
 }
 .footer .bottom {
   display: flex;
@@ -975,9 +974,8 @@ a {
   max-width: 120rem;
   padding-bottom: 2rem;
 }
-.footer .bottom-license a {
-  color: var(--highlight-color);
-  font-weight: bold;
+.footer .bottom p {
+  font-size: 1.4rem;
 }
 
 /*************************************************
