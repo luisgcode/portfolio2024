@@ -1,7 +1,6 @@
 .header {
-  margin: 0 auto;
-
+  @include margin_center;
+  max-width: 250rem;
   overflow-x: hidden;
   position: relative;
-  max-width: 250rem;
 }

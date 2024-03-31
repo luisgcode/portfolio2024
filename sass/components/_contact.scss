@@ -1,8 +1,5 @@
 .contact {
-  align-items: center;
-  border-radius: 5px;
-  display: flex;
-  height: 100%;
+  @include flex_center;
   justify-content: center;
   left: 50%;
   max-width: 95%;
@@ -12,7 +9,6 @@
   transform: translate(-50%, -50%);
   transition: all 0.1s ease;
   visibility: visible;
-  width: 100%;
   z-index: 10;
 
   &-modal {
@@ -80,7 +76,7 @@
           background: transparent;
           color: var(--regular-color);
           &::placeholder {
-            color: var(--regular-color);
+            color: rgba(119, 136, 153, 0.816);
           }
         }
 
@@ -95,7 +91,7 @@
           color: var(--regular-color);
 
           &::placeholder {
-            color: var(--regular-color);
+            color: rgba(119, 136, 153, 0.816);
           }
         }
       }
@@ -107,8 +103,7 @@
         width: 2rem;
         height: 2rem;
         box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
-        display: flex;
-        align-items: center;
+        @include flex-center;
         justify-content: center;
         border-radius: 5px;
         cursor: pointer;
@@ -122,40 +117,43 @@
   }
 }
 
-@media (max-width: 650px) {
-  .contact-modal {
-    flex-direction: column;
-    top: -5%;
-    max-width: 90%;
-
-    p {
-      display: none;
-    }
-  }
-
-  .close-modal {
-    color: var(--bg-color);
-  }
-
-  .contact-modal-form {
-    padding: 0 1rem;
-
-    .form-row {
-      margin: 1rem 0;
-    }
-  }
-
-  .regular-btn {
-    text-align: center;
-    margin: 0 auto;
-    display: inline-block;
-    margin: 1.5rem 0 2rem 0;
-    padding: 1rem;
-  }
+.regular-btn {
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  margin: 1.5rem 0 2rem 0;
+  padding: 1rem;
 }
 
+// hidde the contact until is called
 .hidden {
   visibility: hidden;
   opacity: 0;
   transition: all 0.1s ease;
+}
+
+@media (max-width: 650px) {
+  .contact {
+    &-modal {
+      flex-direction: column;
+      top: -5%;
+      max-width: 90%;
+
+      &-form {
+        padding: 0 1rem;
+
+        .form-row {
+          margin: 1rem 0;
+        }
+
+        .close-modal {
+          color: var(--bg-color);
+        }
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
 }

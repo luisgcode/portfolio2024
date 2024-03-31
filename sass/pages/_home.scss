@@ -1,22 +1,19 @@
 // only for home page
 .main-header {
-  position: relative;
-  overflow-x: hidden;
-  margin: 0 auto;
-  //   To limit the width
-  max-width: 250rem;
+  @include margin_center;
   height: 90vh;
-  //   To limit the height
   max-height: 70rem;
+  max-width: 250rem;
+  overflow-x: hidden;
+  position: relative;
 
   .hero {
-    max-width: 100%;
-    width: 100rem;
+    @include flex_center;
     @include margin_center;
-    display: flex;
-    align-items: center;
     justify-content: center;
     margin-top: 11.5rem;
+    max-width: 100%;
+    width: 100rem;
 
     &-info {
       flex-basis: 60%;
@@ -49,8 +46,8 @@
 @media (max-width: 1050px) {
   .main-header {
     .hero {
-      padding: 0 2rem;
       margin-top: 2rem;
+      padding: 0 2rem;
     }
   }
 }

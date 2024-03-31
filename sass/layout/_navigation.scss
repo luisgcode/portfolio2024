@@ -1,28 +1,26 @@
 // top nav menu
 .nav {
-  display: flex;
-  width: 100rem;
-  max-width: 96%;
-  justify-content: space-between;
-  align-items: center;
+  @include flex_center;
   @include margin_center;
-  padding: 3rem 0;
+  justify-content: space-between;
   margin-bottom: 5rem;
+  max-width: 96%;
+  padding: 3rem 0;
+  width: 100rem;
 
   // Desktop navigation
   &-desktop {
-    display: flex;
-    align-items: center;
+    @include flex_center;
     gap: 2rem;
     margin-right: 3.6rem;
 
     &-li {
       a {
         color: var(--regular-color);
-        font-size: clamp(1.4rem, 2vw, 1.6rem);
-        transition: all 0.3s ease;
         font-family: "Merriweather Sans", sans-serif;
+        font-size: clamp(1.4rem, 2vw, 1.6rem);
         font-weight: bold;
+        transition: all 0.3s ease;
 
         &:hover {
           color: var(--highlight-color);
@@ -35,9 +33,9 @@
 
       .open-modal {
         background: var(--highlight-color);
-        padding: 0.5rem 1rem;
         border-radius: 5px;
         color: var(--bg-color);
+        padding: 0.5rem 1rem;
 
         &:hover {
           color: var(--bg-color);
@@ -49,13 +47,13 @@
 
 // Hidden until clicking the nav open button
 .nav-mobile {
-  width: 100%;
+  background: var(--bg-color);
   height: 100%;
   position: fixed;
-  background: var(--bg-color);
-  z-index: 9;
   transform: translatex(100%);
   transition: all 0.2s ease;
+  width: 100%;
+  z-index: 9;
 
   &-ul {
     text-align: center;
@@ -64,9 +62,9 @@
       margin: 1.5rem 0;
 
       a {
-        font-size: 2rem;
         color: var(--regular-color);
         font-family: "Merriweather Sans", sans-serif;
+        font-size: 2rem;
       }
     }
 
@@ -88,8 +86,8 @@
 
 @media (max-width: 650px) {
   .nav {
-    margin-bottom: 0;
     justify-content: center;
+    margin-bottom: 0;
 
     .logo {
       width: 13rem;
@@ -116,21 +114,21 @@
     li {
       a {
         color: var(--highlight-color);
-        font-size: 1.4rem;
         font-family: "Merriweather Sans", sans-serif;
+        font-size: 1.4rem;
       }
     }
   }
 
   &-text {
-    max-width: 41rem;
-    font-weight: normal;
     font-size: 1.4rem;
+    font-weight: normal;
+    max-width: 41rem;
   }
 }
 
 hr {
   margin: 0;
-  padding: 0;
   opacity: 30%;
+  padding: 0;
 }

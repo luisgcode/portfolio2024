@@ -4,14 +4,14 @@
   box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
   display: flex;
   justify-content: center;
-  padding: 1.5rem 0.5rem 1.1rem 0.5rem;
-  //   Key margin to center all elements because of the toolbar
-  margin-left: -4rem;
   margin-top: 7.3rem;
+  padding: 1.5rem 0.5rem 1.1rem 0.5rem;
   position: sticky;
+  top: 5rem;
   // Can't be bigger than 40px
   width: 4rem;
-  top: 5rem;
+  //   Key margin to center all elements because of the toolbar
+  margin-left: -4rem;
 
   &-ul {
     @include flex_center;
@@ -21,8 +21,7 @@
 
     // Styles for all elements
     li {
-      display: flex;
-      align-items: center;
+      @include flex_center;
       flex-direction: column;
       height: auto;
 
@@ -43,11 +42,11 @@
 
       .menu-detail {
         color: var(--regular-color);
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        margin-top: 0.5rem;
         font-family: "Merriweather Sans", sans-serif;
+        font-size: 0.8rem;
         line-height: 1;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
       }
     }
 
@@ -56,33 +55,33 @@
       position: relative;
 
       &::after {
-        content: "ENG";
-        position: absolute;
-        z-index: -1;
-        font-family: "Merriweather Sans", sans-serif;
         color: var(--highlight-color);
+        content: "ENG";
+        display: none;
+        font-family: "Merriweather Sans", sans-serif;
         font-size: 1.5rem;
         font-weight: 500;
-        display: none;
+        position: absolute;
+        z-index: -1;
       }
 
       &::before {
-        content: "SPA";
-        position: absolute;
-        z-index: -1;
-        font-family: "Merriweather Sans", sans-serif;
         color: var(--highlight-color);
+        content: "SPA";
+        font-family: "Merriweather Sans", sans-serif;
         font-size: 1.5rem;
         font-weight: 500;
+        position: absolute;
+        z-index: -1;
       }
 
       input[type="checkbox"] {
         appearance: none;
-        width: 3rem;
+        cursor: pointer;
         height: 1.8rem;
         outline: none;
-        cursor: pointer;
         position: relative;
+        width: 3rem;
       }
     }
 
@@ -109,17 +108,17 @@
 
       input[type="checkbox"] {
         appearance: none;
-        width: 3rem;
+        cursor: pointer;
         height: 1.5rem;
         outline: none;
-        cursor: pointer;
         position: relative;
+        width: 3rem;
       }
 
       i {
+        left: 50%;
         position: absolute;
         top: 50%;
-        left: 50%;
         transform: translate(-50%, -90%);
         z-index: -1;
       }
@@ -147,35 +146,32 @@
 
 // mobile toolbar
 .toolbar-mobile {
-  position: fixed;
-  z-index: 99;
-  bottom: 0;
-  width: 100%;
-  border: 0.5rem 0.5rem 0 0;
-  // hidden until mobile
-  visibility: hidden;
-  opacity: 0;
   background-color: var(--bg-color);
+  border: 0.5rem 0.5rem 0 0;
+  bottom: 0;
   box-shadow: 0 -0.5rem 2rem 0 rgba(151, 151, 151, 0.2);
+  opacity: 0;
   padding-bottom: 1.5rem;
+  position: fixed;
+  visibility: hidden;
+  width: 100%;
+  z-index: 99;
 
   &-ul {
+    @include flex_center;
+    @include margin_center;
+    gap: 3rem;
+    justify-content: space-evenly;
     padding: 1rem 0;
     width: 35rem;
 
-    margin: 0 auto;
-    @include flex_center;
-    justify-content: space-evenly;
-    gap: 3rem;
-
     li {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include flex_center;
       flex-direction: column;
       height: 4.2rem;
-      overflow: hidden;
+      justify-content: space-between;
       min-width: 4.5rem;
+      overflow: hidden;
       text-align: center;
 
       i {
@@ -184,11 +180,11 @@
 
       // items names
       .menu-detail {
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        font-weight: bold;
         color: var(--regular-color);
         font-family: "Merriweather Sans", sans-serif;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
       }
     }
 
@@ -197,38 +193,37 @@
       position: relative;
 
       &::after {
-        content: "ENG";
-        position: absolute;
-        line-height: 1;
-        margin-top: 0.1rem;
-        z-index: -1;
-        font-family: "Merriweather Sans", sans-serif;
         color: var(--highlight-color);
+        content: "ENG";
+        display: none;
+        font-family: "Merriweather Sans", sans-serif;
         font-size: 1.6rem;
         font-weight: 500;
-        display: none;
+        line-height: 1;
+        margin-top: 0.1rem;
+        position: absolute;
+        z-index: -1;
       }
 
       &::before {
-        content: "SPA";
-        position: absolute;
-        margin-top: 0.1rem;
-        line-height: 1;
-        z-index: -1;
-        font-family: "Merriweather Sans", sans-serif;
         color: var(--highlight-color);
+        content: "SPA";
+        font-family: "Merriweather Sans", sans-serif;
         font-size: 1.6rem;
         font-weight: 500;
+        line-height: 1;
+        margin-top: 0.1rem;
+        position: absolute;
+        z-index: -1;
       }
 
       input[type="checkbox"] {
         appearance: none;
-        width: 3rem;
-
+        cursor: pointer;
         height: 1.8rem;
         outline: none;
-        cursor: pointer;
         position: relative;
+        width: 3rem;
       }
     }
 
@@ -251,18 +246,18 @@
 
       input[type="checkbox"] {
         appearance: none;
-        width: 3rem;
-        height: 2rem;
         border-radius: 1.2rem;
-        outline: none;
         cursor: pointer;
+        height: 2rem;
+        outline: none;
         position: relative;
+        width: 3rem;
       }
 
       i {
+        left: 50%;
         position: absolute;
         top: 50%;
-        left: 50%;
         transform: translate(-50%, -140%);
         z-index: -1;
       }
@@ -282,13 +277,13 @@
 
     // Cv
     &-cv {
-      width: auto;
       padding-top: 0.1rem;
+      width: auto;
       a {
-        padding: 0;
-        margin: 0;
-        line-height: 0.8;
         font-size: 1.6rem;
+        line-height: 0.8;
+        margin: 0;
+        padding: 0;
       }
 
       span {
@@ -307,7 +302,7 @@
 
 @media (max-width: 650px) {
   .toolbar-mobile {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
   }
 }

@@ -1,0 +1,40 @@
+// About me section tooltip
+.hig-text {
+  border-bottom: 2px dashed var(--highlight-color);
+  color: var(--regular-color);
+  cursor: pointer;
+  position: relative;
+
+  .tool-tip {
+    background-color: var(--highlight-color);
+    border-radius: 5px;
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    left: 50%;
+    opacity: 0;
+    padding: 0.5rem;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -135%);
+    transition: 0.3s;
+    width: 300px;
+  }
+
+  .tool-tip::after {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid var(--highlight-color);
+    bottom: -8px;
+    content: "";
+    display: block;
+    left: calc(50% - 8px);
+    position: absolute;
+  }
+}
+
+.hig-text:hover .tool-tip {
+  opacity: 1;
+  transition: 0.3s;
+}

@@ -1,8 +1,8 @@
 // Stylles that apply for all the web
 .main-wrapp {
+  @include margin_center;
   display: flex;
   max-width: 110rem;
-  @include margin_center;
   position: relative;
 
   // aside {

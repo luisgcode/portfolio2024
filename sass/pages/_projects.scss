@@ -1,6 +1,6 @@
 .projects-intro {
-  max-width: 110rem;
   margin: 0 auto 15rem auto;
+  max-width: 110rem;
   padding: 0 5rem;
 }
 
@@ -8,30 +8,29 @@
   &-filter {
     border-radius: 5px;
     border: none;
-    outline: none;
     box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
     color: var(--details-color);
-    font-weight: 500;
-    padding: 0.3rem;
     font-size: 1.5rem;
+    font-weight: 500;
     margin-bottom: 2rem;
+    outline: none;
+    padding: 0.3rem;
   }
 
   &-wrapper {
-    display: flex;
+    @include flex_center;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
     gap: 2rem;
+    justify-content: space-between;
 
     .projects-card {
-      width: 31%;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
+      cursor: pointer;
       min-height: 31.5rem;
       padding: 1rem;
-      box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
-      border-radius: 0.5rem;
       transition: all 0.3s ease;
-      cursor: pointer;
+      width: 31%;
 
       &:hover {
         box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
@@ -56,22 +55,21 @@
 
       &-links {
         @include flex_center;
-        width: 100%;
         justify-content: space-between;
         margin-top: 2rem;
+        width: 100%;
 
         a {
-          color: var(--details-color);
           border-bottom: 0.1rem solid var(--highlight-color);
-          font-weight: bold;
-
-          font-size: 1rem;
+          color: var(--details-color);
           font-family: "Merriweather Sans", sans-serif;
+          font-size: 1rem;
+          font-weight: bold;
         }
 
         .projects-icons {
-          font-size: 1rem;
           color: var(--details-color);
+          font-size: 1rem;
         }
       }
     }

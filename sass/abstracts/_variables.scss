@@ -1,79 +1,27 @@
 // Default variables
 :root {
-  --highlight-color: #5d5fef;
-  --regular-color: #1f2428;
   --bg-color: #ffffff;
-  --footer-bg: #eeeffd44;
   --box-shadow: rgba(0, 0, 0, 0.2);
   --details-color: #321a7f;
+  --footer-bg: #eeeffd44;
+  --highlight-color: #5d5fef;
   --links: rgba(4, 4, 173, 0.784);
+  --regular-color: #1f2428;
 
   --primary-heading-font: clamp(2.3rem, 5vw, 4rem);
-  --secondary-heading-font: clamp(2rem, 5vw, 2.5rem);
-  --tertiary-heading-font: clamp(1.6rem, 5vw, 1.8rem);
   --quaternary-heading-font: clamp(1.3rem, 5vw, 1.6rem);
   --regular-text-font: clamp(1.4rem, 2vw, 1.6rem);
+  --secondary-heading-font: clamp(2rem, 5vw, 2.5rem);
+  --tertiary-heading-font: clamp(1.6rem, 5vw, 1.8rem);
 }
 
-// Variables when dark mode activates
+// Variables when dark mode is activated
 :root:has(.toggleMode:checked) {
-  --regular-color: #f0f0f0;
   --bg-color: #1f2428;
-  --footer-bg: #16191c;
   --box-shadow: rgba(255, 255, 255, 0.2);
-  --highlight-color: #fc6666;
   --details-color: #aeafeb;
+  --footer-bg: #16191c;
+  --highlight-color: #fc6666;
   --links: rgba(62, 152, 255, 0.784);
-}
-
-// Logo changing according to mode
-:root:has(.toggleMode:checked) {
-  .logo-dark,
-  .fa-sun {
-    display: block;
-  }
-
-  .logo-light,
-  .fa-moon {
-    display: none;
-  }
-}
-
-// Languages from the whole page
-.spa {
-  display: none;
-}
-
-:has(.toggleLanguage:checked) .spa {
-  display: block;
-}
-
-:has(.toggleLanguage:checked) .eng {
-  display: none;
-}
-
-// Hidden ENG and SPA from toolbar mobile
-.toolbar-mobile-ul-language::after {
-  display: none;
-}
-
-:has(.toggleLanguage:checked) .toolbar-mobile-ul-language::after {
-  display: block;
-}
-
-:has(.toggleLanguage:checked) .toolbar-mobile-ul-language::before {
-  display: none;
-}
-
-// Hidden ENG and SPA from toolbar desktop
-.toolbar-ul-language::after {
-  display: none;
-}
-
-:has(.toggleLanguage:checked) .toolbar-ul-language::after {
-  display: block;
-}
-
-:has(.toggleLanguage:checked) .toolbar-ul-language::before {
-  display: none;
+  --regular-color: #f0f0f0;
 }

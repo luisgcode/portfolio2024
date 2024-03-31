@@ -1,6 +1,6 @@
 .footer {
-  margin-top: 10rem;
   background-color: var(--footer-bg);
+  margin-top: 10rem;
 
   .top,
   .bottom {
@@ -45,9 +45,9 @@
     display: flex;
     font-size: 1rem;
     justify-content: space-between;
+    margin-top: 2rem;
     max-width: 120rem;
     padding-bottom: 2rem;
-    margin-top: 2rem;
 
     &-license {
       a {

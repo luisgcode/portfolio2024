@@ -6,24 +6,24 @@
 
     &-icons {
       display: flex;
-      justify-content: space-around;
       flex-wrap: wrap;
-      margin-top: 5rem;
       gap: 1rem;
+      justify-content: space-around;
+      margin-top: 5rem;
 
       &-box {
         @include flex_center;
-        width: 110px;
         flex-direction: column;
         margin: 1rem 0;
+        width: 110px;
 
         .tech-name {
-          margin-top: 0.5rem;
-          letter-spacing: 0.1rem;
+          color: var(--details-color);
+          font-family: "Merriweather Sans", sans-serif;
           font-size: 1rem;
           font-weight: bold;
-          font-family: "Merriweather Sans", sans-serif;
-          color: var(--details-color);
+          letter-spacing: 0.1rem;
+          margin-top: 0.5rem;
         }
       }
 

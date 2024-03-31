@@ -1,10 +1,10 @@
 .regular-btn {
   background: var(--highlight-color);
-  font-size: clamp(1.4rem, 2vw, 1.4rem);
-  padding: 0.5rem;
   border-radius: 5px;
-  color: var(--bg-color);
-  outline: none;
-  cursor: pointer;
   border: none;
+  color: var(--bg-color);
+  cursor: pointer;
+  font-size: clamp(1.4rem, 2vw, 1.4rem);
+  outline: none;
+  padding: 0.5rem 1rem;
 }

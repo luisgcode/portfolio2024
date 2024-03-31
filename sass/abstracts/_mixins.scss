@@ -1,40 +1,38 @@
 @mixin primary_heading {
+  font-family: "Merriweather Sans", sans-serif;
   font-size: var(--primary-heading-font);
   font-weight: 600;
   margin: 1.2rem 0;
-  font-family: "Merriweather Sans", sans-serif;
 }
 
 @mixin secondary_heading {
-  font-size: var(--secondary-heading-font);
-  letter-spacing: 0.1rem;
-  font-family: "Crete Round", serif;
-  font-weight: 600;
-  margin: 1rem 0;
   color: var(--details-color);
+  font-family: "Crete Round", serif;
+  font-size: var(--secondary-heading-font);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0;
 }
 
 @mixin tertiary_heading {
-  font-size: var(--tertiary-heading-font);
-  margin: 0.8rem 0;
-  font-family: "Crete Round", serif;
-  font-weight: normal;
   color: var(--details-color);
+  font-family: "Crete Round", serif;
+  font-size: var(--tertiary-heading-font);
+  font-weight: normal;
+  margin: 0.8rem 0;
 }
 @mixin quaternary_heading {
-  font-size: var(--quaternary-heading-font);
-  margin: 0.8rem 0;
-  font-family: "Crete Round", serif;
-  font-weight: normal;
   color: var(--regular-color);
+  font-family: "Crete Round", serif;
+  font-size: var(--quaternary-heading-font);
+  font-weight: normal;
+  margin: 0.8rem 0;
 }
 
 @mixin regular_text {
   font-size: var(--regular-text-font);
-  margin: 0.8rem 0;
-  font-family: "Martel Sans", sans-serif;
-  line-height: 2;
   font-weight: 600;
+  margin: 0.8rem 0;
 }
 
 // Centering margin

@@ -1,7 +1,7 @@
 /*missing alt attribute*/
 img:not([alt]) {
-  outline: 0.5rem dashed red;
   outline-offset: 0.5rem;
+  outline: 0.5rem dashed red;
 }
 
 /*empty alt attribute*/
@@ -10,44 +10,37 @@ img[alt=""] {
   outline: 0.5rem solid blue;
 }
 
-figure,
-figcaption,
-span {
-  margin: 0;
-  padding: 0;
-}
-
 small {
+  color: var(--details-color);
+  font-family: "Crete Round", serif;
+  font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 1.4rem;
-  font-family: "Crete Round", serif;
-  color: var(--details-color);
 }
 
 .detailed {
   color: var(--highlight-color);
 }
 
-// soon techs
+// soon tags for tecnologies
 .soon {
   position: relative;
 
   img {
     opacity: 10%;
   }
-}
 
-.soon::after {
-  content: "Soon";
-  opacity: 50%;
-  position: absolute;
-  left: 50%;
-  bottom: 40%;
-  color: var(--highlight-color);
-  font-weight: bold;
-  text-transform: uppercase;
-  transform: translate(-50%, -50%) rotate(-20deg);
+  &::after {
+    bottom: 40%;
+    color: var(--highlight-color);
+    content: "Soon";
+    font-weight: bold;
+    left: 50%;
+    opacity: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
 }
 
 // Scroll revealing animation
@@ -62,7 +55,62 @@ small {
   transform: translateY(3rem);
 }
 
+// List items separator
 .li-separator {
-  opacity: 20%;
   color: var(--highlight-color);
+  opacity: 20%;
+}
+
+// Dark mode utilities
+// Logo changing according to mode
+:root:has(.toggleMode:checked) {
+  .logo-dark,
+  .fa-sun {
+    display: block;
+  }
+
+  .logo-light,
+  .fa-moon {
+    display: none;
+  }
+}
+
+// Language button & elements
+// Languages from the whole page
+.spa {
+  display: none;
+}
+
+:has(.toggleLanguage:checked) .spa {
+  display: block;
+}
+
+:has(.toggleLanguage:checked) .eng {
+  display: none;
+}
+
+// Hidden ENG and SPA from toolbar mobile
+.toolbar-mobile-ul-language::after {
+  display: none;
+}
+
+:has(.toggleLanguage:checked) .toolbar-mobile-ul-language::after {
+  display: block;
+}
+
+:has(.toggleLanguage:checked) .toolbar-mobile-ul-language::before {
+  display: none;
+}
+
+// Hidden ENG and SPA from toolbar desktop
+.toolbar-ul-language::after {
+  display: none;
+}
+
+:has(.toggleLanguage:checked) .toolbar-ul-language::after {
+  display: block;
+}
+
+:has(.toggleLanguage:checked) .toolbar-ul-language::before {
+  display: none;
 }

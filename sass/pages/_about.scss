@@ -15,13 +15,12 @@
       position: relative;
 
       &::before {
+        border-top: 5px double var(--highlight-color);
+        bottom: -5px;
         content: "";
+        left: 2px;
         position: absolute;
         width: 11.7rem;
-        bottom: -5px;
-
-        border-top: 5px double var(--highlight-color);
-        left: 2px;
         z-index: -1;
       }
     }

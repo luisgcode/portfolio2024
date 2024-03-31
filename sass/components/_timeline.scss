@@ -2,22 +2,21 @@
 
 .timeline {
   border-radius: 15px;
-  padding: 2rem;
   box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
   margin-bottom: 10rem;
+  padding: 2rem;
   // Items box
   .item {
     display: flex;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
     gap: 1rem;
     margin: 1rem 0;
-    font-size: clamp(1.2rem, 2vw, 1.4rem);
 
     &-dates {
-      overflow: hidden;
-      position: relative;
-      padding: 1rem;
-      // Achicar esto para mobile
       min-width: 110px;
+      overflow: hidden;
+      padding: 1rem;
+      position: relative;
       text-align: center;
 
       time {
@@ -25,54 +24,53 @@
       }
 
       .line {
-        position: absolute;
-        height: 100%;
-        top: 4rem;
         background: var(--box-shadow);
+        border-radius: 5px;
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 4rem;
         width: 0.5px;
         z-index: -1;
-        left: 50%;
-        border-radius: 5px;
       }
     }
 
     // each card
     &-container {
+      border-bottom: 1px solid lightgray;
+      max-width: 100%;
       padding: 1rem;
       width: 100%;
-      max-width: 100%;
-      border-bottom: 1px solid lightgray;
 
       &-labels {
         display: flex;
         gap: 1rem;
 
         .label {
-          font-size: clamp(0.8rem, 2vw, 1rem);
-          border-radius: 5px;
-          text-transform: uppercase;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 0.3rem 0.5rem;
           background: var(--highlight-color);
-          color: #ffffff;
-          letter-spacing: 1px;
+          border-radius: 5px;
           border: 1px solid var(--box-shadow);
-          width: auto;
+          color: #ffffff;
+          @include flex_center;
           font-size: 0.8rem;
+          font-size: clamp(0.8rem, 2vw, 1rem);
+          justify-content: center;
+          letter-spacing: 1px;
+          padding: 0.3rem 0.5rem;
+          text-transform: uppercase;
+          width: auto;
         }
       }
 
       &-comment {
-        margin: 2rem 0 1rem 0;
         font-size: 1.4rem;
+        margin: 2rem 0 1rem 0;
       }
 
       .btn {
+        color: var(--links);
         font-size: 1.2rem;
         text-decoration: underline;
-        color: var(--links);
       }
     }
   }

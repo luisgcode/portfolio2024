@@ -4,8 +4,8 @@
   &-wrapper {
     &-info {
       h2 {
-        margin-bottom: 1rem;
         display: inline-block;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -17,11 +17,8 @@
   }
 
   .intro-wrapper {
-    height: auto;
-
     &-info {
       flex-basis: 100%;
-      height: auto;
     }
   }
 }
