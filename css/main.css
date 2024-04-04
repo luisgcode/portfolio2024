@@ -29,6 +29,7 @@ html {
 
 body {
   color: var(--regular-color);
+  font-family: "Martel Sans", sans-serif;
   font-size: var(--regular-text-font);
   line-height: 1.8;
 }
