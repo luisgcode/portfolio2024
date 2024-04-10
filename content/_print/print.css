@@ -1,125 +1,126 @@
-/*CSS Stylesheet T.O.C. - Table of contents
-Created XX April XXXX
-Last update April XX: 
+html {
+  font-size: 62.5%;
+  background-color: white;
+}
 
+body {
+  width: 800px;
+  height: auto;
+  font-size: 13pt;
+  height: 960px;
+  font-family: "Noto Serif", serif;
+  display: block;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: black;
+}
 
-Compatible Browser:
-Firefox V.85.0.2 (64-bit)
-Chrome V.89.0.4389.90 (Build oficial) (64 bits)
-Edge V.89.0.774.54 (Compilación oficial) (64 bits)
-Safari V. 
+img,
+video,
+audio,
+footer,
+figure,
+figcaption,
+nav,
+aside {
+  display: none;
+}
 
-
-=RESET % CONDITIONAL COMMENT
-=GENERAL
-=LAYOUT:
-=PAGES
-
-      =index
-
-/*       RESET      */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-   border: 0;
-   font-size: 100%;
-   font: inherit;
-   margin: 0;
-   padding: 0;
-   vertical-align: baseline;
+h6 {
+  font-family: "Noto Serif", serif;
+  font-weight: normal;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-   display: block;
+/* LOGO APPEAR */
+/* REMEMBER ALWAYS USE THE CLASS LOGO IN ORDER TO APPLY THIS STYLE */
+.logo {
+  display: block;
+  filter: grayscale(1);
+  margin: 20px auto 40px auto;
+  width: 200px;
 }
 
-body {
-   line-height: 1.5;
+/* HEADINGS SETTINGS*/
+h1 {
+  font-size: 22pt;
+  width: 600px;
+  margin: 30px auto 0 auto;
 }
 
-ol,
+h2 {
+  font-size: 18pt;
+  margin: 40px auto 30px auto;
+}
+h3 {
+  font-size: 14pt;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 11pt;
+}
+
+h5 {
+  font-size: 9pt;
+}
+
+/* ARTICLE AND PARAGRAPHS SETTINGS*/
+
+article {
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+article p {
+  margin-bottom: 30px;
+}
+
+.first-paragraph {
+  margin-bottom: 35px;
+}
+/* LINKS SETTINGS */
+
+a::after {
+  content: " [ " attr(href) " ]";
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+a:link,
+a:visited {
+  font-weight: bold;
+  color: black;
+}
+
+/* LIST SETTINGS */
+
 ul {
-   list-style: none;
+  margin: 15px 0 35px 0;
 }
 
-/*///////////////////////GENERAL///////////////////////////*/
+ul li {
+  margin-bottom: 40px;
+  page-break-inside: avoid;
+}
+
+/* PAGE MEDIA SETTINGS */
+
+@page :first {
+  margin-top: 20pt;
+}
+
+@page {
+  margin-bottom: 80pt;
+  margin-top: 70pt;
+}
+
+/* ----------------------------------
+          CUSTOMIZED ADJUSTMENTS  
+   ----------------------------------- */
