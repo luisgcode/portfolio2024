@@ -21,8 +21,11 @@ audio,
 footer,
 figure,
 figcaption,
-nav,
-aside {
+aside,
+.toolbar-mobile,
+.nav-mobile,
+.nav-desktop,
+.logo-dark {
   display: none;
 }
 
@@ -38,7 +41,12 @@ h6 {
 
 /* LOGO APPEAR */
 /* REMEMBER ALWAYS USE THE CLASS LOGO IN ORDER TO APPLY THIS STYLE */
-.logo {
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-light {
   display: block;
   filter: grayscale(1);
   margin: 20px auto 40px auto;
@@ -46,7 +54,7 @@ h6 {
 }
 
 /* HEADINGS SETTINGS*/
-h1 {
+/* h1 {
   font-size: 22pt;
   width: 600px;
   margin: 30px auto 0 auto;
@@ -56,6 +64,7 @@ h2 {
   font-size: 18pt;
   margin: 40px auto 30px auto;
 }
+
 h3 {
   font-size: 14pt;
   margin-bottom: 10px;
@@ -68,26 +77,12 @@ h4 {
 
 h5 {
   font-size: 9pt;
-}
+} */
 
 /* ARTICLE AND PARAGRAPHS SETTINGS*/
 
-article {
-  width: 600px;
-  height: auto;
-  margin: 0 auto;
-}
-
-article p {
-  margin-bottom: 30px;
-}
-
-.first-paragraph {
-  margin-bottom: 35px;
-}
 /* LINKS SETTINGS */
-
-a::after {
+/* a::after {
   content: " [ " attr(href) " ]";
   font-weight: normal;
   letter-spacing: 1px;
@@ -97,29 +92,18 @@ a:link,
 a:visited {
   font-weight: bold;
   color: black;
-}
-
-/* LIST SETTINGS */
-
-ul {
-  margin: 15px 0 35px 0;
-}
-
-ul li {
-  margin-bottom: 40px;
-  page-break-inside: avoid;
-}
+} */
 
 /* PAGE MEDIA SETTINGS */
 
-@page :first {
+/* @page :first {
   margin-top: 20pt;
 }
 
 @page {
   margin-bottom: 80pt;
   margin-top: 70pt;
-}
+} */
 
 /* ----------------------------------
           CUSTOMIZED ADJUSTMENTS  
