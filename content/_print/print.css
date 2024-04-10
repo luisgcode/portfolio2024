@@ -17,6 +17,27 @@ body {
   color: black;
 }
 
+main,
+header,
+section,
+nav {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+/******************** Logo Settings ********************/
+.logo-light {
+  filter: grayscale(1);
+  margin: 1rem auto;
+}
+
 /******************** Hide elements ********************/
 audio,
 footer,
@@ -24,7 +45,10 @@ figcaption,
 aside,
 .contact,
 .nav-mobile,
-.nav-desktop {
+.nav-desktop,
+.logo-dark,
+.hand-animation,
+br {
   display: none !important;
 }
 
@@ -63,4 +87,12 @@ h3 {
 
 h4 {
   font-size: 11pt;
+}
+
+p,
+small,
+.detailed,
+a,
+span {
+  color: black !important;
 }
