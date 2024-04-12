@@ -5,16 +5,13 @@ html {
 }
 
 body {
-  width: 800px;
-  height: auto;
-  font-size: 13pt;
-  height: 960px;
-  font-family: "Noto Serif", serif;
-  display: block;
-  margin: 0 auto;
-  line-height: 1.6;
-  border: 1px solid red;
-  color: black;
+  width: 800px !important;
+  font-size: 13pt !important;
+  font-family: "Noto Serif", serif !important;
+  display: block !important;
+  margin: 0 auto !important;
+  line-height: 1.6 !important;
+  color: black !important;
 }
 
 main,
@@ -25,6 +22,10 @@ nav {
   margin: 0 !important;
 }
 
+main {
+  height: auto !important;
+}
+
 nav {
   display: flex !important;
   align-items: center !important;
@@ -32,10 +33,37 @@ nav {
   width: 100% !important;
 }
 
+.hero {
+  padding: 0 !important;
+  margin: 0 auto 5rem auto !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+header {
+  height: auto !important;
+}
+
+section {
+  margin-bottom: 4rem !important;
+}
+
+.stack-wrapper-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.stack-wrapper-icons-box {
+  width: 50px !important;
+}
+
 /******************** Logo Settings ********************/
 .logo-light {
   filter: grayscale(1);
-  margin: 1rem auto;
+  margin: 3rem auto !important;
 }
 
 /******************** Hide elements ********************/
@@ -48,7 +76,11 @@ aside,
 .nav-desktop,
 .logo-dark,
 .hand-animation,
-br {
+br,
+.hero-banner,
+.projects,
+.abilities-wrapper-counter,
+.stack-wrapper-icons-box img {
   display: none !important;
 }
 
@@ -66,12 +98,13 @@ h6 {
   color: black !important;
   margin: 0 !important;
   padding: 0 !important;
+  width: 100% !important;
 }
 
 h1 {
   font-size: 22pt;
   width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
 }
 
 h2 {
