@@ -94,3 +94,62 @@ openNavBtns.forEach(function (openBtn) {
     });
   });
 });
+
+// Thank you message
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.querySelector(".contact-modal-form");
+
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      var formData = new FormData(this); // Get form data
+
+      // Log form data to verify it's captured correctly
+      console.log("Form Data:", formData);
+
+      fetch("process_contact_form.php", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => response.text()) // Parse response as text
+        .then((result) => {
+          console.log("Server Response:", result); // Log server response for debugging
+          try {
+            var data = JSON.parse(result); // Parse the JSON response
+            if (data.status === "success") {
+              redirectToHome(); // Redirect to home page after successful form submission
+            } else if (data.status === "error") {
+              console.error(
+                "There was a problem sending your message. Please try again later."
+              );
+            } else if (data.status === "incomplete") {
+              console.error("Please fill out all fields in the form.");
+            } else {
+              console.error(
+                "An error occurred while processing the form. Please try again."
+              );
+            }
+          } catch (error) {
+            console.error("Error parsing JSON response:", error);
+            console.error(
+              "An error occurred while processing the form. Please try again."
+            );
+          }
+        })
+        .catch((error) => {
+          console.error("Fetch error:", error);
+          console.error(
+            "An error occurred while processing the form. Please try again."
+          );
+        });
+    });
+  } else {
+    console.error("Form element not found.");
+  }
+
+  // Function to redirect to the home page
+  function redirectToHome() {
+    window.location.href = "https://luisgcode.com/"; // Redirect to the home page
+  }
+});
