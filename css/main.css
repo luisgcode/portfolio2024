@@ -1354,3 +1354,29 @@ a {
 .inner-ul li a:hover {
   text-decoration: underline;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.container .fa-circle-check {
+  color: green;
+  font-size: clamp(2rem, 5vw, 7rem);
+  margin-bottom: 2rem;
+}
+.container h1 {
+  color: var(--highlight-color);
+}
+.container .social-list {
+  display: flex;
+  gap: 2rem;
+}
