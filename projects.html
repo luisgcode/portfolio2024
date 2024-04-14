@@ -868,15 +868,19 @@
         </div>
         <!-- right side -->
         <form
-          class="contact-modal-form"
-          action="process_contact_form.php"
+          action="https://api.web3forms.com/submit"
           method="POST"
+          class="contact-modal-form"
         >
           <span class="close-modal">
             <i class="fa-solid fa-xmark"></i>
           </span>
           <h3>Contact me</h3>
-
+          <input
+            type="hidden"
+            name="access_key"
+            value="a8cda7ef-f947-4dd6-9e73-cffce391f01d"
+          />
           <div class="form-row">
             <textarea
               name="message"
@@ -912,6 +916,7 @@
         </form>
       </div>
     </div>
+
     <script src="javascript/common.js"></script>
     <script src="javascript/main.js"></script>
   </body>
