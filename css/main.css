@@ -970,7 +970,7 @@ a {
   padding-bottom: 2rem;
 }
 .footer .bottom p {
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
 }
 
 /*************************************************
