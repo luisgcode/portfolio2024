@@ -1,0 +1,22 @@
+.projects {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.projects-card video[poster="images/poster-benefits.png"],
+.projects-card video[poster="images/poster-catalogs.png"],
+.projects-card video[poster="images/poster-encore.png"],
+.projects-card video[poster="images/poster-meet.png"],
+.projects-card video[poster="images/poster-portfolio.png"],
+.projects-card video[poster="images/poster-project.png"],
+.projects-card video[poster="images/poster-slot.png"],
+.projects-card video[poster="images/poster-stores.png"],
+.projects-card video[poster="images/poster-terms.png"],
+.projects-card video[poster="images/poster-timer.png"] {
+  filter: grayscale(100%);
+}
+
+/******************** Hidden elements ********************/
+.projects-card-links {
+  display: none !important;
+}

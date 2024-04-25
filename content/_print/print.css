@@ -1,6 +1,7 @@
 /******************** General settings ********************/
 @import url("print_about.css");
 @import url("print_home.css");
+@import url("print_projects.css");
 
 html {
   font-size: 62.5%;
