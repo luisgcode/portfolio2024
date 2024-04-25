@@ -127,6 +127,13 @@ a:visited {
   color: black;
 }
 
+/* Hidden link logo [index.html] */
+.logo_link_print::after {
+  content: "";
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
 /* Queries */
 @page {
   size: A4;
