@@ -1,10 +1,8 @@
 /******************** Hide elements ********************/
-/* .hero-banner,
-.projects,
-.abilities-wrapper-counter,
-.stack-wrapper-icons-box img {
+
+.hero.spa {
   display: none !important;
-} */
+}
 
 h2 {
   font-size: 18pt;
@@ -23,4 +21,9 @@ h2 {
 .presentation-ul {
   flex-direction: column;
   margin: 3rem 0;
+}
+
+.timeline {
+  border: none;
+  box-shadow: none !important;
 }
