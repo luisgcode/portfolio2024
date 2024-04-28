@@ -1351,16 +1351,11 @@ a {
 }
 
 .container {
+  padding: 3rem 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-content: center;
   flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 2rem;
-  width: 100%;
+  justify-content: center;
   text-align: center;
 }
 .container .fa-circle-check {
@@ -1374,4 +1369,9 @@ a {
 .container .social-list {
   display: flex;
   gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.container .regular-btn {
+  margin: 2rem auto;
 }

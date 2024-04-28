@@ -78,41 +78,400 @@
   </head>
 
   <body>
-    <div class="container">
-      <i class="fa-solid fa-circle-check"></i>
-      <h1>Thank you!</h1>
-      <p>I've received your message and I will be in touch with you shortly.</p>
-      <ul class="social-list">
-        <li>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/luisgcode/"
-            aria-label="Link to Linkedin profile"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
+    <header class="header">
+      <!-- mobile absolute nav menu -->
+      <div class="nav-mobile">
+        <ul class="nav-mobile-ul">
+          <li class="nav-mobile-ul-li">
+            <a href="index.html" aria-label="Link to Home page">
+              <img
+                class="logo logo-light"
+                src="images/logos/luisgcodelight.svg"
+                alt="lgcode logo"
+              />
+              <img
+                class="logo logo-dark"
+                src="images/logos/luisgcodedark.svg"
+                alt="lgcode logo"
+              />
+            </a>
+          </li>
+
+          <li class="nav-mobile-ul-li">
+            <!-- Eng -->
+            <a class="eng" href="index.html" aria-label="Link to home page"
+              >Home</a
+            >
+            <!-- Spa -->
+            <a class="spa" href="index.html" aria-label="Link to home page"
+              >Inicio</a
+            >
+          </li>
+
+          <li class="nav-mobile-ul-li">
+            <!-- Eng -->
+            <a
+              class="eng"
+              href="projects.html"
+              aria-label="Link to projects page"
+              >Projects</a
+            >
+            <!-- Spa -->
+            <a
+              class="spa"
+              href="projects.html"
+              aria-label="Link to projects page"
+              >Proyectos</a
+            >
+          </li>
+
+          <li class="nav-mobile-ul-li">
+            <!-- Eng -->
+            <a class="eng" href="about.html" aria-label="Link to about page"
+              >About</a
+            >
+            <!-- Spa -->
+            <a class="spa" href="about.html" aria-label="Link to about page"
+              >Sobre mí</a
+            >
+          </li>
+
+          <!-- contact button -->
+          <li class="nav-desktop-li">
+            <a
+              class="open-modal"
+              href="#"
+              aria-label="Button to open the contact form modal"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- navigation -->
+      <nav class="nav">
+        <!-- Desktop logo -->
+        <a
+          class="logo_link_print"
+          href="index.html"
+          aria-label="Link to Home page"
+        >
+          <img
+            class="logo logo-light"
+            src="images/logos/luisgcodelight.svg"
+            alt="lgcode logo"
+          />
+          <img
+            class="logo logo-dark"
+            src="images/logos/luisgcodedark.svg"
+            alt="lgcode logo"
+          />
+        </a>
+        <!-- desktop nav menu -->
+        <ul class="nav-desktop">
+          <li class="nav-desktop-li">
+            <!-- Eng -->
+            <a class="eng" href="index.html" aria-label="Link to home page"
+              >Home</a
+            >
+
+            <!-- Spa -->
+            <a class="spa" href="index.html" aria-label="Link to home page"
+              >Inicio</a
+            >
+          </li>
+          <li class="li-separator">|</li>
+          <li class="nav-desktop-li">
+            <!-- Eng -->
+            <a
+              class="eng"
+              href="projects.html"
+              aria-label="link to projects page"
+              >Projects</a
+            >
+
+            <!-- Spa -->
+            <a
+              class="spa"
+              href="projects.html"
+              aria-label="link to projects page"
+              >Proyectos</a
+            >
+          </li>
+          <li class="li-separator">|</li>
+          <li class="nav-desktop-li">
+            <!-- Eng -->
+            <a class="eng" href="about.html" aria-label="Link to about page"
+              >About</a
+            >
+
+            <!-- Spa -->
+            <a class="spa" href="about.html" aria-label="Link to about page"
+              >Sobre mí</a
+            >
+          </li>
+          <li class="li-separator">|</li>
+          <!-- contact button -->
+          <li class="nav-desktop-li">
+            <a
+              class="open-modal"
+              href="#"
+              aria-label="Button to open the contact form modal"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- mobile toolbar with its own design-->
+    <div class="toolbar-mobile">
+      <ul class="toolbar-mobile-ul">
+        <li class="toolbar-mobile-ul-language">
+          <input
+            type="checkbox"
+            name="toggleLanguage"
+            class="toggleLanguage"
+            aria-label="Button to change the text language between English and spanish"
+          />
+          <span class="menu-detail">lang</span>
         </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://github.com/luisgcode"
-            aria-label="Link to github profile"
-            ><i class="fa-brands fa-github"></i
-          ></a>
+        <!-- Increase font-size -->
+        <li class="toolbar-mobile-ul-increase">
+          <button
+            class="btn-increase"
+            aria-label="Button to Increase font size"
+          >
+            <i class="fa-solid fa-text-height"></i>
+          </button>
+          <span class="menu-detail">Font size</span>
         </li>
-        <li>
+        <!-- mode  -->
+        <li class="toolbar-mobile-ul-mode">
+          <input
+            type="checkbox"
+            name="toggleMode"
+            class="toggleMode"
+            aria-label="button to change between Light and Dark mode"
+          />
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+          <span class="menu-detail">Dark mode</span>
+        </li>
+        <!-- Cv -->
+        <li class="toolbar-mobile-ul-cv">
           <a
-            target="_blank"
-            href="https://www.instagram.com/luisgcode/"
-            aria-label="Link to instagram profile"
-            ><i class="fa-brands fa-square-instagram"></i>
+            href="images/Luis-velasquez.pdf"
+            aria-label="Button to download Luis resume in pdf"
+            download="luisGcode CV"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> </a
+          ><span class="menu-detail">CV</span>
+        </li>
+        <!-- Hamburguer menu -->
+        <li class="toolbar-mobile-ul-hamburguer">
+          <a href="#" aria-label="button to open the options menu"
+            ><i class="fa-solid fa-bars"></i>
           </a>
+          <span class="menu-detail">menu</span>
         </li>
       </ul>
-
-      <a href="https://luisgcode.com" class="regular-btn"
-        >Go back to luisgcode.com</a
-      >
     </div>
+
+    <div class="main-wrapp">
+      <aside class="scroll">
+        <div class="toolbar">
+          <ul class="toolbar-ul">
+            <li class="toolbar-ul-language">
+              <input
+                type="checkbox"
+                name="toggleLanguage"
+                class="toggleLanguage"
+                value="eng"
+                aria-label="Button to change the language between english and spanish"
+              />
+              <span class="menu-detail">lang</span>
+            </li>
+            <!-- Increase font -->
+            <li class="toolbar-ul-increase">
+              <button
+                class="btn-increase"
+                aria-label="Button to Increase font size"
+              >
+                <i class="fa-solid fa-text-height"></i>
+              </button>
+              <span class="menu-detail" style="margin-top: 1px">Size</span>
+            </li>
+            <li class="toolbar-ul-mode">
+              <input
+                type="checkbox"
+                name="toggleMode"
+                class="toggleMode"
+                aria-label="button to change between Light and Dark mode"
+              />
+              <i class="fa-solid fa-moon"></i>
+              <i class="fa-solid fa-sun"></i>
+              <span class="menu-detail" style="margin-top: 2px">Mode</span>
+            </li>
+            <li
+              class="toolbar-ul-print"
+              id="printLink"
+              style="margin-top: -1px"
+            >
+              <a
+                href="#"
+                aria-label="button to get a print version of the page"
+              >
+                <i class="fa-solid fa-print"></i>
+              </a>
+              <span class="menu-detail" style="margin-top: 4px">Print</span>
+            </li>
+            <li class="toolbar-ul-cv" style="margin-top: -2px">
+              <a
+                href="images/Luis-velasquez.pdf"
+                aria-label="Button to download Luis resume in pdf"
+                download="luisGcode CV"
+              >
+                <i class="fa-solid fa-file-arrow-down"></i>
+              </a>
+              <span class="menu-detail" style="margin-bottom: 3px">CV</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main-thanks">
+        <div class="container">
+          <i class="fa-solid fa-circle-check"></i>
+          <h1>Thank you!</h1>
+          <p>
+            I've received your message and I will be in touch with you shortly.
+          </p>
+          <ul class="social-list">
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/luisgcode/"
+                aria-label="Link to Linkedin profile"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/luisgcode"
+                aria-label="Link to github profile"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/luisgcode/"
+                aria-label="Link to instagram profile"
+                ><i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </li>
+          </ul>
+
+          <a href="https://luisgcode.com/projects.html" class="regular-btn"
+            >Check my projects</a
+          >
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="top">
+        <div class="top-footer">
+          <img
+            class="logo logo-light"
+            src="images/logos/luisgcodelight.svg"
+            alt="luis portfolio logo"
+          />
+          <img
+            class="logo logo-dark"
+            src="images/logos/luisgcodedark.svg"
+            alt="luis portfolio logo"
+          />
+        </div>
+        <div class="top-nav">
+          <ul class="top-nav-ul">
+            <!-- Eng -->
+            <li class="eng">
+              <a href="index.html" aria-label="Link to Home page">Home</a>
+            </li>
+            <!-- Spa -->
+            <li class="spa">
+              <a href="index.html" aria-label="Link to Home page">Inicio</a>
+            </li>
+            <!-- Eng -->
+            <li class="eng">
+              <a aria-label="Link to projects page" href="projects.html"
+                >Projects</a
+              >
+            </li>
+            <!-- Spa -->
+            <li class="spa">
+              <a aria-label="Link to projects page" href="projects.html"
+                >Proyectos</a
+              >
+            </li>
+            <!-- Eng -->
+            <li class="eng">
+              <a aria-label="Link to about page" href="about.html">About</a>
+            </li>
+            <!-- Spa -->
+            <li class="spa">
+              <a aria-label="Link to about page" href="about.html">Sobre mí</a>
+            </li>
+            <!-- Eng -->
+            <li>
+              <a href="sitemap.html" aria-label="Link to the sitemap page"
+                >Sitemap</a
+              >
+            </li>
+          </ul>
+          <!-- Eng -->
+          <p class="eng top-nav-text">
+            luisgcode.com is my starting professional portfolio for Web
+            Development. I'm excited about working for a great team and learning
+            new skills.
+          </p>
+          <!-- Spa -->
+          <p class="spa top-nav-text">
+            luisgcode.com es mi primer portafolio como un Web Developer
+            profesional. Me emociona ser parte de un gran equipo y aprender
+            nuevas habilidades
+          </p>
+        </div>
+        <div class="top-icon">
+          <div class="top-icon-info">
+            <!-- Eng -->
+            <p class="eng top-icon-info-title">Get in touch</p>
+            <!-- Spa -->
+            <p class="spa top-icon-info-title">Contactame</p>
+            <!-- Eng -->
+            <p class="eng top-icon-info-text">
+              For any project inquiry or for more information about what I do,
+              please feel free to get in touch at contact@luisgcode.com
+            </p>
+            <!-- Spa -->
+            <p class="spa top-icon-info-text">
+              Por cualquier consulta sobre un proyecto o solicitar más
+              información sobre lo que hago, por favor no dudes en contactarme a
+              mi correo contact@luisgcode.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="bottom">
+        <p>&copy; 2024 All rights reserved.</p>
+        <p>Made with 💜 by Luis G code</p>
+      </div>
+    </footer>
 
     <script src="javascript/main.min.js"></script>
   </body>
