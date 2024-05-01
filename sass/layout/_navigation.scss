@@ -5,7 +5,7 @@
   justify-content: space-between;
   margin-bottom: 5rem;
   max-width: 96%;
-  padding: 3rem 0;
+  padding: 2rem 0 1rem 0;
   width: 100rem;
 
   // Desktop navigation
@@ -131,4 +131,28 @@ hr {
   margin: 0;
   opacity: 30%;
   padding: 0;
+}
+
+// Sticky menu
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0 0 5px 5px;
+  z-index: 99;
+  background: var(--bg-color);
+}
+
+.nav.active {
+  background: var(--bg-color);
+  padding: 1rem 0;
+  box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
+  padding-left: 3.3rem;
+}
+
+.nav.active .logo {
+  width: 10rem;
+  margin-top: 1.2rem;
 }

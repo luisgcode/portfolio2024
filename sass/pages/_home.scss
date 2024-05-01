@@ -6,6 +6,7 @@
   max-width: 250rem;
   overflow-x: hidden;
   position: relative;
+  margin-top: 12rem;
 
   .hero {
     @include flex_center;
