@@ -296,6 +296,22 @@ a {
   padding: 0.5rem 1rem;
 }
 
+#help-button {
+  color: var(--highlight-color);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+#help-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 15px;
+  background: var(--highlight-color);
+}
+
 .contact {
   align-items: center;
   display: flex;
