@@ -1070,7 +1070,7 @@ a {
   transform: translatex(100%);
   transition: all 0.2s ease;
   width: 100%;
-  z-index: 9;
+  z-index: 14;
 }
 .nav-mobile-ul {
   text-align: center;
@@ -1140,7 +1140,7 @@ hr {
   right: 0;
   transition: all 0.3s ease-in-out;
   border-radius: 0 0 5px 5px;
-  z-index: 99;
+  z-index: 9;
   background: var(--bg-color);
 }
 
@@ -1156,6 +1156,14 @@ hr {
   margin-top: 1.2rem;
 }
 
+@media (max-width: 650px) {
+  .nav.active {
+    background: var(--bg-color);
+    padding: 0.5rem 0;
+    box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
+    padding-left: 0rem;
+  }
+}
 .main-wrapp {
   margin: 0 auto;
   display: flex;
@@ -1271,6 +1279,9 @@ hr {
   .hero {
     flex-direction: column;
     text-align: center;
+  }
+  .main-header {
+    margin-top: 0;
   }
 }
 .projects-intro {
