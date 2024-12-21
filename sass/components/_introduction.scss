@@ -9,6 +9,85 @@
       }
     }
   }
+
+  &-experience {
+    margin-top: 4rem;
+
+    .timeline {
+      position: relative;
+      padding-left: 50px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: #666;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -54px;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #3b82f6;
+      border: 2px solid #0a0a0a;
+    }
+
+    .timeline-icon {
+      position: absolute;
+      left: -58px;
+      top: -2px;
+      width: 18px;
+      height: 18px;
+      background-color: #3b82f6;
+      border-radius: 50%;
+    }
+
+    .job-title {
+      color: #3b82f6;
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .company {
+      color: #d97706;
+      font-size: 1rem;
+      margin: 4px 0;
+    }
+
+    .period {
+      color: #6b7280;
+      font-size: 0.875rem;
+      margin-bottom: 12px;
+    }
+
+    .description {
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-top: 12px;
+    }
+
+    .location {
+      color: #6b7280;
+      font-size: 0.875rem;
+      font-style: italic;
+      margin-top: 4px;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
