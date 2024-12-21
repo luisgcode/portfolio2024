@@ -1,5 +1,5 @@
 .intro {
-  padding: 8rem 0 10rem 0;
+  padding: 8rem 0 0 0;
 
   &-wrapper {
     &-info {
@@ -15,7 +15,12 @@
 
     .timeline {
       position: relative;
-      padding-left: 50px;
+      padding-left: 20px;
+      box-shadow: none;
+
+      p {
+        font-size: 1.3rem;
+      }
     }
 
     .timeline::before {
@@ -24,61 +29,33 @@
       left: 0;
       top: 0;
       height: 100%;
-      width: 2px;
-      background-color: #666;
+      width: 1px;
+      background-color: #d7d7d749;
     }
 
     .timeline-item {
       position: relative;
-      margin-bottom: 50px;
-    }
-
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      left: -54px;
-      top: 0;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #3b82f6;
-      border: 2px solid #0a0a0a;
+      margin-bottom: 2rem;
     }
 
     .timeline-icon {
       position: absolute;
-      left: -58px;
-      top: -2px;
-      width: 18px;
-      height: 18px;
-      background-color: #3b82f6;
+      left: -22px;
+      top: 13px;
+      width: 5px;
+      height: 5px;
+      background-color: var(--highlight-color);
       border-radius: 50%;
     }
 
-    .job-title {
-      color: #3b82f6;
-      font-size: 1.25rem;
-      font-weight: 500;
-      margin: 0;
-    }
-
-    .company {
-      color: #d97706;
-      font-size: 1rem;
-      margin: 4px 0;
+    .company-link {
+      font-size: 1.4rem;
     }
 
     .period {
       color: #6b7280;
-      font-size: 0.875rem;
       margin-bottom: 12px;
-    }
-
-    .location {
-      color: #6b7280;
-      font-size: 0.875rem;
-      font-style: italic;
-      margin-top: 4px;
+      font-size: 1.2rem;
     }
   }
 }
