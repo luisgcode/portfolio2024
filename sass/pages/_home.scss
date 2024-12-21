@@ -27,6 +27,16 @@
       }
     }
 
+    &-info-ul {
+      display: flex;
+      gap: 2rem;
+
+      li a {
+        color: var(--highlight-color);
+        font-size: 2rem;
+      }
+    }
+
     &-banner {
       @include flex_center;
       align-items: center;
@@ -38,6 +48,10 @@
       }
     }
   }
+}
+
+.hero-info-ul.mobile {
+  display: none;
 }
 
 /*************************************************
@@ -60,5 +74,14 @@
 
   .main-header {
     margin-top: 0;
+  }
+
+  .hero-info-ul.desktop {
+    display: none;
+  }
+
+  .hero-info-ul.mobile {
+    display: flex;
+    margin-top: 2rem;
   }
 }

@@ -1202,6 +1202,14 @@ hr {
   display: inline-block;
   transform-origin: 70% 70%;
 }
+.main-header .hero-info-ul {
+  display: flex;
+  gap: 2rem;
+}
+.main-header .hero-info-ul li a {
+  color: var(--highlight-color);
+  font-size: 2rem;
+}
 .main-header .hero-banner {
   align-items: center;
   display: flex;
@@ -1211,6 +1219,10 @@ hr {
 }
 .main-header .hero-banner img {
   max-width: 60%;
+}
+
+.hero-info-ul.mobile {
+  display: none;
 }
 
 /*************************************************
@@ -1229,6 +1241,13 @@ hr {
   }
   .main-header {
     margin-top: 0;
+  }
+  .hero-info-ul.desktop {
+    display: none;
+  }
+  .hero-info-ul.mobile {
+    display: flex;
+    margin-top: 2rem;
   }
 }
 .projects-intro {
