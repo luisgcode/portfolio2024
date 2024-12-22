@@ -4,18 +4,22 @@
   &-wrapper {
     @include margin_center;
 
+    .stack-row {
+      margin-bottom: 2rem;
+    }
+
     &-icons {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      justify-content: space-around;
-      margin-top: 5rem;
+      justify-content: flex-start;
+      margin-top: 2rem;
 
       &-box {
         @include flex_center;
         flex-direction: column;
         margin: 1rem 0;
-        width: 110px;
+        width: 80px;
 
         .tech-name {
           color: var(--details-color);
