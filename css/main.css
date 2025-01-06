@@ -126,7 +126,9 @@ small {
 }
 
 .scroll {
-  transition: transform 0.5s, opacity 1s;
+  transition:
+    transform 0.5s,
+    opacity 1s;
 }
 
 .scroll-hidden {
@@ -530,7 +532,8 @@ a {
   box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
   transition: all 0.3s ease;
 }
-.projects-home .projects-card-details, .projects-home .projects-card-links {
+.projects-home .projects-card-details,
+.projects-home .projects-card-links {
   padding: 0 1rem;
 }
 .projects-home .projects-card-details h4 {
@@ -752,7 +755,7 @@ a {
   position: absolute;
   z-index: -1;
 }
-.toolbar-ul-language input[type=checkbox] {
+.toolbar-ul-language input[type="checkbox"] {
   appearance: none;
   cursor: pointer;
   height: 1.8rem;
@@ -776,7 +779,7 @@ a {
   position: relative;
   margin-bottom: 0.3rem;
 }
-.toolbar-ul-mode input[type=checkbox] {
+.toolbar-ul-mode input[type="checkbox"] {
   appearance: none;
   cursor: pointer;
   height: 1.5rem;
@@ -868,7 +871,7 @@ a {
   position: absolute;
   z-index: -1;
 }
-.toolbar-mobile-ul-language input[type=checkbox] {
+.toolbar-mobile-ul-language input[type="checkbox"] {
   appearance: none;
   cursor: pointer;
   height: 1.8rem;
@@ -887,7 +890,7 @@ a {
 .toolbar-mobile-ul-mode {
   position: relative;
 }
-.toolbar-mobile-ul-mode input[type=checkbox] {
+.toolbar-mobile-ul-mode input[type="checkbox"] {
   appearance: none;
   border-radius: 1.2rem;
   cursor: pointer;
@@ -1318,7 +1321,8 @@ hr {
   box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
   transition: all 0.3s ease;
 }
-.projects-wrapper .projects-card-details, .projects-wrapper .projects-card-links {
+.projects-wrapper .projects-card-details,
+.projects-wrapper .projects-card-links {
   padding: 0 1rem;
 }
 .projects-wrapper .projects-card-details small {
