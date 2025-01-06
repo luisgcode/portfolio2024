@@ -16,6 +16,7 @@
     .timeline {
       position: relative;
       padding-left: 20px;
+      padding-bottom: 0;
       box-shadow: none;
 
       p {
@@ -36,6 +37,10 @@
     .timeline-item {
       position: relative;
       margin-bottom: 2rem;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
     }
 
     .timeline-icon {

@@ -448,6 +448,7 @@ a {
 .intro-experience .timeline {
   position: relative;
   padding-left: 20px;
+  padding-bottom: 0;
   box-shadow: none;
 }
 .intro-experience .timeline p {
@@ -465,6 +466,9 @@ a {
 .intro-experience .timeline-item {
   position: relative;
   margin-bottom: 2rem;
+}
+.intro-experience .timeline-item:last-child {
+  margin-bottom: 0;
 }
 .intro-experience .timeline-icon {
   position: absolute;
@@ -493,7 +497,7 @@ a {
   }
 }
 .projects {
-  padding-bottom: 10rem;
+  padding-bottom: 6.3rem;
 }
 .projects-heading {
   border-top: 0.1rem solid rgba(128, 128, 128, 0.353);
@@ -616,7 +620,7 @@ a {
 .timeline {
   border-radius: 15px;
   box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
-  margin-bottom: 10rem;
+  margin-bottom: 8.5rem;
   padding: 2rem;
 }
 .timeline .item {
@@ -1168,7 +1172,7 @@ hr {
 .presentation {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
 }
 .presentation-about {
   flex-basis: 40%;
@@ -1281,7 +1285,7 @@ hr {
     margin: 1rem 0 2rem 0;
   }
   .hero-banner {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .main-header {
     margin-top: 0;
