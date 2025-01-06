@@ -17,14 +17,6 @@
 
     &-info {
       flex-basis: 60%;
-
-      .hand-animation {
-        animation-duration: 2.5s;
-        animation-iteration-count: infinite;
-        animation-name: shake;
-        display: inline-block;
-        transform-origin: 70% 70%;
-      }
     }
 
     &-info-ul {

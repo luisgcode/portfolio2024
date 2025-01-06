@@ -1239,13 +1239,6 @@ hr {
 .main-header .hero-info {
   flex-basis: 60%;
 }
-.main-header .hero-info .hand-animation {
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  animation-name: shake;
-  display: inline-block;
-  transform-origin: 70% 70%;
-}
 .main-header .hero-info-ul {
   display: flex;
   gap: 2rem;
@@ -1365,52 +1358,6 @@ hr {
     padding: 0 2rem;
   }
 }
-.main-sitemap {
-  overflow-x: hidden;
-}
-
-.sitemap {
-  margin-left: 3rem;
-  width: 100vw;
-}
-
-a {
-  font-size: 2rem;
-}
-
-.sitemap-ul {
-  font-size: 2rem;
-  list-style-type: none;
-  margin-left: 2rem;
-  padding: 0;
-}
-
-.sitemap-ul-li {
-  margin-bottom: 10px;
-}
-
-.sitemap-ul-li a {
-  text-decoration: none;
-}
-
-.inner-ul {
-  list-style-type: none;
-  padding-left: 20px;
-}
-
-.inner-ul li {
-  margin-bottom: 5px;
-}
-
-.inner-ul li a {
-  color: #555;
-  text-decoration: none;
-}
-
-.inner-ul li a:hover {
-  text-decoration: underline;
-}
-
 .container {
   padding: 3rem 0;
   display: flex;
