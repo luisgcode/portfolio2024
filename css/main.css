@@ -1103,6 +1103,9 @@ a {
   width: 100%;
   z-index: 14;
 }
+.nav-mobile.active {
+  transform: translateX(0);
+}
 .nav-mobile-ul {
   text-align: center;
 }

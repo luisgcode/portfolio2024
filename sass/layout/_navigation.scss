@@ -55,6 +55,10 @@
   width: 100%;
   z-index: 14;
 
+  &.active {
+    transform: translateX(0); // Mueve el menú a la vista
+  }
+
   &-ul {
     text-align: center;
 

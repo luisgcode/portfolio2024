@@ -90,6 +90,8 @@ const mobileMenus = document.querySelectorAll(".nav-mobile");
 
 openNavBtns.forEach(function (openBtn) {
   openBtn.addEventListener("click", function () {
+    console.log("clicked");
+
     mobileMenus.forEach(function (mobileMenu) {
       mobileMenu.classList.toggle("active");
     });
