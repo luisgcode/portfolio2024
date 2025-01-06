@@ -96,16 +96,6 @@ openNavBtns.forEach(function (openBtn) {
   });
 });
 
-// Print button function
-const printLinks = document.querySelectorAll('[id^="printLink"]');
-
-printLinks.forEach((link) => {
-  link.addEventListener("click", function (event) {
-    event.preventDefault();
-    window.print();
-  });
-});
-
 // contact modal
 const modal = document.querySelector(".contact");
 const btnOpenModal = document.querySelectorAll(".open-modal");
