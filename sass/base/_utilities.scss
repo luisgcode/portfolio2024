@@ -18,6 +18,10 @@ small {
   letter-spacing: 1px;
 }
 
+.logo {
+  width: 12rem;
+}
+
 .detailed {
   color: var(--highlight-color);
 }
@@ -53,12 +57,6 @@ small {
 .scroll-hidden {
   opacity: 0;
   transform: translateY(3rem);
-}
-
-// List items separator
-.li-separator {
-  color: var(--highlight-color);
-  opacity: 20%;
 }
 
 // Dark mode utilities

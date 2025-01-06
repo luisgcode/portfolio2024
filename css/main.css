@@ -99,6 +99,10 @@ small {
   letter-spacing: 1px;
 }
 
+.logo {
+  width: 12rem;
+}
+
 .detailed {
   color: var(--highlight-color);
 }
@@ -128,11 +132,6 @@ small {
 .scroll-hidden {
   opacity: 0;
   transform: translateY(3rem);
-}
-
-.li-separator {
-  color: var(--highlight-color);
-  opacity: 20%;
 }
 
 :root:has(.toggleMode:checked) .logo-dark,
@@ -1061,9 +1060,6 @@ a {
   max-width: 96%;
   padding: 3rem 0;
   width: 100rem;
-}
-.nav .logo {
-  width: 13rem;
 }
 .nav-desktop {
   align-items: center;

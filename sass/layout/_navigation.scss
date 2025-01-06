@@ -8,10 +8,6 @@
   padding: 3rem 0;
   width: 100rem;
 
-  .logo {
-    width: 13rem;
-  }
-
   // Desktop navigation
   &-desktop {
     @include flex_center;
