@@ -1283,17 +1283,6 @@ hr {
     margin-top: 2rem;
   }
 }
-.projects-filter {
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
-  color: var(--details-color);
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 2rem;
-  outline: none;
-  padding: 0.3rem;
-}
 .projects-wrapper {
   align-items: center;
   display: flex;
