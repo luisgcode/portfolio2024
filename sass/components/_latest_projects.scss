@@ -29,6 +29,7 @@
       padding: 1rem;
       transition: all 0.3s ease;
       width: 31%;
+      position: relative;
 
       &:hover {
         box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
@@ -74,6 +75,19 @@
           font-size: 1rem;
         }
       }
+    }
+
+    .projects-card::after {
+      content: "Showcase ▶";
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: var(--details-color);
+      color: white;
+      padding: 0 5px;
+      border-radius: 4px;
+      font-size: 1rem;
+      opacity: 0.8;
     }
   }
 }

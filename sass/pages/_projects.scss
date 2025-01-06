@@ -6,6 +6,7 @@
     justify-content: space-between;
 
     .projects-card {
+      position: relative;
       border-radius: 0.5rem;
       box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
       cursor: pointer;
@@ -54,6 +55,19 @@
           font-size: 1rem;
         }
       }
+    }
+
+    .projects-card::after {
+      content: "Showcase ▶";
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: var(--details-color);
+      color: white;
+      padding: 0 5px;
+      border-radius: 4px;
+      font-size: 1rem;
+      opacity: 0.8;
     }
   }
 }

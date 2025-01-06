@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --bg-color: #ffffff;
   --box-shadow: rgba(0, 0, 0, 0.2);
@@ -126,9 +127,7 @@ small {
 }
 
 .scroll {
-  transition:
-    transform 0.5s,
-    opacity 1s;
+  transition: transform 0.5s, opacity 1s;
 }
 
 .scroll-hidden {
@@ -527,13 +526,13 @@ a {
   padding: 1rem;
   transition: all 0.3s ease;
   width: 31%;
+  position: relative;
 }
 .projects-home .projects-card:hover {
   box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
   transition: all 0.3s ease;
 }
-.projects-home .projects-card-details,
-.projects-home .projects-card-links {
+.projects-home .projects-card-details, .projects-home .projects-card-links {
   padding: 0 1rem;
 }
 .projects-home .projects-card-details h4 {
@@ -563,6 +562,18 @@ a {
 }
 .projects-home .projects-card-links .projects-icons {
   font-size: 1rem;
+}
+.projects-home .projects-card::after {
+  content: "Showcase ▶";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: var(--details-color);
+  color: white;
+  padding: 0 5px;
+  border-radius: 4px;
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
 @media (max-width: 800px) {
@@ -755,7 +766,7 @@ a {
   position: absolute;
   z-index: -1;
 }
-.toolbar-ul-language input[type="checkbox"] {
+.toolbar-ul-language input[type=checkbox] {
   appearance: none;
   cursor: pointer;
   height: 1.8rem;
@@ -779,7 +790,7 @@ a {
   position: relative;
   margin-bottom: 0.3rem;
 }
-.toolbar-ul-mode input[type="checkbox"] {
+.toolbar-ul-mode input[type=checkbox] {
   appearance: none;
   cursor: pointer;
   height: 1.5rem;
@@ -871,7 +882,7 @@ a {
   position: absolute;
   z-index: -1;
 }
-.toolbar-mobile-ul-language input[type="checkbox"] {
+.toolbar-mobile-ul-language input[type=checkbox] {
   appearance: none;
   cursor: pointer;
   height: 1.8rem;
@@ -890,7 +901,7 @@ a {
 .toolbar-mobile-ul-mode {
   position: relative;
 }
-.toolbar-mobile-ul-mode input[type="checkbox"] {
+.toolbar-mobile-ul-mode input[type=checkbox] {
   appearance: none;
   border-radius: 1.2rem;
   cursor: pointer;
@@ -1312,6 +1323,7 @@ hr {
   justify-content: space-between;
 }
 .projects-wrapper .projects-card {
+  position: relative;
   border-radius: 0.5rem;
   box-shadow: 0 0.1rem 0.4rem 0 var(--box-shadow);
   cursor: pointer;
@@ -1324,8 +1336,7 @@ hr {
   box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow);
   transition: all 0.3s ease;
 }
-.projects-wrapper .projects-card-details,
-.projects-wrapper .projects-card-links {
+.projects-wrapper .projects-card-details, .projects-wrapper .projects-card-links {
   padding: 0 1rem;
 }
 .projects-wrapper .projects-card-details small {
@@ -1352,6 +1363,18 @@ hr {
 .projects-wrapper .projects-card-links .projects-icons {
   color: var(--details-color);
   font-size: 1rem;
+}
+.projects-wrapper .projects-card::after {
+  content: "Showcase ▶";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: var(--details-color);
+  color: white;
+  padding: 0 5px;
+  border-radius: 4px;
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
 .container {
