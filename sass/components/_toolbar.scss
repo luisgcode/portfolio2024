@@ -143,9 +143,9 @@
 .toolbar-mobile {
   background-color: var(--bg-color);
   border: 0.5rem 0.5rem 0 0;
-  bottom: 0;
   box-shadow: 0 -0.5rem 2rem 0 rgba(151, 151, 151, 0.2);
   opacity: 0;
+  bottom: -20px;
   padding-bottom: 1.5rem;
   position: fixed;
   visibility: hidden;
