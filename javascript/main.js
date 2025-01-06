@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(odometro);
 });
 
-// // Hamburguer menu displaying
+//  Hamburguer menu displaying
 const openNavBtns = document.querySelectorAll(".toolbar-mobile-ul-hamburguer");
 const mobileMenus = document.querySelectorAll(".nav-mobile");
 

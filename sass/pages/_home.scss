@@ -17,6 +17,15 @@
 
     &-info {
       flex-basis: 60%;
+
+      h1 {
+        line-height: 1;
+      }
+
+      .detailed {
+        font-style: italic;
+        font-size: 3rem;
+      }
     }
 
     &-info-ul {
@@ -62,6 +71,19 @@
   .hero {
     flex-direction: column;
     text-align: center;
+  }
+
+  .hero-info {
+    h1 {
+      span {
+        display: block;
+        margin: 1rem 0 2rem 0;
+      }
+    }
+  }
+
+  .hero-banner {
+    margin-top: 1rem;
   }
 
   .main-header {

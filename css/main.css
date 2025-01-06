@@ -1232,6 +1232,13 @@ hr {
 .main-header .hero-info {
   flex-basis: 60%;
 }
+.main-header .hero-info h1 {
+  line-height: 1;
+}
+.main-header .hero-info .detailed {
+  font-style: italic;
+  font-size: 3rem;
+}
 .main-header .hero-info-ul {
   display: flex;
   gap: 2rem;
@@ -1268,6 +1275,13 @@ hr {
   .hero {
     flex-direction: column;
     text-align: center;
+  }
+  .hero-info h1 span {
+    display: block;
+    margin: 1rem 0 2rem 0;
+  }
+  .hero-banner {
+    margin-top: 1rem;
   }
   .main-header {
     margin-top: 0;
