@@ -1062,6 +1062,9 @@ a {
   padding: 3rem 0;
   width: 100rem;
 }
+.nav .logo {
+  width: 13rem;
+}
 .nav-desktop {
   align-items: center;
   display: flex;
@@ -1123,9 +1126,6 @@ a {
   .nav {
     justify-content: center;
     margin-bottom: 0;
-  }
-  .nav .logo {
-    width: 13rem;
   }
   .nav-desktop {
     display: none;
