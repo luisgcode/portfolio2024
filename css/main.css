@@ -1283,12 +1283,6 @@ hr {
     margin-top: 2rem;
   }
 }
-.projects-intro {
-  margin: 0 auto 15rem auto;
-  max-width: 110rem;
-  padding: 0 5rem;
-}
-
 .projects-filter {
   border-radius: 5px;
   border: none;
@@ -1349,11 +1343,6 @@ hr {
   font-size: 1rem;
 }
 
-@media (max-width: 900px) {
-  .projects-intro {
-    padding: 0 2rem;
-  }
-}
 .container {
   padding: 3rem 0;
   display: flex;
