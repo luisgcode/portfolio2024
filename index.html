@@ -13,6 +13,9 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/main.css" />
 
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
     <!--FAVICON-->
     <link
       rel="apple-touch-icon"
@@ -246,9 +249,9 @@
             <span class="detailed">Web Developer</span>
           </h1>
           <span class="eng">
-            Passionate about creating responsive web applications with modern
-            technologies. Combining hands-on experience with ongoing education
-            to build scalable, user-friendly solutions.
+            I build responsive web applications with modern technologies.
+            Combining hands-on experience with ongoing education to build
+            scalable, user-friendly solutions.
           </span>
           <!-- Spa -->
           <h1 class="spa">
@@ -290,6 +293,7 @@
         </div>
         <figure class="hero-banner">
           <img
+            class="hero-banner-picture"
             src="images/banners/hero-alter1.webp"
             alt="Luis Guaiquirian photo"
           />
@@ -836,6 +840,50 @@
             <h3 class="spa">Algunos de mis ultimos codigos.</h3>
           </div>
           <div class="projects-home">
+            <!-- portfolio 2.0 -->
+            <div class="projects-card">
+              <video
+                poster="images/poster-portfolio2.0.png"
+                class="videoBtn"
+                width="100%"
+                height="100%"
+                style="border-radius: 7px"
+              >
+                <source src="#" type="video/mp4" />
+                Your browser does not support the video tag.
+                <track
+                  kind="descriptions"
+                  src="videos/WCAG_portfolio_description.vtt"
+                  srclang="en"
+                  label="English description"
+                />
+              </video>
+
+              <div class="projects-card-details">
+                <h4>luisgcode.com | Portfolio (v2) <br /></h4>
+                <small
+                  >Tech stacks:<span> React, Tailwind CSS & JavaSCript </span>
+                </small>
+                <br />
+                <small
+                  >Goal:<span>
+                    Update my version 1.0, and showcase everything I have
+                    learned in the last 2 years.
+                  </span>
+                </small>
+                <br />
+                <small>** Developing **</small>
+              </div>
+              <div class="projects-card-links">
+                <a
+                  href="https://github.com/luisgcode/portfolio2.0"
+                  aria-label="Link to github profile of this project"
+                  target="_blank"
+                  ><i class="projects-icons fa-brands fa-github"></i> View
+                  Code</a
+                >
+              </div>
+            </div>
             <!-- Crowdmeter System -->
             <div class="projects-card">
               <video
@@ -885,7 +933,7 @@
               </div>
             </div>
 
-            <!-- portfolio -->
+            <!-- portfolio 1 -->
             <div class="projects-card">
               <video
                 poster="images/poster-portfolio.jpg"
@@ -905,7 +953,7 @@
               </video>
 
               <div class="projects-card-details">
-                <h4>luisgcode.com | Portfolio <br /></h4>
+                <h4>luisgcode.com | Portfolio (v1) <br /></h4>
                 <small
                   >Tech stacks:<span> HTML, SCSS, CSS, and JavaSCript </span>
                 </small>
@@ -1066,58 +1114,6 @@
               <div class="projects-card-links">
                 <a href="https://infanti.cl/terminos-y-condiciones"
                   ><i class="projects-icons fa-solid fa-link"></i> Live site</a
-                >
-              </div>
-            </div>
-
-            <!-- EncoreGym -->
-            <div class="projects-card">
-              <video
-                poster="images/poster-encore.jpg"
-                class="videoBtn"
-                width="100% "
-                style="border-radius: 7px"
-              >
-                <source
-                  src="videos/encore-gym.mp4"
-                  type="video/mp4"
-                  alt="video"
-                />
-
-                <track
-                  kind="descriptions"
-                  src="videos/WCAG_encoreGym_description.vtt"
-                  srclang="en"
-                  label="English description"
-                />
-              </video>
-
-              <div class="projects-card-details">
-                <h4>EncoreGym website</h4>
-                <small
-                  >Tech stacks:<span> HTML, CSS, and JavaSCript </span></small
-                >
-                <br />
-
-                <small
-                  >Goal:<span>
-                    Create a functional gym website for EncoreGym.
-                  </span>
-                </small>
-                <br />
-                <small>Mobile responsive ✔️</small>
-              </div>
-              <div class="projects-card-links">
-                <a
-                  href="https://luisgcode.github.io/encoregymWeb/"
-                  target="_blank"
-                  ><i class="projects-icons fa-solid fa-link"></i> Live site</a
-                >
-                <a
-                  href="https://github.com/luisgcode/encoregymWeb"
-                  target="_blank"
-                  ><i class="projects-icons fa-brands fa-github"></i> View
-                  Code</a
                 >
               </div>
             </div>
@@ -1422,5 +1418,6 @@
       </div>
     </div>
     <script src="javascript/main.js"></script>
+    <script src="javascript/gsap.js"></script>
   </body>
 </html>
